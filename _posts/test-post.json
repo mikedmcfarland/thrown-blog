@@ -1,0 +1,404 @@
+{
+  "$$data_type": "org-document",
+  "properties": {
+    "title": ["A Test Post"],
+    "filetags": [],
+    "author": ["Michael McFarland"],
+    "creator": "Emacs 28.0.60 (Org mode 9.6)",
+    "date": [],
+    "description": [],
+    "email": "michaelmcfarland@michaels-air.lan",
+    "language": "en"
+  },
+  "contents": [
+    {
+      "$$data_type": "org-node",
+      "type": "section",
+      "ref": "org08539d1",
+      "properties": {
+        "robust-begin": 1,
+        "robust-end": 44,
+        "post-blank": 1,
+        "post-affiliated": 1,
+        "mode": "first-section",
+        "granularity": null
+      },
+      "contents": [
+        {
+          "$$data_type": "org-node",
+          "type": "keyword",
+          "ref": "org459be9b",
+          "properties": {
+            "key": "TITLE",
+            "value": "A Test Post",
+            "post-blank": 1,
+            "post-affiliated": 1,
+            "mode": "top-comment",
+            "granularity": null
+          },
+          "contents": []
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "paragraph",
+          "ref": "orge9e4360",
+          "properties": {
+            "post-blank": 0,
+            "post-affiliated": 23,
+            "mode": null,
+            "granularity": null
+          },
+          "contents": ["Welcome to a test post\n"]
+        }
+      ]
+    },
+    {
+      "$$data_type": "org-node",
+      "type": "headline",
+      "ref": "org297d8cb",
+      "drawer": {},
+      "properties": {
+        "tags-all": [],
+        "raw-value": "Overview",
+        "pre-blank": 1,
+        "robust-begin": 61,
+        "robust-end": 169,
+        "level": 1,
+        "priority": null,
+        "tags": [],
+        "todo-keyword": null,
+        "todo-type": null,
+        "post-blank": 1,
+        "footnote-section-p": false,
+        "archivedp": false,
+        "commentedp": false,
+        "post-affiliated": 47,
+        "title": ["Overview"],
+        "mode": null,
+        "granularity": null
+      },
+      "contents": [
+        {
+          "$$data_type": "org-node",
+          "type": "section",
+          "ref": "org3aa2dc9",
+          "properties": {
+            "robust-begin": 59,
+            "robust-end": 169,
+            "post-blank": 1,
+            "post-affiliated": 59,
+            "mode": "section",
+            "granularity": null
+          },
+          "contents": [
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "org8e7ece3",
+              "properties": {
+                "post-blank": 0,
+                "post-affiliated": 59,
+                "mode": "planning",
+                "granularity": null
+              },
+              "contents": ["Here's a test post with some awesome content\n"]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "plain-list",
+              "ref": "org969d383",
+              "properties": {
+                "type": "unordered",
+                "structure": [
+                  [104, 0, "- ", null, null, null, 139],
+                  [139, 0, "- ", null, null, null, 171]
+                ],
+                "post-blank": 0,
+                "post-affiliated": 104,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": [
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "orgcf453cf",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 104,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "orgc68b6c4",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 106,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": ["we're going to list a few things\n"]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "orge125939",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 139,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "orgbb59a63",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 141,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": ["another list item sounds good\n"]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$$data_type": "org-node",
+      "type": "headline",
+      "ref": "orgaaf13a8",
+      "drawer": {},
+      "properties": {
+        "tags-all": [],
+        "raw-value": "Another heading",
+        "pre-blank": 1,
+        "robust-begin": 193,
+        "robust-end": 441,
+        "level": 1,
+        "priority": null,
+        "tags": [],
+        "todo-keyword": null,
+        "todo-type": null,
+        "post-blank": 0,
+        "footnote-section-p": false,
+        "archivedp": false,
+        "commentedp": false,
+        "post-affiliated": 172,
+        "title": ["Another heading"],
+        "mode": null,
+        "granularity": null,
+        "cached": true,
+        "org-element--cache-sync-key": [11]
+      },
+      "contents": [
+        {
+          "$$data_type": "org-node",
+          "type": "section",
+          "ref": "orge529374",
+          "properties": {
+            "robust-begin": 191,
+            "robust-end": 371,
+            "post-blank": 1,
+            "post-affiliated": 191,
+            "mode": "section",
+            "granularity": null
+          },
+          "contents": [
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "org14a02c7",
+              "properties": {
+                "post-blank": 0,
+                "post-affiliated": 191,
+                "mode": "planning",
+                "granularity": null
+              },
+              "contents": ["lets have some source here\n"]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "src-block",
+              "ref": "org0da3027",
+              "properties": {
+                "language": "js",
+                "switches": null,
+                "parameters": null,
+                "number-lines": null,
+                "preserve-indent": false,
+                "retain-labels": true,
+                "use-labels": true,
+                "label-fmt": null,
+                "value": "function helloWorld() {\n    console.log(\"hello world\")\n}\n",
+                "post-blank": 1,
+                "post-affiliated": 218,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": []
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "org7e5c419",
+              "properties": {
+                "post-blank": 1,
+                "post-affiliated": 301,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": ["this seems pretty sweet huh?\n"]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "orgaa80c54",
+              "properties": {
+                "post-blank": 0,
+                "post-affiliated": 331,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": [
+                "lets remake on that function ",
+                {
+                  "$$data_type": "org-node",
+                  "type": "verbatim",
+                  "ref": "org87ad22c",
+                  "properties": {
+                    "post-blank": 0,
+                    "value": "helloWorld"
+                  },
+                  "contents": []
+                },
+                "\n"
+              ]
+            }
+          ]
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "headline",
+          "ref": "orgf386a8f",
+          "drawer": {},
+          "properties": {
+            "tags-all": [],
+            "raw-value": "Hey a subheading",
+            "pre-blank": 0,
+            "robust-begin": 396,
+            "robust-end": 441,
+            "level": 2,
+            "priority": null,
+            "tags": [],
+            "todo-keyword": null,
+            "todo-type": null,
+            "post-blank": 0,
+            "footnote-section-p": false,
+            "archivedp": false,
+            "commentedp": false,
+            "post-affiliated": 374,
+            "title": ["Hey a subheading"],
+            "mode": null,
+            "granularity": null
+          },
+          "contents": [
+            {
+              "$$data_type": "org-node",
+              "type": "section",
+              "ref": "orga49e6aa",
+              "properties": {
+                "robust-begin": 394,
+                "robust-end": 441,
+                "post-blank": 0,
+                "post-affiliated": 394,
+                "mode": "section",
+                "granularity": null
+              },
+              "contents": [
+                {
+                  "$$data_type": "org-node",
+                  "type": "paragraph",
+                  "ref": "org75dd30a",
+                  "properties": {
+                    "post-blank": 0,
+                    "post-affiliated": 394,
+                    "mode": "planning",
+                    "granularity": null
+                  },
+                  "contents": ["Adding even more content here\n"]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "plain-list",
+                  "ref": "org973d221",
+                  "properties": {
+                    "type": "unordered",
+                    "structure": [[424, 0, "- ", null, null, null, 443]],
+                    "post-blank": 0,
+                    "post-affiliated": 424,
+                    "mode": null,
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "item",
+                      "ref": "org6c051dd",
+                      "properties": {
+                        "bullet": "- ",
+                        "checkbox": null,
+                        "counter": null,
+                        "pre-blank": 0,
+                        "post-blank": 0,
+                        "post-affiliated": 424,
+                        "tag": [],
+                        "mode": "item",
+                        "granularity": null
+                      },
+                      "contents": [
+                        {
+                          "$$data_type": "org-node",
+                          "type": "paragraph",
+                          "ref": "orga06ae89",
+                          "properties": {
+                            "post-blank": 0,
+                            "post-affiliated": 426,
+                            "mode": null,
+                            "granularity": null
+                          },
+                          "contents": ["even a list here\n"]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
