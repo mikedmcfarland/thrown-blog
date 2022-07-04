@@ -1,6 +1,8 @@
 #+Title: Lets try another one
-#+Summary: This is a beautiful summary of this post, you will never believe your eyes!
-#+Hero: https://placekitten.com/400/200
+#+Description: This is a beautiful summary of this post, you will never believe your eyes!
+#+Date: 2022-07-04 Mon
+#+Image: https://placekitten.com/500/500
+#+CATEGORY: lorem
 
 * Overview
 

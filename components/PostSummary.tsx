@@ -12,10 +12,10 @@ import {
 export type Props = {
     category: string
     title: string
-    authorName: string
-    authorAvatarImageUrl: string
-    heroImage: string
-    summaryText: string
+    author: string
+    authorImage: string
+    image: string
+    description: string
     date: string
 }
 
@@ -38,7 +38,7 @@ export function PostSummary(props: Props) {
                     mb={6}
                     pos={'relative'}>
                     <Image
-                        src={props.heroImage}
+                        src={props.image}
                         layout={'fill'}
                     />
                 </Box>
@@ -58,15 +58,15 @@ export function PostSummary(props: Props) {
                         {props.title}
                     </Heading>
                     <Text color={'gray.500'}>
-                        {props.summaryText}
+                        {props.description}
                     </Text>
                 </Stack>
                 <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
                     <Avatar
-                        src={props.authorAvatarImageUrl}
+                        src={props.authorImage}
                     />
                     <Stack direction={'column'} spacing={0} fontSize={'sm'}>
-                        <Text fontWeight={600}>{props.authorName}</Text>
+                        <Text fontWeight={600}>{props.author}</Text>
                         <Text color={'gray.500'}>{props.date}</Text>
                     </Stack>
                 </Stack>

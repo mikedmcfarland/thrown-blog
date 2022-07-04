@@ -1,4 +1,8 @@
 #+Title: A Test Post
+#+AUTHOR: Michael McFarland
+#+DESCRIPTION: Here's a test post with some awesome content
+#+IMAGE: https://placekitten.com/400/200
+#+DATE: 2022-07-04 Mon 15:48
 
 Welcome to a test post
 

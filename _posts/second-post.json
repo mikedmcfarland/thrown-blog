@@ -5,7 +5,7 @@
     "filetags": [],
     "author": ["Michael McFarland"],
     "creator": "Emacs 28.0.60 (Org mode 9.6)",
-    "date": [],
+    "date": ["2022-07-04 Mon"],
     "description": [],
     "email": "michaelmcfarland@michaels-air.lan",
     "language": "en"
@@ -14,10 +14,10 @@
     {
       "$$data_type": "org-node",
       "type": "section",
-      "ref": "org265d4c2",
+      "ref": "orgc12074a",
       "properties": {
         "robust-begin": 1,
-        "robust-end": 156,
+        "robust-end": 201,
         "post-blank": 1,
         "post-affiliated": 1,
         "mode": "first-section",
@@ -27,7 +27,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orge1d1fc0",
+          "ref": "orgf63a5e6",
           "properties": {
             "key": "TITLE",
             "value": "Lets try another one",
@@ -41,9 +41,9 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orgd9b29cd",
+          "ref": "org89eb865",
           "properties": {
-            "key": "SUMMARY",
+            "key": "DESCRIPTION",
             "value": "This is a beautiful summary of this post, you will never believe your eyes!",
             "post-blank": 0,
             "post-affiliated": 31,
@@ -55,12 +55,40 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org88d5ed3",
+          "ref": "org0fdb4ee",
           "properties": {
-            "key": "HERO",
-            "value": "https://placekitten.com/400/200",
+            "key": "DATE",
+            "value": "2022-07-04 Mon",
             "post-blank": 0,
-            "post-affiliated": 118,
+            "post-affiliated": 122,
+            "mode": null,
+            "granularity": null
+          },
+          "contents": []
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "keyword",
+          "ref": "org5f4b45c",
+          "properties": {
+            "key": "IMAGE",
+            "value": "https://placekitten.com/500/500",
+            "post-blank": 0,
+            "post-affiliated": 145,
+            "mode": null,
+            "granularity": null
+          },
+          "contents": []
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "keyword",
+          "ref": "orgfc403df",
+          "properties": {
+            "key": "CATEGORY",
+            "value": "tech",
+            "post-blank": 0,
+            "post-affiliated": 186,
             "mode": null,
             "granularity": null
           },
@@ -71,14 +99,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org5b5105a",
+      "ref": "orgd169fad",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "Overview",
         "pre-blank": 1,
-        "robust-begin": 173,
-        "robust-end": 288,
+        "robust-begin": 218,
+        "robust-end": 333,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -88,7 +116,7 @@
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
-        "post-affiliated": 159,
+        "post-affiliated": 204,
         "title": ["Overview"],
         "mode": null,
         "granularity": null
@@ -97,12 +125,12 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "orgd362fb1",
+          "ref": "org1101fec",
           "properties": {
-            "robust-begin": 171,
-            "robust-end": 288,
+            "robust-begin": 216,
+            "robust-end": 333,
             "post-blank": 1,
-            "post-affiliated": 171,
+            "post-affiliated": 216,
             "mode": "section",
             "granularity": null
           },
@@ -110,10 +138,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org3a60835",
+              "ref": "org74f3c01",
               "properties": {
                 "post-blank": 0,
-                "post-affiliated": 171,
+                "post-affiliated": 216,
                 "mode": "planning",
                 "granularity": null
               },
@@ -122,16 +150,16 @@
             {
               "$$data_type": "org-node",
               "type": "plain-list",
-              "ref": "orgfc06533",
+              "ref": "org03db861",
               "properties": {
                 "type": "unordered",
                 "structure": [
-                  [216, 0, "- ", null, null, null, 251],
-                  [251, 0, "- ", null, null, null, 258],
-                  [258, 0, "- ", null, null, null, 290]
+                  [261, 0, "- ", null, null, null, 296],
+                  [296, 0, "- ", null, null, null, 303],
+                  [303, 0, "- ", null, null, null, 335]
                 ],
                 "post-blank": 0,
-                "post-affiliated": 216,
+                "post-affiliated": 261,
                 "mode": null,
                 "granularity": null
               },
@@ -139,14 +167,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orga647fe7",
+                  "ref": "orgbb7da17",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 216,
+                    "post-affiliated": 261,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -155,10 +183,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgbe2aad7",
+                      "ref": "org8c15ae6",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 218,
+                        "post-affiliated": 263,
                         "mode": null,
                         "granularity": null
                       },
@@ -169,14 +197,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgfaec98d",
+                  "ref": "org0cb5301",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 251,
+                    "post-affiliated": 296,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -185,10 +213,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org2bd0bd5",
+                      "ref": "orga0ba700",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 253,
+                        "post-affiliated": 298,
                         "mode": null,
                         "granularity": null
                       },
@@ -199,14 +227,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org934fb29",
+                  "ref": "orgc9d03c8",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 258,
+                    "post-affiliated": 303,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -215,10 +243,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org14a13cd",
+                      "ref": "org9f9146e",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 260,
+                        "post-affiliated": 305,
                         "mode": null,
                         "granularity": null
                       },
@@ -235,14 +263,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org1a95dd9",
+      "ref": "orge4014f9",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "Lorem Ipsum",
         "pre-blank": 0,
-        "robust-begin": 307,
-        "robust-end": 1169,
+        "robust-begin": 352,
+        "robust-end": 1214,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -252,7 +280,7 @@
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
-        "post-affiliated": 291,
+        "post-affiliated": 336,
         "title": ["Lorem Ipsum"],
         "mode": null,
         "granularity": null
@@ -261,12 +289,12 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "orgadae141",
+          "ref": "orgb64714a",
           "properties": {
-            "robust-begin": 305,
-            "robust-end": 1169,
+            "robust-begin": 350,
+            "robust-end": 1214,
             "post-blank": 0,
-            "post-affiliated": 305,
+            "post-affiliated": 350,
             "mode": "section",
             "granularity": null
           },
@@ -274,10 +302,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgb405c6b",
+              "ref": "org7865d92",
               "properties": {
                 "post-blank": 0,
-                "post-affiliated": 305,
+                "post-affiliated": 350,
                 "mode": "planning",
                 "granularity": null
               },

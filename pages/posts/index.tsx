@@ -1,31 +1,28 @@
 import { getAllPosts } from "src/org/files"
-import { OrgDoc } from "src/org/types"
 import { Grid } from "@chakra-ui/layout"
 import { PostSummary } from 'components/PostSummary'
+import { getSummaryData } from "src/org/metadata"
 
-interface Props { posts: OrgDoc[] }
+type Props = Awaited<ReturnType<typeof getStaticProps>>["props"]
 
 export default function Posts(props: Props) {
     return (
         <Grid gridColumn={[1, 2]}>
-            {props.posts.map((post) => (
-                <PostSummary
-                    category={"Tech"}
-                    title={post.properties.title}
-                    authorName={'Michael McFarland'}
-                    authorAvatarImageUrl={'https://placekitten.com/200/300'}
-                    heroImage={'https://placekitten.com/500/400'}
-                    summaryText={""}
-                    date={'Friday, July 1, 2022'} />
-            ))}
+            {props.posts.map((post, i) => {
+                const summaryProps = getSummaryData(post)
+                return (<PostSummary key={i} {...summaryProps} />)
+            })}
         </Grid>
     )
 }
 
 export async function getStaticProps() {
+    const allPosts = await getAllPosts()
+    console.log("allPosts", allPosts)
+    const posts = allPosts.map(({ name, post }) => post)
     return {
         props: {
-            posts: await getAllPosts()
+            posts
         }
     }
 }

@@ -1,79 +1,92 @@
 export interface OrgDoc {
-    "$$data_type$$": "org-document"
+    "$$data_type$$": DataType.ORG_DOCUMENT
     properties: {
         title: string
     }
-    contents: (KeywordNode | ContentNode)[]
+    contents: Exclude<AnyNode, OrgDoc>
 }
 
 type ContentNode = SectionNode | ParagraphNode | HeadlineNode | SourceBlockNode | VerbatimNode
+export type AnyNode = OrgDoc | SectionNode | KeywordNode | ParagraphNode | HeadlineNode | ItemNode | PlainListNode | VerbatimNode | SourceBlockNode
 
-
-export interface SectionNode {
-    "$$data_type$$": "org-node"
-    "type": "section"
-    ref: string
-    contents: ContentNode[]
+export enum DataType {
+    ORG_NODE = 'org-node',
+    ORG_DOCUMENT = 'org-document',
 }
 
-export interface KeywordNode {
-    "$$data_type$$": "org-node"
-    "type": "keyword"
-    ref: string
+export enum NodeType {
+    SECTION = 'section',
+    KEYWORD = 'keyword',
+    PARAGRAPH = 'paragraph',
+    HEADLINE = 'headline',
+    ITEM = 'item',
+    PLAIN_LIST = 'plain-list',
+    VERBATIM = 'verbatim',
+    SRC_BLOCK = 'src-block'
 }
 
+
+type Node<CT = ContentNode[]> = {
+    "$$data_type$$": DataType.ORG_NODE,
+    contents: CT
+    ref?: string
+}
+
+// type Node<NT extends NodeType, CT, PT extends { [k: string]: string } = {}> = {
+//     "$$data_type$$": DataType.ORG_NODE,
+//     "type": keyof NT
+//     properties: PT
+//     contents: CT
+//     ref?: string
+// }
+
+export interface SectionNode extends Node {
+    "type": NodeType.SECTION
+}
+
+export interface KeywordNode extends Node<never> {
+    "type": NodeType.KEYWORD
+    properties: {
+        key: string,
+        value: string
+    }
+}
+
+export interface ParagraphNode extends Node<string[]> { }
 export interface ParagraphNode {
-    "$$data_type$$": "org-node"
-    "type": "paragraph"
-    ref: string
-    contents: string[]
+    "type": NodeType.PARAGRAPH
 }
 
-export interface HeadlineNode {
-
-    "$$data_type$$": "org-node"
-    "type": "headline"
-    ref: string
+export interface HeadlineNode extends Node {
+    "type": NodeType.HEADLINE
     properties: {
         title: string[],
-        "raw-value": string
+        "raw-value": string,
         level: number
+
     }
-    contents: ContentNode[]
 }
 
-export interface ItemNode {
-
-    "$$data_type$$": "org-node"
-    "type": "item"
-    ref: string
-    contents: ContentNode[]
+export interface ItemNode extends Node {
+    "type": NodeType.ITEM
 }
 
-export interface PlainListNode {
+export interface PlainListNode extends Node<ItemNode[]> {
+    "type": NodeType.PLAIN_LIST
 
-    "$$data_type$$": "org-node"
-    "type": "plain-list"
-    ref: string
-    properties: {}
-    contents: ItemNode[]
+
 }
 
-export interface SourceBlockNode {
-
-    "$$data_type$$": "src-block"
-    ref: string
+export interface SourceBlockNode extends Node<never> {
+    "type": NodeType.SRC_BLOCK
     properties: {
         language: string
         value: string
     }
 }
 
-export interface VerbatimNode {
-
-    "$$data_type$$": "org-node"
-    "type": "verbatim"
-    ref: string
+export interface VerbatimNode extends Node<never> {
+    "type": NodeType.VERBATIM
     properties: {
         value: string
     }
