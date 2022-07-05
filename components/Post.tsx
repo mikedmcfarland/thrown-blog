@@ -17,7 +17,7 @@ export function Post(props: Props) {
                 {props.summary.title}
             </Heading>
 
-            <Container maxWidth='4xl'>
+            <Container maxWidth='3xl'>
                 {props.children}
             </Container>
         </VStack>
