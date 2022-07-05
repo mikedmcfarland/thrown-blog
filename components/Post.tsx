@@ -13,11 +13,11 @@ type Props = {
 export function Post(props: Props) {
     return (
         <VStack>
-            <Heading size='4xl'>
+            <Heading mb={4} color="brand" size='3xl'>
                 {props.summary.title}
             </Heading>
 
-            <Container maxWidth='7xl'>
+            <Container maxWidth='4xl'>
                 {props.children}
             </Container>
         </VStack>

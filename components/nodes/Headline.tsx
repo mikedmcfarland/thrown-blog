@@ -1,4 +1,4 @@
-import { Container, Heading } from "@chakra-ui/react"
+import { Box, Heading } from "@chakra-ui/react"
 import { HeadlineNode } from "src/org/types"
 import { NodeComponent } from "./types"
 
@@ -21,8 +21,10 @@ export const Headline: NodeComponent<HeadlineNode> = ({ node, children }) => {
     return (
 
         <>
-            <Heading as={h} size={size}>{title}</Heading>
-            {children}
+            <Heading mb={[2, 1]} as={h} size={size}>{title}</Heading>
+            <Box ml={3}>
+                {children}
+            </Box>
         </>
     )
 }
