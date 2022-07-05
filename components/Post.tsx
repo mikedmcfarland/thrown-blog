@@ -1,8 +1,10 @@
 /* import Image from 'next/image'; */
 import { Props as SummaryProps } from 'components/PostSummary'
 import {
+    Center,
     Container,
     Heading,
+    VStack,
 } from '@chakra-ui/react';
 type Props = {
     summary: SummaryProps
@@ -10,15 +12,12 @@ type Props = {
 }
 export function Post(props: Props) {
     return (
-        <Container maxWidth='7xl'>
-            <Heading
-                fontWeight={600}
-                fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
-                lineHeight={'110%'}>
+        <VStack>
+            <Heading size='4xl'>
                 {props.summary.title}
             </Heading>
 
             {props.children}
-        </Container>
+        </VStack>
     )
 }
