@@ -13,13 +13,14 @@ import { Verbatim } from "components/nodes/Verbatim";
 import { Paragraph } from "components/nodes/Paragraph";
 import { Unknown } from "components/nodes/Unknown";
 import { OrgLink } from "components/nodes/Link";
+import { Bold } from "components/nodes/Bold";
 
 type Props = Awaited<ReturnType<typeof getStaticProps>>["props"]
 
 export default function PostPage(props: Props) {
-
+    const summary = getSummaryData(props.post)
     const postProps = {
-        summary: getSummaryData(props.post),
+        summary
     }
 
     const content = props.post.contents.map(renderComponent)
@@ -55,19 +56,7 @@ function renderComponent(node: Exclude<AnyNode, OrgDoc>, i: number): JSX.Element
             )
         case NodeType.PARAGRAPH:
             return (
-                <Paragraph {...props}>
-                    {
-                        node.contents.map((c, i) => {
-                            if (typeof c === 'string') {
-                                return c
-                            }
-                            else {
-                                return renderComponent(c, i)
-                            }
-                        })
-                    }
-
-                </Paragraph>
+                <Paragraph node={node} renderFn={renderComponent} {...props} />
             )
         case NodeType.PLAIN_LIST:
             return (
@@ -103,6 +92,11 @@ function renderComponent(node: Exclude<AnyNode, OrgDoc>, i: number): JSX.Element
                     })
                 }
                 </OrgLink>
+            )
+
+        case NodeType.BOLD:
+            return (
+                <Bold {...props} node={node}>{node.contents}</Bold>
             )
         default:
             return (
