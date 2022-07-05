@@ -1,13 +1,13 @@
 /* import Image from 'next/image'; */
-import { Props as SummaryProps } from 'components/PostSummary'
 import {
-    Center,
     Container,
     Heading,
     VStack,
 } from '@chakra-ui/react';
 type Props = {
-    summary: SummaryProps
+    summary: {
+        title: string
+    }
     children: JSX.Element | JSX.Element[]
 }
 export function Post(props: Props) {
@@ -17,7 +17,9 @@ export function Post(props: Props) {
                 {props.summary.title}
             </Heading>
 
-            {props.children}
+            <Container maxWidth='7xl'>
+                {props.children}
+            </Container>
         </VStack>
     )
 }
