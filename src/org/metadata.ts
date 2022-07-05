@@ -45,5 +45,14 @@ export function getSummaryData(doc: OrgDoc) {
         date: metadata['DATE'],
     }
 
-    return { ...defaults, ...fromMetaData }
+    type Result = typeof defaults & typeof fromMetaData
+    type MetaDataKey = keyof typeof fromMetaData
+
+    const summaryData = (Object.keys(fromMetaData) as MetaDataKey[])
+        .filter((k: MetaDataKey) => fromMetaData[k] !== undefined)
+        .reduce((data, k) => ({ ...data, [k]: fromMetaData[k] }), defaults as Result)
+
+
+    return summaryData
 }
+
