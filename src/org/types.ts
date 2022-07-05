@@ -52,7 +52,7 @@ export interface KeywordNode extends Node<never> {
     }
 }
 
-export interface ParagraphNode extends Node<string[]> { }
+export interface ParagraphNode extends Node<(string | ContentNode)[]> { }
 export interface ParagraphNode {
     "type": NodeType.PARAGRAPH
 }

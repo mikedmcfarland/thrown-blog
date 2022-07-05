@@ -1,11 +1,9 @@
 import { Code } from "@chakra-ui/react"
 import { VerbatimNode } from "src/org/types"
 
-type Props = { node: VerbatimNode, props: any }
-export function Verbatim({ props, node }: Props) {
+type Props = { node: VerbatimNode }
+export function Verbatim({ node }: Props) {
     return (
-        <Code {...props}>
-            {node.properties.value}
-        </Code>
+        <Code>{node.properties.value}</Code>
     )
 }

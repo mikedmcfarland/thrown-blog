@@ -12,7 +12,6 @@ import { SrcBlock } from "components/nodes/SrcBlock";
 import { Verbatim } from "components/nodes/Verbatim";
 import { Paragraph } from "components/nodes/Paragraph";
 import { Unknown } from "components/nodes/Unknown";
-import { Stack } from "@chakra-ui/react";
 
 type Props = Awaited<ReturnType<typeof getStaticProps>>["props"]
 
@@ -25,9 +24,7 @@ export default function PostPage(props: Props) {
     const content = props.post.contents.map(renderComponent)
     return (
         <Post {...postProps} >
-            <Stack>
-                {content}
-            </Stack>
+            {content}
         </Post>
     )
 }
@@ -41,47 +38,61 @@ function renderComponent(node: Exclude<AnyNode, OrgDoc>, i: number): JSX.Element
     switch (node.type) {
         case NodeType.HEADLINE:
             return (
-                <Headline props={props} node={node}>
+                <Headline {...props} node={node}>
                     {node.contents.map(renderComponent)}
                 </Headline>
             )
         case NodeType.ITEM:
             return (
-                <Item props={props} node={node}>
+                <Item {...props} node={node}>
                     {node.contents.map(renderComponent)}
                 </Item>
             )
         case NodeType.KEYWORD:
             return (
-                <Keyword props={props} node={node} />
+                <Keyword {...props} node={node} />
             )
         case NodeType.PARAGRAPH:
             return (
-                <Paragraph props={props} node={node} />
+                <Paragraph {...props}>
+                    {
+                        node.contents.map((c, i) => {
+                            if (typeof c === 'string') {
+                                return c
+                            }
+                            else {
+                                return renderComponent(c, i)
+                            }
+                        })
+                    }
+
+                </Paragraph>
             )
         case NodeType.PLAIN_LIST:
             return (
-                <PlainList props={props} node={node} >
+                <PlainList {...props} node={node} >
                     {node.contents.map(renderComponent)}
                 </PlainList>
             )
         case NodeType.SECTION:
             return (
-                <Section props={props} node={node} >
+                <Section {...props} node={node} >
                     {node.contents.map(renderComponent)}
                 </Section>
             )
         case NodeType.SRC_BLOCK:
             return (
-                <SrcBlock props={props} node={node} />
+                <SrcBlock {...props} node={node} />
             )
+
         case NodeType.VERBATIM:
+            console.log("verbatim?")
             return (
-                <Verbatim props={props} node={node} />
+                <Verbatim {...props} node={node} />
             )
         default:
             return (
-                <Unknown node={node} />
+                <Unknown {...props} node={node} />
             )
 
     }

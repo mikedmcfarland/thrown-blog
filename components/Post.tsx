@@ -6,17 +6,18 @@ import {
 } from '@chakra-ui/react';
 type Props = {
     summary: SummaryProps
-    children: JSX.Element
+    children: JSX.Element | JSX.Element[]
 }
 export function Post(props: Props) {
     return (
-        <Container>
+        <Container maxWidth='7xl'>
             <Heading
                 fontWeight={600}
                 fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
                 lineHeight={'110%'}>
                 {props.summary.title}
             </Heading>
+
             {props.children}
         </Container>
     )

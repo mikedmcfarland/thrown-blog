@@ -14,7 +14,7 @@
     {
       "$$data_type": "org-node",
       "type": "section",
-      "ref": "org936cd80",
+      "ref": "org7a682c6",
       "properties": {
         "robust-begin": 1,
         "robust-end": 202,
@@ -27,7 +27,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orgb618034",
+          "ref": "orgfa3becf",
           "properties": {
             "key": "TITLE",
             "value": "A Test Post",
@@ -41,7 +41,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org97236a4",
+          "ref": "org86ea4f1",
           "properties": {
             "key": "AUTHOR",
             "value": "Michael McFarland",
@@ -55,7 +55,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org1ab88ac",
+          "ref": "org514a4eb",
           "properties": {
             "key": "DESCRIPTION",
             "value": "Here's a test post with some awesome content",
@@ -69,7 +69,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org07bd5f6",
+          "ref": "org101adf2",
           "properties": {
             "key": "IMAGE",
             "value": "https://placekitten.com/400/200",
@@ -83,7 +83,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org418ea23",
+          "ref": "org1b1d352",
           "properties": {
             "key": "DATE",
             "value": "2022-07-04 Mon 15:48",
@@ -97,7 +97,7 @@
         {
           "$$data_type": "org-node",
           "type": "paragraph",
-          "ref": "orgc957fb8",
+          "ref": "org666309b",
           "properties": {
             "post-blank": 0,
             "post-affiliated": 181,
@@ -111,7 +111,7 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org71dad45",
+      "ref": "org0182817",
       "drawer": {},
       "properties": {
         "tags-all": [],
@@ -137,7 +137,7 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "org8c5a118",
+          "ref": "org675978d",
           "properties": {
             "robust-begin": 217,
             "robust-end": 327,
@@ -150,7 +150,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgd9ed7a3",
+              "ref": "org929c0ba",
               "properties": {
                 "post-blank": 0,
                 "post-affiliated": 217,
@@ -162,7 +162,7 @@
             {
               "$$data_type": "org-node",
               "type": "plain-list",
-              "ref": "org9beeb1c",
+              "ref": "org822ec32",
               "properties": {
                 "type": "unordered",
                 "structure": [
@@ -178,7 +178,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org0eebaf7",
+                  "ref": "orga2a103d",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -194,7 +194,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgb66df82",
+                      "ref": "orgd927ecf",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 264,
@@ -208,7 +208,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orge4327e3",
+                  "ref": "orge3377d4",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -224,7 +224,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org169d95c",
+                      "ref": "orgbfa6140",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 299,
@@ -244,14 +244,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org6d32d16",
+      "ref": "orgfe82a23",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "Another heading",
         "pre-blank": 1,
         "robust-begin": 351,
-        "robust-end": 599,
+        "robust-end": 1971,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -272,10 +272,10 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "org8513107",
+          "ref": "orgf71178f",
           "properties": {
             "robust-begin": 349,
-            "robust-end": 529,
+            "robust-end": 1901,
             "post-blank": 1,
             "post-affiliated": 349,
             "mode": "section",
@@ -285,7 +285,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgcb2cdcd",
+              "ref": "org0a9ed4a",
               "properties": {
                 "post-blank": 0,
                 "post-affiliated": 349,
@@ -297,9 +297,9 @@
             {
               "$$data_type": "org-node",
               "type": "src-block",
-              "ref": "orgb7a38cf",
+              "ref": "org0038b8c",
               "properties": {
-                "language": "js",
+                "language": "javascript",
                 "switches": null,
                 "parameters": null,
                 "number-lines": null,
@@ -307,7 +307,7 @@
                 "retain-labels": true,
                 "use-labels": true,
                 "label-fmt": null,
-                "value": "function helloWorld() {\n    console.log(\"hello world\")\n}\n",
+                "value": "function createStyleObject(classNames, style) {\n  return classNames.reduce((styleObject, className) => {\n    return { ...styleObject, ...style[className] };\n  }, {});\n}\n\nfunction createClassNameString(classNames) {\n  return classNames.join(\" \");\n}\n\n// this comment is here to demonstrate an extremely long line length, well beyond what you should probably allow in your own code, though sometimes you'll be highlighting code you can't refactor, which is unfortunate but should be handled gracefully\n\nfunction createChildren(style, useInlineStyles) {\n  let childrenCount = 0;\n  return (children) => {\n    childrenCount += 1;\n    return children.map((child, i) =>\n      createElement({\n        node: child,\n        style,\n        useInlineStyles,\n        key: `code-segment-${childrenCount}-${i}`,\n      })\n    );\n  };\n}\n\nfunction createElement({ node, style, useInlineStyles, key }) {\n  const { properties, type, tagName, value } = node;\n  if (type === \"text\") {\n    return value;\n  } else if (tagName) {\n    const TagName = tagName;\n    const childrenCreator = createChildren(style, useInlineStyles);\n    const props = useInlineStyles\n      ? { style: createStyleObject(properties.className, style) }\n      : { className: createClassNameString(properties.className) };\n    const children = childrenCreator(node.children);\n    return (\n      <TagName key={key} {...props}>\n        {children}\n      </TagName>\n    );\n  }\n}\n",
                 "post-blank": 1,
                 "post-affiliated": 376,
                 "mode": null,
@@ -318,10 +318,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org648c07a",
+              "ref": "orgd1463f9",
               "properties": {
                 "post-blank": 1,
-                "post-affiliated": 459,
+                "post-affiliated": 1831,
                 "mode": null,
                 "granularity": null
               },
@@ -330,10 +330,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org45597e1",
+              "ref": "org2f86d6b",
               "properties": {
                 "post-blank": 0,
-                "post-affiliated": 489,
+                "post-affiliated": 1861,
                 "mode": null,
                 "granularity": null
               },
@@ -342,7 +342,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "verbatim",
-                  "ref": "org9e400a5",
+                  "ref": "org05b7b8d",
                   "properties": {
                     "post-blank": 0,
                     "value": "helloWorld"
@@ -357,14 +357,14 @@
         {
           "$$data_type": "org-node",
           "type": "headline",
-          "ref": "orgd3c3a74",
+          "ref": "orgf7fa0e9",
           "drawer": {},
           "properties": {
             "tags-all": [],
             "raw-value": "Hey a subheading",
             "pre-blank": 0,
-            "robust-begin": 554,
-            "robust-end": 599,
+            "robust-begin": 1926,
+            "robust-end": 1971,
             "level": 2,
             "priority": null,
             "tags": [],
@@ -374,7 +374,7 @@
             "footnote-section-p": false,
             "archivedp": false,
             "commentedp": false,
-            "post-affiliated": 532,
+            "post-affiliated": 1904,
             "title": ["Hey a subheading"],
             "mode": null,
             "granularity": null
@@ -383,12 +383,12 @@
             {
               "$$data_type": "org-node",
               "type": "section",
-              "ref": "org58e12ed",
+              "ref": "org00dfa6d",
               "properties": {
-                "robust-begin": 552,
-                "robust-end": 599,
+                "robust-begin": 1924,
+                "robust-end": 1971,
                 "post-blank": 0,
-                "post-affiliated": 552,
+                "post-affiliated": 1924,
                 "mode": "section",
                 "granularity": null
               },
@@ -396,10 +396,10 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "orgf9d6d24",
+                  "ref": "org7c7ddf4",
                   "properties": {
                     "post-blank": 0,
-                    "post-affiliated": 552,
+                    "post-affiliated": 1924,
                     "mode": "planning",
                     "granularity": null
                   },
@@ -408,12 +408,12 @@
                 {
                   "$$data_type": "org-node",
                   "type": "plain-list",
-                  "ref": "orgcce7f5a",
+                  "ref": "org078158a",
                   "properties": {
                     "type": "unordered",
-                    "structure": [[582, 0, "- ", null, null, null, 601]],
+                    "structure": [[1954, 0, "- ", null, null, null, 1973]],
                     "post-blank": 0,
-                    "post-affiliated": 582,
+                    "post-affiliated": 1954,
                     "mode": null,
                     "granularity": null
                   },
@@ -421,14 +421,14 @@
                     {
                       "$$data_type": "org-node",
                       "type": "item",
-                      "ref": "org3491471",
+                      "ref": "orge1d9021",
                       "properties": {
                         "bullet": "- ",
                         "checkbox": null,
                         "counter": null,
                         "pre-blank": 0,
                         "post-blank": 0,
-                        "post-affiliated": 582,
+                        "post-affiliated": 1954,
                         "tag": [],
                         "mode": "item",
                         "granularity": null
@@ -437,10 +437,10 @@
                         {
                           "$$data_type": "org-node",
                           "type": "paragraph",
-                          "ref": "org9388d3d",
+                          "ref": "org1461aac",
                           "properties": {
                             "post-blank": 0,
-                            "post-affiliated": 584,
+                            "post-affiliated": 1956,
                             "mode": null,
                             "granularity": null
                           },
