@@ -6,8 +6,8 @@ export interface OrgDoc {
     contents: Exclude<AnyNode, OrgDoc>[]
 }
 
-type ContentNode = SectionNode | ParagraphNode | HeadlineNode | SourceBlockNode | VerbatimNode
-export type AnyNode = OrgDoc | SectionNode | KeywordNode | ParagraphNode | HeadlineNode | ItemNode | PlainListNode | VerbatimNode | SourceBlockNode
+type ContentNode = SectionNode | ParagraphNode | HeadlineNode | SourceBlockNode | VerbatimNode | LinkNode
+export type AnyNode = OrgDoc | SectionNode | KeywordNode | ParagraphNode | HeadlineNode | ItemNode | PlainListNode | VerbatimNode | SourceBlockNode | LinkNode
 
 export enum DataType {
     ORG_NODE = 'org-node',
@@ -22,7 +22,8 @@ export enum NodeType {
     ITEM = 'item',
     PLAIN_LIST = 'plain-list',
     VERBATIM = 'verbatim',
-    SRC_BLOCK = 'src-block'
+    SRC_BLOCK = 'src-block',
+    LINK = 'link'
 }
 
 
@@ -89,5 +90,15 @@ export interface VerbatimNode extends Node<never> {
     "type": NodeType.VERBATIM
     properties: {
         value: string
+    }
+}
+
+
+export interface LinkNode extends Node<string[]> {
+    "type": NodeType.LINK
+    properties: {
+        'type': string
+        path: string
+        'is-internal': boolean
     }
 }

@@ -12,6 +12,7 @@ import { SrcBlock } from "components/nodes/SrcBlock";
 import { Verbatim } from "components/nodes/Verbatim";
 import { Paragraph } from "components/nodes/Paragraph";
 import { Unknown } from "components/nodes/Unknown";
+import { OrgLink } from "components/nodes/Link";
 
 type Props = Awaited<ReturnType<typeof getStaticProps>>["props"]
 
@@ -86,9 +87,22 @@ function renderComponent(node: Exclude<AnyNode, OrgDoc>, i: number): JSX.Element
             )
 
         case NodeType.VERBATIM:
-            console.log("verbatim?")
             return (
                 <Verbatim {...props} node={node} />
+            )
+        case NodeType.LINK:
+            return (
+                <OrgLink {...props} node={node}>{
+                    node.contents.map((c, i) => {
+                        if (typeof c === 'string') {
+                            return c
+                        }
+                        else {
+                            return renderComponent(c, i)
+                        }
+                    })
+                }
+                </OrgLink>
             )
         default:
             return (
