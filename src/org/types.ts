@@ -3,7 +3,7 @@ export interface OrgDoc {
     properties: {
         title: string
     }
-    contents: Exclude<AnyNode, OrgDoc>
+    contents: Exclude<AnyNode, OrgDoc>[]
 }
 
 type ContentNode = SectionNode | ParagraphNode | HeadlineNode | SourceBlockNode | VerbatimNode
