@@ -3,8 +3,8 @@ import { HeadlineNode } from "src/org/types"
 import { NodeComponent } from "./types"
 
 const sizes = [
-    "3xl",
-    "2xl",
+    /* "3xl", */
+    /* "2xl", */
     "xl",
     "lg",
     "md",
@@ -20,9 +20,9 @@ export const Headline: NodeComponent<HeadlineNode> = ({ node, children }) => {
     const h = `h${level}`
     return (
 
-        <Container maxWidth='7xl'>
+        <>
             <Heading as={h} size={size}>{title}</Heading>
             {children}
-        </Container>
+        </>
     )
 }
