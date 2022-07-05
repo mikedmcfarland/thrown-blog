@@ -14,7 +14,7 @@
     {
       "$$data_type": "org-node",
       "type": "section",
-      "ref": "org1767d39",
+      "ref": "orgbc550c9",
       "properties": {
         "robust-begin": 1,
         "robust-end": 423,
@@ -27,7 +27,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orgcafaeb6",
+          "ref": "org86ea7c8",
           "properties": {
             "key": "STARTUP",
             "value": "showall indent",
@@ -41,7 +41,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orgefba6a0",
+          "ref": "orgf06643e",
           "properties": {
             "key": "OPTIONS",
             "value": "num:nil",
@@ -55,7 +55,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orgca70e56",
+          "ref": "org768aa91",
           "properties": {
             "key": "TITLE",
             "value": "Keep Unity3d meta files in sync",
@@ -69,7 +69,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org72426c7",
+          "ref": "orgee2505a",
           "properties": {
             "key": "DATE",
             "value": "2015-06-16",
@@ -83,7 +83,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orgf0d2a1a",
+          "ref": "org635ec99",
           "properties": {
             "key": "CATEGORY",
             "value": "code",
@@ -97,7 +97,7 @@
         {
           "$$data_type": "org-node",
           "type": "paragraph",
-          "ref": "orge09c61c",
+          "ref": "org9daa752",
           "properties": {
             "post-blank": 0,
             "post-affiliated": 124,
@@ -113,7 +113,7 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org553165f",
+      "ref": "org2e88eed",
       "drawer": {},
       "properties": {
         "tags-all": [],
@@ -139,7 +139,7 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "orgb1a13cd",
+          "ref": "orge82ed75",
           "properties": {
             "robust-begin": 450,
             "robust-end": 719,
@@ -152,7 +152,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org931d203",
+              "ref": "org67c4f8d",
               "properties": {
                 "post-blank": 0,
                 "post-affiliated": 450,
@@ -170,7 +170,7 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org95400f6",
+      "ref": "org67117a3",
       "drawer": {},
       "properties": {
         "tags-all": [],
@@ -196,7 +196,7 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "orgc44e6da",
+          "ref": "orgf3caadf",
           "properties": {
             "robust-begin": 740,
             "robust-end": 2294,
@@ -209,7 +209,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org7651e99",
+              "ref": "orgc5172bf",
               "properties": {
                 "post-blank": 0,
                 "post-affiliated": 740,
@@ -221,7 +221,7 @@
             {
               "$$data_type": "org-node",
               "type": "plain-list",
-              "ref": "org4257a22",
+              "ref": "org38068e6",
               "properties": {
                 "type": "unordered",
                 "structure": [
@@ -240,7 +240,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgc8e5990",
+                  "ref": "org8c82d91",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -256,7 +256,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org865c000",
+                      "ref": "org9758666",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 788,
@@ -272,7 +272,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orge652141",
+                  "ref": "orgd2bb858",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -288,7 +288,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org635851c",
+                      "ref": "orgb1dcda5",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 833,
@@ -304,7 +304,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org47a89fa",
+                  "ref": "orga94912f",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -320,7 +320,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org9e37218",
+                      "ref": "orgc079959",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 899,
@@ -336,7 +336,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgf01da0b",
+                  "ref": "org0f7c2db",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -352,7 +352,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org19d626f",
+                      "ref": "orgf664441",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 950,
@@ -368,7 +368,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org0a989c2",
+                  "ref": "org4c912e3",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -384,7 +384,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org61d8e8c",
+                      "ref": "orgd3d781f",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 1013,
@@ -396,7 +396,7 @@
                         {
                           "$$data_type": "org-node",
                           "type": "bold",
-                          "ref": "org7d917db",
+                          "ref": "org47e28bd",
                           "properties": {
                             "post-blank": 1
                           },
@@ -412,7 +412,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org193b744",
+              "ref": "org51d3510",
               "properties": {
                 "post-blank": 1,
                 "post-affiliated": 1102,
@@ -426,7 +426,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orga58c777",
+              "ref": "orga321853",
               "properties": {
                 "post-blank": 0,
                 "post-affiliated": 1296,
@@ -440,7 +440,7 @@
             {
               "$$data_type": "org-node",
               "type": "plain-list",
-              "ref": "org202492d",
+              "ref": "org95d70c4",
               "properties": {
                 "type": "unordered",
                 "structure": [
@@ -463,7 +463,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgbcc4613",
+                  "ref": "org2d2edf1",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -479,7 +479,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orga376ae1",
+                      "ref": "org12ec0f8",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 1375,
@@ -495,7 +495,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgdf344fb",
+                  "ref": "org92be3fc",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -511,7 +511,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org8fa0e82",
+                      "ref": "org5f77659",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 1443,
@@ -527,7 +527,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org8ee17d3",
+                  "ref": "org612bd8e",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -543,7 +543,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgdf7ecd5",
+                      "ref": "org044f67c",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 1511,
@@ -559,7 +559,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org6bebb18",
+                  "ref": "orga3550a1",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -575,7 +575,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org3b3b81f",
+                      "ref": "org35f2166",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 1565,
@@ -589,7 +589,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orge74f778",
+                  "ref": "org0429b91",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -605,7 +605,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org1c9ddf0",
+                      "ref": "org183389e",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 1603,
@@ -619,7 +619,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgc38d1b6",
+                  "ref": "orgc7a4563",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -635,7 +635,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org48ca51a",
+                      "ref": "org8b69983",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 1632,
@@ -649,7 +649,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "plain-list",
-                      "ref": "orgcca4ebd",
+                      "ref": "orgd10884f",
                       "properties": {
                         "type": "unordered",
                         "structure": [
@@ -672,7 +672,7 @@
                         {
                           "$$data_type": "org-node",
                           "type": "item",
-                          "ref": "orgba4b049",
+                          "ref": "org1bcfa2e",
                           "properties": {
                             "bullet": "- ",
                             "checkbox": null,
@@ -688,7 +688,7 @@
                             {
                               "$$data_type": "org-node",
                               "type": "paragraph",
-                              "ref": "org2245c71",
+                              "ref": "orgcef4981",
                               "properties": {
                                 "post-blank": 0,
                                 "post-affiliated": 1688,
@@ -700,7 +700,7 @@
                                 {
                                   "$$data_type": "org-node",
                                   "type": "bold",
-                                  "ref": "org69b2e3e",
+                                  "ref": "orgcab17ed",
                                   "properties": {
                                     "post-blank": 1
                                   },
@@ -714,7 +714,7 @@
                         {
                           "$$data_type": "org-node",
                           "type": "item",
-                          "ref": "org00e7534",
+                          "ref": "org6783c57",
                           "properties": {
                             "bullet": "- ",
                             "checkbox": null,
@@ -730,7 +730,7 @@
                             {
                               "$$data_type": "org-node",
                               "type": "paragraph",
-                              "ref": "org4ee3d09",
+                              "ref": "org0671b4c",
                               "properties": {
                                 "post-blank": 0,
                                 "post-affiliated": 1760,
@@ -742,7 +742,7 @@
                                 {
                                   "$$data_type": "org-node",
                                   "type": "bold",
-                                  "ref": "orgf3572cf",
+                                  "ref": "org4d09e26",
                                   "properties": {
                                     "post-blank": 1
                                   },
@@ -760,7 +760,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org74adde0",
+                  "ref": "org614a346",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -776,7 +776,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgb3a87f4",
+                      "ref": "org78bbc7e",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 1831,
@@ -794,7 +794,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org4ac7db7",
+              "ref": "orgcef5202",
               "properties": {
                 "post-blank": 0,
                 "post-affiliated": 1887,
@@ -812,20 +812,20 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org2ff4a33",
+      "ref": "orgeb26f66",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "A solution",
         "pre-blank": 0,
         "robust-begin": 2313,
-        "robust-end": 6469,
+        "robust-end": 5130,
         "level": 1,
         "priority": null,
         "tags": [],
         "todo-keyword": null,
         "todo-type": null,
-        "post-blank": 0,
+        "post-blank": 2,
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
@@ -840,7 +840,7 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "orge1b0be4",
+          "ref": "org18dc156",
           "properties": {
             "robust-begin": 2311,
             "robust-end": 5130,
@@ -853,7 +853,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org91cce40",
+              "ref": "orgee57133",
               "properties": {
                 "post-blank": 1,
                 "post-affiliated": 2311,
@@ -867,7 +867,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgdde586e",
+              "ref": "org5c50f59",
               "properties": {
                 "post-blank": 1,
                 "post-affiliated": 2381,
@@ -881,7 +881,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org77f629b",
+              "ref": "org75ce96e",
               "properties": {
                 "post-blank": 1,
                 "post-affiliated": 2485,
@@ -895,7 +895,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgdee5ebc",
+              "ref": "org3a62fed",
               "properties": {
                 "post-blank": 1,
                 "post-affiliated": 2590,
@@ -909,7 +909,7 @@
             {
               "$$data_type": "org-node",
               "type": "src-block",
-              "ref": "orgfd28595",
+              "ref": "org7cdcc02",
               "properties": {
                 "language": "python",
                 "switches": null,
@@ -928,269 +928,121 @@
               "contents": []
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "$$data_type": "org-node",
+      "type": "headline",
+      "ref": "org785e675",
+      "drawer": {},
+      "properties": {
+        "tags-all": [],
+        "raw-value": "Installation",
+        "pre-blank": 0,
+        "robust-begin": 5151,
+        "robust-end": 6047,
+        "level": 1,
+        "priority": null,
+        "tags": [],
+        "todo-keyword": null,
+        "todo-type": null,
+        "post-blank": 2,
+        "footnote-section-p": false,
+        "archivedp": false,
+        "commentedp": false,
+        "post-affiliated": 5134,
+        "title": ["Installation"],
+        "mode": null,
+        "granularity": null,
+        "cached": true,
+        "org-element--cache-sync-key": [23]
+      },
+      "contents": [
         {
           "$$data_type": "org-node",
           "type": "headline",
-          "ref": "orgcccee8d",
+          "ref": "org561f263",
           "drawer": {},
           "properties": {
             "tags-all": [],
-            "raw-value": "Installation",
-            "pre-blank": 0,
-            "robust-begin": 5152,
-            "robust-end": 6050,
+            "raw-value": "Configure your asset folder path",
+            "pre-blank": 1,
+            "robust-begin": 5188,
+            "robust-end": 5479,
             "level": 2,
             "priority": null,
             "tags": [],
             "todo-keyword": null,
             "todo-type": null,
-            "post-blank": 2,
+            "post-blank": 1,
             "footnote-section-p": false,
             "archivedp": false,
             "commentedp": false,
-            "post-affiliated": 5134,
-            "title": ["Installation"],
-            "mode": null,
-            "granularity": null,
-            "cached": true
+            "post-affiliated": 5149,
+            "title": ["Configure your asset folder path"],
+            "mode": "section",
+            "granularity": null
           },
           "contents": [
             {
               "$$data_type": "org-node",
-              "type": "headline",
-              "ref": "orgd5beb09",
-              "drawer": {},
+              "type": "section",
+              "ref": "org586f4bb",
               "properties": {
-                "tags-all": [],
-                "raw-value": "Configure your asset folder path",
-                "pre-blank": 1,
-                "robust-begin": 5190,
-                "robust-end": 5481,
-                "level": 3,
-                "priority": null,
-                "tags": [],
-                "todo-keyword": null,
-                "todo-type": null,
+                "robust-begin": 5186,
+                "robust-end": 5479,
                 "post-blank": 1,
-                "footnote-section-p": false,
-                "archivedp": false,
-                "commentedp": false,
-                "post-affiliated": 5150,
-                "title": ["Configure your asset folder path"],
+                "post-affiliated": 5186,
                 "mode": "section",
                 "granularity": null
               },
               "contents": [
                 {
                   "$$data_type": "org-node",
-                  "type": "section",
-                  "ref": "orgfbc6c76",
+                  "type": "paragraph",
+                  "ref": "org1fb687b",
                   "properties": {
-                    "robust-begin": 5188,
-                    "robust-end": 5481,
-                    "post-blank": 1,
-                    "post-affiliated": 5188,
-                    "mode": "section",
+                    "post-blank": 0,
+                    "post-affiliated": 5186,
+                    "mode": "planning",
                     "granularity": null
                   },
                   "contents": [
+                    "in ",
                     {
                       "$$data_type": "org-node",
-                      "type": "paragraph",
-                      "ref": "org3f1ba7d",
-                      "properties": {
-                        "post-blank": 0,
-                        "post-affiliated": 5188,
-                        "mode": "planning",
-                        "granularity": null
-                      },
-                      "contents": [
-                        "in ",
-                        {
-                          "$$data_type": "org-node",
-                          "type": "verbatim",
-                          "ref": "org457b9b6",
-                          "properties": {
-                            "post-blank": 1,
-                            "value": "checkFiles"
-                          },
-                          "contents": []
-                        },
-                        "alter the ",
-                        {
-                          "$$data_type": "org-node",
-                          "type": "verbatim",
-                          "ref": "org057397c",
-                          "properties": {
-                            "post-blank": 1,
-                            "value": "path"
-                          },
-                          "contents": []
-                        },
-                        "variable so that it points to your assets directory.\nThe current value reflects my projects, which generally have the unity project folder start at the path ",
-                        {
-                          "$$data_type": "org-node",
-                          "type": "verbatim",
-                          "ref": "org0dc23f7",
-                          "properties": {
-                            "post-blank": 0,
-                            "value": "UnityProject"
-                          },
-                          "contents": []
-                        },
-                        ".\nThe script only checks the files under that path, and it's relative to your repo's root.\n"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "$$data_type": "org-node",
-              "type": "headline",
-              "ref": "org1eedc55",
-              "drawer": {},
-              "properties": {
-                "tags-all": [],
-                "raw-value": "Add the hook",
-                "pre-blank": 0,
-                "robust-begin": 5503,
-                "robust-end": 6050,
-                "level": 3,
-                "priority": null,
-                "tags": [],
-                "todo-keyword": null,
-                "todo-type": null,
-                "post-blank": 2,
-                "footnote-section-p": false,
-                "archivedp": false,
-                "commentedp": false,
-                "post-affiliated": 5484,
-                "title": ["Add the hook"],
-                "mode": null,
-                "granularity": null,
-                "cached": true,
-                "org-element--cache-sync-key": [23]
-              },
-              "contents": [
-                {
-                  "$$data_type": "org-node",
-                  "type": "section",
-                  "ref": "org7705ec5",
-                  "properties": {
-                    "robust-begin": 5501,
-                    "robust-end": 6050,
-                    "post-blank": 2,
-                    "post-affiliated": 5501,
-                    "mode": "section",
-                    "granularity": null
-                  },
-                  "contents": [
-                    {
-                      "$$data_type": "org-node",
-                      "type": "paragraph",
-                      "ref": "orgb8c8b97",
+                      "type": "verbatim",
+                      "ref": "org4cf9725",
                       "properties": {
                         "post-blank": 1,
-                        "post-affiliated": 5501,
-                        "mode": "planning",
-                        "granularity": null
-                      },
-                      "contents": [
-                        "Mercurial needs you to ",
-                        {
-                          "$$data_type": "org-node",
-                          "type": "link",
-                          "ref": "orgdc8438f",
-                          "properties": {
-                            "type": "https",
-                            "path": "//mercurial.selenic.com/wiki/Hook",
-                            "format": "bracket",
-                            "raw-link": "https://mercurial.selenic.com/wiki/Hook",
-                            "application": null,
-                            "search-option": null,
-                            "post-blank": 1,
-                            "is-internal": false,
-                            "target-ref": null,
-                            "is-inline-image": false
-                          },
-                          "contents": ["register the hook"]
-                        },
-                        "in your hg config.\nEveryone on the team should register and use this pre-commit hook in order for it to be effective.\nI keep them in hooks directory for the project for that reason.\n"
-                      ]
-                    },
-                    {
-                      "$$data_type": "org-node",
-                      "type": "paragraph",
-                      "ref": "org301a9f0",
-                      "properties": {
-                        "post-blank": 1,
-                        "post-affiliated": 5770,
-                        "mode": null,
-                        "granularity": null
-                      },
-                      "contents": [
-                        "For example, Lets say you saved the above script to a file in your repo at ",
-                        {
-                          "$$data_type": "org-node",
-                          "type": "verbatim",
-                          "ref": "orgfebf4f1",
-                          "properties": {
-                            "post-blank": 0,
-                            "value": "hooks/checkMetas.py"
-                          },
-                          "contents": []
-                        },
-                        ".\n"
-                      ]
-                    },
-                    {
-                      "$$data_type": "org-node",
-                      "type": "paragraph",
-                      "ref": "org6f857c5",
-                      "properties": {
-                        "post-blank": 1,
-                        "post-affiliated": 5869,
-                        "mode": null,
-                        "granularity": null
-                      },
-                      "contents": [
-                        "Then you would add these lines to your ",
-                        {
-                          "$$data_type": "org-node",
-                          "type": "verbatim",
-                          "ref": "orga796ef9",
-                          "properties": {
-                            "post-blank": 1,
-                            "value": ".hg/hgrc"
-                          },
-                          "contents": []
-                        },
-                        "file.\n"
-                      ]
-                    },
-                    {
-                      "$$data_type": "org-node",
-                      "type": "src-block",
-                      "ref": "orgbedc369",
-                      "properties": {
-                        "language": "python",
-                        "switches": null,
-                        "parameters": null,
-                        "number-lines": null,
-                        "preserve-indent": false,
-                        "retain-labels": true,
-                        "use-labels": true,
-                        "label-fmt": null,
-                        "value": "    [hooks]\n    precommit.checkMetas = python:/pathToUnityRepo/hooks/checkMetas.py:precommit\n",
-                        "post-blank": 0,
-                        "post-affiliated": 5926,
-                        "mode": null,
-                        "granularity": null
+                        "value": "checkFiles"
                       },
                       "contents": []
-                    }
+                    },
+                    "alter the ",
+                    {
+                      "$$data_type": "org-node",
+                      "type": "verbatim",
+                      "ref": "org4e5f303",
+                      "properties": {
+                        "post-blank": 1,
+                        "value": "path"
+                      },
+                      "contents": []
+                    },
+                    "variable so that it points to your assets directory.\nThe current value reflects my projects, which generally have the unity project folder start at the path ",
+                    {
+                      "$$data_type": "org-node",
+                      "type": "verbatim",
+                      "ref": "orgc29a6ef",
+                      "properties": {
+                        "post-blank": 0,
+                        "value": "UnityProject"
+                      },
+                      "contents": []
+                    },
+                    ".\nThe script only checks the files under that path, and it's relative to your repo's root.\n"
                   ]
                 }
               ]
@@ -1200,174 +1052,323 @@
         {
           "$$data_type": "org-node",
           "type": "headline",
-          "ref": "orgc044182",
+          "ref": "orgd184a72",
           "drawer": {},
           "properties": {
             "tags-all": [],
-            "raw-value": "Disclaimer",
+            "raw-value": "Add the hook",
             "pre-blank": 0,
-            "robust-begin": 6070,
-            "robust-end": 6469,
+            "robust-begin": 5500,
+            "robust-end": 6047,
             "level": 2,
             "priority": null,
             "tags": [],
             "todo-keyword": null,
             "todo-type": null,
-            "post-blank": 0,
+            "post-blank": 2,
             "footnote-section-p": false,
             "archivedp": false,
             "commentedp": false,
-            "post-affiliated": 6054,
-            "title": ["Disclaimer"],
+            "post-affiliated": 5482,
+            "title": ["Add the hook"],
             "mode": null,
-            "granularity": null
+            "granularity": null,
+            "cached": true,
+            "org-element--cache-sync-key": [23]
           },
           "contents": [
             {
               "$$data_type": "org-node",
               "type": "section",
-              "ref": "org3c765f5",
+              "ref": "org7a16227",
               "properties": {
-                "robust-begin": 6068,
-                "robust-end": 6469,
-                "post-blank": 0,
-                "post-affiliated": 6068,
+                "robust-begin": 5498,
+                "robust-end": 6047,
+                "post-blank": 2,
+                "post-affiliated": 5498,
                 "mode": "section",
                 "granularity": null
               },
               "contents": [
                 {
                   "$$data_type": "org-node",
-                  "type": "plain-list",
-                  "ref": "org6f9350b",
+                  "type": "paragraph",
+                  "ref": "org89b8e47",
                   "properties": {
-                    "type": "unordered",
-                    "structure": [
-                      [6068, 0, "- ", null, null, null, 6350],
-                      [6350, 0, "- ", null, null, null, 6438],
-                      [6438, 0, "- ", null, null, null, 6471]
-                    ],
-                    "post-blank": 0,
-                    "post-affiliated": 6068,
+                    "post-blank": 1,
+                    "post-affiliated": 5498,
                     "mode": "planning",
+                    "granularity": null
+                  },
+                  "contents": [
+                    "Mercurial needs you to ",
+                    {
+                      "$$data_type": "org-node",
+                      "type": "link",
+                      "ref": "org49c255a",
+                      "properties": {
+                        "type": "https",
+                        "path": "//mercurial.selenic.com/wiki/Hook",
+                        "format": "bracket",
+                        "raw-link": "https://mercurial.selenic.com/wiki/Hook",
+                        "application": null,
+                        "search-option": null,
+                        "post-blank": 1,
+                        "is-internal": false,
+                        "target-ref": null,
+                        "is-inline-image": false
+                      },
+                      "contents": ["register the hook"]
+                    },
+                    "in your hg config.\nEveryone on the team should register and use this pre-commit hook in order for it to be effective.\nI keep them in hooks directory for the project for that reason.\n"
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "paragraph",
+                  "ref": "org50ceb27",
+                  "properties": {
+                    "post-blank": 1,
+                    "post-affiliated": 5767,
+                    "mode": null,
+                    "granularity": null
+                  },
+                  "contents": [
+                    "For example, Lets say you saved the above script to a file in your repo at ",
+                    {
+                      "$$data_type": "org-node",
+                      "type": "verbatim",
+                      "ref": "org621f9c8",
+                      "properties": {
+                        "post-blank": 0,
+                        "value": "hooks/checkMetas.py"
+                      },
+                      "contents": []
+                    },
+                    ".\n"
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "paragraph",
+                  "ref": "org740b404",
+                  "properties": {
+                    "post-blank": 1,
+                    "post-affiliated": 5866,
+                    "mode": null,
+                    "granularity": null
+                  },
+                  "contents": [
+                    "Then you would add these lines to your ",
+                    {
+                      "$$data_type": "org-node",
+                      "type": "verbatim",
+                      "ref": "org558fbb0",
+                      "properties": {
+                        "post-blank": 1,
+                        "value": ".hg/hgrc"
+                      },
+                      "contents": []
+                    },
+                    "file.\n"
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "src-block",
+                  "ref": "orgfc8667b",
+                  "properties": {
+                    "language": "python",
+                    "switches": null,
+                    "parameters": null,
+                    "number-lines": null,
+                    "preserve-indent": false,
+                    "retain-labels": true,
+                    "use-labels": true,
+                    "label-fmt": null,
+                    "value": "    [hooks]\n    precommit.checkMetas = python:/pathToUnityRepo/hooks/checkMetas.py:precommit\n",
+                    "post-blank": 0,
+                    "post-affiliated": 5923,
+                    "mode": null,
+                    "granularity": null
+                  },
+                  "contents": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$$data_type": "org-node",
+      "type": "headline",
+      "ref": "org1ebbfbe",
+      "drawer": {},
+      "properties": {
+        "tags-all": [],
+        "raw-value": "Disclaimer",
+        "pre-blank": 0,
+        "robust-begin": 6066,
+        "robust-end": 6465,
+        "level": 1,
+        "priority": null,
+        "tags": [],
+        "todo-keyword": null,
+        "todo-type": null,
+        "post-blank": 0,
+        "footnote-section-p": false,
+        "archivedp": false,
+        "commentedp": false,
+        "post-affiliated": 6051,
+        "title": ["Disclaimer"],
+        "mode": null,
+        "granularity": null
+      },
+      "contents": [
+        {
+          "$$data_type": "org-node",
+          "type": "section",
+          "ref": "org1890276",
+          "properties": {
+            "robust-begin": 6064,
+            "robust-end": 6465,
+            "post-blank": 0,
+            "post-affiliated": 6064,
+            "mode": "section",
+            "granularity": null
+          },
+          "contents": [
+            {
+              "$$data_type": "org-node",
+              "type": "plain-list",
+              "ref": "orgfb4f718",
+              "properties": {
+                "type": "unordered",
+                "structure": [
+                  [6064, 0, "- ", null, null, null, 6346],
+                  [6346, 0, "- ", null, null, null, 6434],
+                  [6434, 0, "- ", null, null, null, 6467]
+                ],
+                "post-blank": 0,
+                "post-affiliated": 6064,
+                "mode": "planning",
+                "granularity": null
+              },
+              "contents": [
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "org344b3ec",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 1,
+                    "post-affiliated": 6064,
+                    "tag": [],
+                    "mode": "item",
                     "granularity": null
                   },
                   "contents": [
                     {
                       "$$data_type": "org-node",
-                      "type": "item",
-                      "ref": "orgc96c137",
+                      "type": "paragraph",
+                      "ref": "orgaf17619",
                       "properties": {
-                        "bullet": "- ",
-                        "checkbox": null,
-                        "counter": null,
-                        "pre-blank": 0,
-                        "post-blank": 1,
-                        "post-affiliated": 6068,
-                        "tag": [],
-                        "mode": "item",
+                        "post-blank": 0,
+                        "post-affiliated": 6066,
+                        "mode": null,
                         "granularity": null
                       },
                       "contents": [
+                        "This ",
                         {
                           "$$data_type": "org-node",
-                          "type": "paragraph",
-                          "ref": "org5d3942d",
+                          "type": "bold",
+                          "ref": "org694654c",
                           "properties": {
-                            "post-blank": 0,
-                            "post-affiliated": 6070,
-                            "mode": null,
-                            "granularity": null
+                            "post-blank": 0
                           },
                           "contents": [
-                            "This ",
-                            {
-                              "$$data_type": "org-node",
-                              "type": "bold",
-                              "ref": "orgb0d6373",
-                              "properties": {
-                                "post-blank": 0
-                              },
-                              "contents": [
-                                "doesn't handle .meta files for directories"
-                              ]
-                            },
-                            ". I couldn't think of an elegant way\nTo locate directories from the hg API. Mercurial has no concept of them, files are just at paths.\nThis isn't such a big deal since, AFAIK, directories aren't referenced in serialized data.\n"
+                            "doesn't handle .meta files for directories"
                           ]
-                        }
+                        },
+                        ". I couldn't think of an elegant way\nTo locate directories from the hg API. Mercurial has no concept of them, files are just at paths.\nThis isn't such a big deal since, AFAIK, directories aren't referenced in serialized data.\n"
                       ]
-                    },
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "orgf4242e1",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 6346,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
                     {
                       "$$data_type": "org-node",
-                      "type": "item",
-                      "ref": "org6fdab27",
+                      "type": "paragraph",
+                      "ref": "orgb0bc9ae",
                       "properties": {
-                        "bullet": "- ",
-                        "checkbox": null,
-                        "counter": null,
-                        "pre-blank": 0,
                         "post-blank": 0,
-                        "post-affiliated": 6350,
-                        "tag": [],
-                        "mode": "item",
+                        "post-affiliated": 6348,
+                        "mode": null,
                         "granularity": null
                       },
                       "contents": [
+                        "I don't program in Python much so this likely ",
                         {
                           "$$data_type": "org-node",
-                          "type": "paragraph",
-                          "ref": "orgbe45d37",
+                          "type": "bold",
+                          "ref": "org6c5f450",
                           "properties": {
-                            "post-blank": 0,
-                            "post-affiliated": 6352,
-                            "mode": null,
-                            "granularity": null
+                            "post-blank": 0
                           },
-                          "contents": [
-                            "I don't program in Python much so this likely ",
-                            {
-                              "$$data_type": "org-node",
-                              "type": "bold",
-                              "ref": "org5359b06",
-                              "properties": {
-                                "post-blank": 0
-                              },
-                              "contents": ["isn't idiomatic python"]
-                            },
-                            ". But it works.\n"
-                          ]
-                        }
+                          "contents": ["isn't idiomatic python"]
+                        },
+                        ". But it works.\n"
                       ]
-                    },
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "org774f64c",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 6434,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
                     {
                       "$$data_type": "org-node",
-                      "type": "item",
-                      "ref": "org3b05b6f",
+                      "type": "paragraph",
+                      "ref": "orgc8be51f",
                       "properties": {
-                        "bullet": "- ",
-                        "checkbox": null,
-                        "counter": null,
-                        "pre-blank": 0,
                         "post-blank": 0,
-                        "post-affiliated": 6438,
-                        "tag": [],
-                        "mode": "item",
+                        "post-affiliated": 6436,
+                        "mode": null,
                         "granularity": null
                       },
-                      "contents": [
-                        {
-                          "$$data_type": "org-node",
-                          "type": "paragraph",
-                          "ref": "orgc92b1e2",
-                          "properties": {
-                            "post-blank": 0,
-                            "post-affiliated": 6440,
-                            "mode": null,
-                            "granularity": null
-                          },
-                          "contents": ["This script is provided as is.\n"]
-                        }
-                      ]
+                      "contents": ["This script is provided as is.\n"]
                     }
                   ]
                 }

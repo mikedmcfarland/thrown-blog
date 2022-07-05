@@ -142,14 +142,14 @@ and some version of it has been in every unity project I've done since.
 #+end_src
 
 
-** Installation
-*** Configure your asset folder path
+* Installation
+** Configure your asset folder path
 
 in =checkFiles= alter the =path= variable so that it points to your assets directory.
 The current value reflects my projects, which generally have the unity project folder start at the path =UnityProject=.
 The script only checks the files under that path, and it's relative to your repo's root.
 
-*** Add the hook
+** Add the hook
 Mercurial needs you to [[https://mercurial.selenic.com/wiki/Hook][register the hook]] in your hg config.
 Everyone on the team should register and use this pre-commit hook in order for it to be effective.
 I keep them in hooks directory for the project for that reason.
@@ -164,7 +164,7 @@ Then you would add these lines to your =.hg/hgrc= file.
   #+end_src
 
 
-** Disclaimer
+* Disclaimer
 - This *doesn't handle .meta files for directories*. I couldn't think of an elegant way
   To locate directories from the hg API. Mercurial has no concept of them, files are just at paths.
   This isn't such a big deal since, AFAIK, directories aren't referenced in serialized data.

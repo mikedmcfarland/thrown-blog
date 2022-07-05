@@ -14,7 +14,7 @@
     {
       "$$data_type": "org-node",
       "type": "section",
-      "ref": "org51bdd28",
+      "ref": "orga79a867",
       "properties": {
         "robust-begin": 1,
         "robust-end": 233,
@@ -27,7 +27,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org244041b",
+          "ref": "orga8c9480",
           "properties": {
             "key": "TITLE",
             "value": "A Test Post",
@@ -41,7 +41,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org0370b87",
+          "ref": "orgf272c29",
           "properties": {
             "key": "AUTHOR",
             "value": "Michael McFarland",
@@ -55,7 +55,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orga66d7c5",
+          "ref": "orgf2e60db",
           "properties": {
             "key": "DESCRIPTION",
             "value": "Here's a test post with some awesome content",
@@ -69,7 +69,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org0663ee4",
+          "ref": "org7818e96",
           "properties": {
             "key": "IMAGE",
             "value": "https://placekitten.com/400/200",
@@ -83,7 +83,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org4578cab",
+          "ref": "org0efb391",
           "properties": {
             "key": "DATE",
             "value": "2022-07-04 Mon 15:48",
@@ -97,7 +97,7 @@
         {
           "$$data_type": "org-node",
           "type": "paragraph",
-          "ref": "org902921a",
+          "ref": "org970f83d",
           "properties": {
             "post-blank": 0,
             "post-affiliated": 181,
@@ -113,7 +113,7 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org4aaa142",
+      "ref": "orgb191e4e",
       "drawer": {},
       "properties": {
         "tags-all": [],
@@ -139,7 +139,7 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "org9d1cc81",
+          "ref": "orgf23cbf4",
           "properties": {
             "robust-begin": 248,
             "robust-end": 358,
@@ -152,7 +152,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org1b31bff",
+              "ref": "org7367be4",
               "properties": {
                 "post-blank": 0,
                 "post-affiliated": 248,
@@ -164,7 +164,7 @@
             {
               "$$data_type": "org-node",
               "type": "plain-list",
-              "ref": "orgaa6e0a0",
+              "ref": "org82f1862",
               "properties": {
                 "type": "unordered",
                 "structure": [
@@ -180,7 +180,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgdf52158",
+                  "ref": "org0e3eecc",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -196,7 +196,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgb836b5f",
+                      "ref": "org5e70acc",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 295,
@@ -210,7 +210,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgc7d621d",
+                  "ref": "org0680c75",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
@@ -226,7 +226,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orga94c86a",
+                      "ref": "org9e021f8",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 330,
@@ -244,7 +244,7 @@
         {
           "$$data_type": "org-node",
           "type": "headline",
-          "ref": "orgdb00294",
+          "ref": "orgfd4ea90",
           "drawer": {},
           "properties": {
             "tags-all": [],
@@ -270,7 +270,7 @@
             {
               "$$data_type": "org-node",
               "type": "section",
-              "ref": "org3bdff69",
+              "ref": "orgdbca081",
               "properties": {
                 "robust-begin": 379,
                 "robust-end": 686,
@@ -283,7 +283,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "org635b8a2",
+                  "ref": "org4af7229",
                   "properties": {
                     "post-blank": 0,
                     "post-affiliated": 379,
@@ -299,7 +299,7 @@
             {
               "$$data_type": "org-node",
               "type": "headline",
-              "ref": "org373d56b",
+              "ref": "org7a0a11c",
               "drawer": {},
               "properties": {
                 "tags-all": [],
@@ -325,7 +325,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "section",
-                  "ref": "org921378a",
+                  "ref": "org652bb27",
                   "properties": {
                     "robust-begin": 723,
                     "robust-end": 1184,
@@ -338,7 +338,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgc045e9c",
+                      "ref": "orgb9ff0c4",
                       "properties": {
                         "post-blank": 0,
                         "post-affiliated": 723,
@@ -360,14 +360,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org28707a6",
+      "ref": "org30eb792",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "Another heading",
         "pre-blank": 1,
         "robust-begin": 1209,
-        "robust-end": 2829,
+        "robust-end": 2888,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -388,7 +388,7 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "org9e40bc1",
+          "ref": "orgd5ec41a",
           "properties": {
             "robust-begin": 1207,
             "robust-end": 2759,
@@ -401,7 +401,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org4ca7cd1",
+              "ref": "org6833d79",
               "properties": {
                 "post-blank": 0,
                 "post-affiliated": 1207,
@@ -413,7 +413,7 @@
             {
               "$$data_type": "org-node",
               "type": "src-block",
-              "ref": "org63a0985",
+              "ref": "orgf6e5498",
               "properties": {
                 "language": "javascript",
                 "switches": null,
@@ -434,7 +434,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgee4fb9a",
+              "ref": "orgdaf4de9",
               "properties": {
                 "post-blank": 1,
                 "post-affiliated": 2689,
@@ -446,7 +446,7 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org8f2386b",
+              "ref": "org70e6f2e",
               "properties": {
                 "post-blank": 0,
                 "post-affiliated": 2719,
@@ -458,7 +458,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "verbatim",
-                  "ref": "orga7917a7",
+                  "ref": "orge984d6b",
                   "properties": {
                     "post-blank": 0,
                     "value": "helloWorld"
@@ -473,14 +473,14 @@
         {
           "$$data_type": "org-node",
           "type": "headline",
-          "ref": "orgb73eb8a",
+          "ref": "org49c20a4",
           "drawer": {},
           "properties": {
             "tags-all": [],
             "raw-value": "Hey a subheading",
             "pre-blank": 0,
             "robust-begin": 2784,
-            "robust-end": 2829,
+            "robust-end": 2888,
             "level": 2,
             "priority": null,
             "tags": [],
@@ -499,10 +499,10 @@
             {
               "$$data_type": "org-node",
               "type": "section",
-              "ref": "org8f68095",
+              "ref": "orgd43722e",
               "properties": {
                 "robust-begin": 2782,
-                "robust-end": 2829,
+                "robust-end": 2888,
                 "post-blank": 0,
                 "post-affiliated": 2782,
                 "mode": "section",
@@ -512,7 +512,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "org032e162",
+                  "ref": "org76aca4c",
                   "properties": {
                     "post-blank": 0,
                     "post-affiliated": 2782,
@@ -524,10 +524,13 @@
                 {
                   "$$data_type": "org-node",
                   "type": "plain-list",
-                  "ref": "org81062c0",
+                  "ref": "orgaf23456",
                   "properties": {
                     "type": "unordered",
-                    "structure": [[2812, 0, "- ", null, null, null, 2831]],
+                    "structure": [
+                      [2812, 0, "- ", null, null, null, 2831],
+                      [2831, 0, "- ", null, null, null, 2890]
+                    ],
                     "post-blank": 0,
                     "post-affiliated": 2812,
                     "mode": null,
@@ -537,7 +540,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "item",
-                      "ref": "org8b6da92",
+                      "ref": "org5979b51",
                       "properties": {
                         "bullet": "- ",
                         "checkbox": null,
@@ -553,7 +556,7 @@
                         {
                           "$$data_type": "org-node",
                           "type": "paragraph",
-                          "ref": "org45610a6",
+                          "ref": "orgbfaccef",
                           "properties": {
                             "post-blank": 0,
                             "post-affiliated": 2814,
@@ -561,6 +564,57 @@
                             "granularity": null
                           },
                           "contents": ["even a list here\n"]
+                        }
+                      ]
+                    },
+                    {
+                      "$$data_type": "org-node",
+                      "type": "item",
+                      "ref": "orgafe8fb6",
+                      "properties": {
+                        "bullet": "- ",
+                        "checkbox": null,
+                        "counter": null,
+                        "pre-blank": 0,
+                        "post-blank": 0,
+                        "post-affiliated": 2831,
+                        "tag": [],
+                        "mode": "item",
+                        "granularity": null
+                      },
+                      "contents": [
+                        {
+                          "$$data_type": "org-node",
+                          "type": "paragraph",
+                          "ref": "org71db0de",
+                          "properties": {
+                            "post-blank": 0,
+                            "post-affiliated": 2833,
+                            "mode": null,
+                            "granularity": null
+                          },
+                          "contents": [
+                            "lets do an external link to ",
+                            {
+                              "$$data_type": "org-node",
+                              "type": "link",
+                              "ref": "org48fcf59",
+                              "properties": {
+                                "type": "https",
+                                "path": "google.com",
+                                "format": "bracket",
+                                "raw-link": "https:google.com",
+                                "application": null,
+                                "search-option": null,
+                                "post-blank": 0,
+                                "is-internal": false,
+                                "target-ref": null,
+                                "is-inline-image": false
+                              },
+                              "contents": ["google"]
+                            },
+                            "\n"
+                          ]
                         }
                       ]
                     }

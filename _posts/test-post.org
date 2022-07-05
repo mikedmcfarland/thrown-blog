@@ -78,3 +78,4 @@ lets remake on that function =helloWorld=
 ** Hey a subheading
 Adding even more content here
 - even a list here
+- lets do an external link to [[https:google.com][google]]
