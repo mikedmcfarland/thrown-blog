@@ -1,0 +1,1381 @@
+{
+  "$$data_type": "org-document",
+  "properties": {
+    "title": ["Keep Unity3d meta files in sync"],
+    "filetags": [],
+    "author": ["Michael McFarland"],
+    "creator": "Emacs 28.0.60 (Org mode 9.6)",
+    "date": ["2015-06-16"],
+    "description": [],
+    "email": "michaelmcfarland@michaels-air.lan",
+    "language": "en"
+  },
+  "contents": [
+    {
+      "$$data_type": "org-node",
+      "type": "section",
+      "ref": "org1767d39",
+      "properties": {
+        "robust-begin": 1,
+        "robust-end": 423,
+        "post-blank": 1,
+        "post-affiliated": 1,
+        "mode": "first-section",
+        "granularity": null
+      },
+      "contents": [
+        {
+          "$$data_type": "org-node",
+          "type": "keyword",
+          "ref": "orgcafaeb6",
+          "properties": {
+            "key": "STARTUP",
+            "value": "showall indent",
+            "post-blank": 0,
+            "post-affiliated": 1,
+            "mode": "top-comment",
+            "granularity": null
+          },
+          "contents": []
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "keyword",
+          "ref": "orgefba6a0",
+          "properties": {
+            "key": "OPTIONS",
+            "value": "num:nil",
+            "post-blank": 0,
+            "post-affiliated": 27,
+            "mode": null,
+            "granularity": null
+          },
+          "contents": []
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "keyword",
+          "ref": "orgca70e56",
+          "properties": {
+            "key": "TITLE",
+            "value": "Keep Unity3d meta files in sync",
+            "post-blank": 0,
+            "post-affiliated": 46,
+            "mode": null,
+            "granularity": null
+          },
+          "contents": []
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "keyword",
+          "ref": "org72426c7",
+          "properties": {
+            "key": "DATE",
+            "value": "2015-06-16",
+            "post-blank": 0,
+            "post-affiliated": 87,
+            "mode": null,
+            "granularity": null
+          },
+          "contents": []
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "keyword",
+          "ref": "orgf0d2a1a",
+          "properties": {
+            "key": "CATEGORY",
+            "value": "code",
+            "post-blank": 1,
+            "post-affiliated": 106,
+            "mode": null,
+            "granularity": null
+          },
+          "contents": []
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "paragraph",
+          "ref": "orge09c61c",
+          "properties": {
+            "post-blank": 0,
+            "post-affiliated": 124,
+            "mode": null,
+            "granularity": null
+          },
+          "contents": [
+            "If you've ever worked on a team using Unity3d, somebody has forgotten to commit a .meta file.\nIt's fairly easy to do, and pretty hard to notice you're doing it (things still work for you).\nI've been bitten by this mistake plenty, from myself and others.\nIt really sucks, but there's an easy solution.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "$$data_type": "org-node",
+      "type": "headline",
+      "ref": "org553165f",
+      "drawer": {},
+      "properties": {
+        "tags-all": [],
+        "raw-value": "Why this is a problem",
+        "pre-blank": 0,
+        "robust-begin": 452,
+        "robust-end": 719,
+        "level": 1,
+        "priority": null,
+        "tags": [],
+        "todo-keyword": null,
+        "todo-type": null,
+        "post-blank": 1,
+        "footnote-section-p": false,
+        "archivedp": false,
+        "commentedp": false,
+        "post-affiliated": 426,
+        "title": ["Why this is a problem"],
+        "mode": null,
+        "granularity": null
+      },
+      "contents": [
+        {
+          "$$data_type": "org-node",
+          "type": "section",
+          "ref": "orgb1a13cd",
+          "properties": {
+            "robust-begin": 450,
+            "robust-end": 719,
+            "post-blank": 1,
+            "post-affiliated": 450,
+            "mode": "section",
+            "granularity": null
+          },
+          "contents": [
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "org931d203",
+              "properties": {
+                "post-blank": 0,
+                "post-affiliated": 450,
+                "mode": "planning",
+                "granularity": null
+              },
+              "contents": [
+                "The .meta file holds GUID for the given asset, which is how the editor associates assets for serialized data (your prefabs and scenes).\nWhen you're serialized data references the wrong id, then you get missing references that show up like \"Missing Script\" in the editor.\n"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$$data_type": "org-node",
+      "type": "headline",
+      "ref": "org95400f6",
+      "drawer": {},
+      "properties": {
+        "tags-all": [],
+        "raw-value": "What looks like",
+        "pre-blank": 0,
+        "robust-begin": 742,
+        "robust-end": 2294,
+        "level": 1,
+        "priority": null,
+        "tags": [],
+        "todo-keyword": null,
+        "todo-type": null,
+        "post-blank": 2,
+        "footnote-section-p": false,
+        "archivedp": false,
+        "commentedp": false,
+        "post-affiliated": 722,
+        "title": ["What looks like"],
+        "mode": null,
+        "granularity": null
+      },
+      "contents": [
+        {
+          "$$data_type": "org-node",
+          "type": "section",
+          "ref": "orgc44e6da",
+          "properties": {
+            "robust-begin": 740,
+            "robust-end": 2294,
+            "post-blank": 2,
+            "post-affiliated": 740,
+            "mode": "section",
+            "granularity": null
+          },
+          "contents": [
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "org7651e99",
+              "properties": {
+                "post-blank": 0,
+                "post-affiliated": 740,
+                "mode": "planning",
+                "granularity": null
+              },
+              "contents": ["Lets say we have two developers, Bob and Sue.\n"]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "plain-list",
+              "ref": "org4257a22",
+              "properties": {
+                "type": "unordered",
+                "structure": [
+                  [786, 0, "- ", null, null, null, 831],
+                  [831, 0, "- ", null, null, null, 897],
+                  [897, 0, "- ", null, null, null, 948],
+                  [948, 0, "- ", null, null, null, 1011],
+                  [1011, 0, "- ", null, null, null, 1101]
+                ],
+                "post-blank": 1,
+                "post-affiliated": 786,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": [
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "orgc8e5990",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 786,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org865c000",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 788,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Bob creates a new behaviour called Foo.cs.\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "orge652141",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 831,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org635851c",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 833,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Unity automatically generates Foo.cs.meta with a new unique ID.\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "org47a89fa",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 897,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org9e37218",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 899,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Bob adds and pushes Foo.cs, but not Foo.cs.meta.\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "orgf01da0b",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 948,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org19d626f",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 950,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Sue pulls down the code, and Foo.cs is added to her project.\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "org0a989c2",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 1011,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org61d8e8c",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 1013,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Unity generates a Foo.cs.meta with a ",
+                        {
+                          "$$data_type": "org-node",
+                          "type": "bold",
+                          "ref": "org7d917db",
+                          "properties": {
+                            "post-blank": 1
+                          },
+                          "contents": ["new"]
+                        },
+                        "unique ID (different then Bob's Foo.cs.meta)\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "org193b744",
+              "properties": {
+                "post-blank": 1,
+                "post-affiliated": 1102,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": [
+                "Now Bob and Sue have their own IDs for the asset. At best, whoever pushes their meta second\nwill have a merge conflict (Which you then need to resolve by not merging! Choose one or the other.)\n"
+              ]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "orga58c777",
+              "properties": {
+                "post-blank": 0,
+                "post-affiliated": 1296,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": [
+                "But often it's not caught until later, and something like this happens next:\n"
+              ]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "plain-list",
+              "ref": "org202492d",
+              "properties": {
+                "type": "unordered",
+                "structure": [
+                  [1373, 0, "- ", null, null, null, 1441],
+                  [1441, 0, "- ", null, null, null, 1509],
+                  [1509, 0, "- ", null, null, null, 1563],
+                  [1563, 0, "- ", null, null, null, 1601],
+                  [1601, 0, "- ", null, null, null, 1630],
+                  [1630, 0, "- ", null, null, null, 1829],
+                  [1684, 2, "- ", null, null, null, 1756],
+                  [1756, 2, "- ", null, null, null, 1829],
+                  [1829, 0, "- ", null, null, null, 1886]
+                ],
+                "post-blank": 1,
+                "post-affiliated": 1373,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": [
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "orgbcc4613",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 1373,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "orga376ae1",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 1375,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Bob creates a new prefab Bob.prefab, which has the behaviour Foo.\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "orgdf344fb",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 1441,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org8fa0e82",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 1443,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Sue creates a new prefab Sue.prefab, which has the behaviour Foo.\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "org8ee17d3",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 1509,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "orgdf7ecd5",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 1511,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Each prefab is referencing Foo with a different ID.\n"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "org6bebb18",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 1563,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org3b3b81f",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 1565,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": ["Bob adds and pushes his Bob.prefab.\n"]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "orge74f778",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 1601,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org1c9ddf0",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 1603,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": ["Sue pushes her Sue.prefab.\n"]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "orgc38d1b6",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 1630,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org48ca51a",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 1632,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Bob pulls, get's a merge conflict with Foo.cs.meta.\n"
+                      ]
+                    },
+                    {
+                      "$$data_type": "org-node",
+                      "type": "plain-list",
+                      "ref": "orgcca4ebd",
+                      "properties": {
+                        "type": "unordered",
+                        "structure": [
+                          [1373, 0, "- ", null, null, null, 1441],
+                          [1441, 0, "- ", null, null, null, 1509],
+                          [1509, 0, "- ", null, null, null, 1563],
+                          [1563, 0, "- ", null, null, null, 1601],
+                          [1601, 0, "- ", null, null, null, 1630],
+                          [1630, 0, "- ", null, null, null, 1829],
+                          [1684, 2, "- ", null, null, null, 1756],
+                          [1756, 2, "- ", null, null, null, 1829],
+                          [1829, 0, "- ", null, null, null, 1886]
+                        ],
+                        "post-blank": 0,
+                        "post-affiliated": 1684,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        {
+                          "$$data_type": "org-node",
+                          "type": "item",
+                          "ref": "orgba4b049",
+                          "properties": {
+                            "bullet": "- ",
+                            "checkbox": null,
+                            "counter": null,
+                            "pre-blank": 0,
+                            "post-blank": 0,
+                            "post-affiliated": 1684,
+                            "tag": [],
+                            "mode": "item",
+                            "granularity": null
+                          },
+                          "contents": [
+                            {
+                              "$$data_type": "org-node",
+                              "type": "paragraph",
+                              "ref": "org2245c71",
+                              "properties": {
+                                "post-blank": 0,
+                                "post-affiliated": 1688,
+                                "mode": null,
+                                "granularity": null
+                              },
+                              "contents": [
+                                "If he resolves with ",
+                                {
+                                  "$$data_type": "org-node",
+                                  "type": "bold",
+                                  "ref": "org69b2e3e",
+                                  "properties": {
+                                    "post-blank": 1
+                                  },
+                                  "contents": ["his"]
+                                },
+                                "he gets a \"Missing Script\" on Sue.prefab.\n"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "$$data_type": "org-node",
+                          "type": "item",
+                          "ref": "org00e7534",
+                          "properties": {
+                            "bullet": "- ",
+                            "checkbox": null,
+                            "counter": null,
+                            "pre-blank": 0,
+                            "post-blank": 0,
+                            "post-affiliated": 1756,
+                            "tag": [],
+                            "mode": "item",
+                            "granularity": null
+                          },
+                          "contents": [
+                            {
+                              "$$data_type": "org-node",
+                              "type": "paragraph",
+                              "ref": "org4ee3d09",
+                              "properties": {
+                                "post-blank": 0,
+                                "post-affiliated": 1760,
+                                "mode": null,
+                                "granularity": null
+                              },
+                              "contents": [
+                                "If he resolves with ",
+                                {
+                                  "$$data_type": "org-node",
+                                  "type": "bold",
+                                  "ref": "orgf3572cf",
+                                  "properties": {
+                                    "post-blank": 1
+                                  },
+                                  "contents": ["hers"]
+                                },
+                                "he gets a \"Missing Script\" on Bob.prefab.\n"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "$$data_type": "org-node",
+                  "type": "item",
+                  "ref": "org74adde0",
+                  "properties": {
+                    "bullet": "- ",
+                    "checkbox": null,
+                    "counter": null,
+                    "pre-blank": 0,
+                    "post-blank": 0,
+                    "post-affiliated": 1829,
+                    "tag": [],
+                    "mode": "item",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "orgb3a87f4",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 1831,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Sue pulls, and see's a \"Missing Script\" on Bob.prefab.\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "org4ac7db7",
+              "properties": {
+                "post-blank": 0,
+                "post-affiliated": 1887,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": [
+                "Add a few more developers into the mix and you can easily have a more complicated example,\nWhere people have repeated \"fixed\" the meta only to cause a different reference to go missing.\nAnd it can happen to more then just scripts, materials and prefabs can also have faulty references.\nFiguring these things out requires too much time, and it's not that fun to explain to new developers (especially artists).\n"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$$data_type": "org-node",
+      "type": "headline",
+      "ref": "org2ff4a33",
+      "drawer": {},
+      "properties": {
+        "tags-all": [],
+        "raw-value": "A solution",
+        "pre-blank": 0,
+        "robust-begin": 2313,
+        "robust-end": 6469,
+        "level": 1,
+        "priority": null,
+        "tags": [],
+        "todo-keyword": null,
+        "todo-type": null,
+        "post-blank": 0,
+        "footnote-section-p": false,
+        "archivedp": false,
+        "commentedp": false,
+        "post-affiliated": 2298,
+        "title": ["A solution"],
+        "mode": null,
+        "granularity": null,
+        "cached": true,
+        "org-element--cache-sync-key": [13]
+      },
+      "contents": [
+        {
+          "$$data_type": "org-node",
+          "type": "section",
+          "ref": "orge1b0be4",
+          "properties": {
+            "robust-begin": 2311,
+            "robust-end": 5130,
+            "post-blank": 2,
+            "post-affiliated": 2311,
+            "mode": "section",
+            "granularity": null
+          },
+          "contents": [
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "org91cce40",
+              "properties": {
+                "post-blank": 1,
+                "post-affiliated": 2311,
+                "mode": "planning",
+                "granularity": null
+              },
+              "contents": [
+                "Solve it with software, don't let people share assets without metas.\n"
+              ]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "orgdde586e",
+              "properties": {
+                "post-blank": 1,
+                "post-affiliated": 2381,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": [
+                "Most version control systems have hooks that you can run your own scripts in,\nMercurials no different.\n"
+              ]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "org77f629b",
+              "properties": {
+                "post-blank": 1,
+                "post-affiliated": 2485,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": [
+                "You can make a pre-commit hook that will look at all your assets\nand make sure none are missing a meta.\n"
+              ]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "paragraph",
+              "ref": "orgdee5ebc",
+              "properties": {
+                "post-blank": 1,
+                "post-affiliated": 2590,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": [
+                "I've made one below. It's worked fine for windows and mac machines,\nand some version of it has been in every unity project I've done since.\n"
+              ]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "src-block",
+              "ref": "orgfd28595",
+              "properties": {
+                "language": "python",
+                "switches": null,
+                "parameters": null,
+                "number-lines": null,
+                "preserve-indent": false,
+                "retain-labels": true,
+                "use-labels": true,
+                "label-fmt": null,
+                "value": "  import os\n  import mercurial.commands\n\n  class HG:\n    def __init__(self,ui,repo):\n      self.ui = ui\n      self.repo = repo\n      self.files = self.getAddedFiles()\n\n    def existsInRepo(self, filename):\n      self.ui.pushbuffer()\n      mercurial.commands.locate(self.ui,self.repo,include=[filename])\n      files = self.ui.popbuffer().split(\"\\n\")\n\n      for repoFile in files:\n        if(pathsEqual(filename,repoFile)):\n          return True\n\n      return False\n\n    def getAddedFiles(self):\n      self.ui.pushbuffer()\n      mercurial.commands.status(self.ui,self.repo,no_status=True, added = True)\n      files = self.ui.popbuffer().split(\"\\n\")\n      return files\n\n    def filesExistInDir(self,dirname):\n      self.ui.pushbuffer()\n      mercurial.commands.locate(self.ui,self.repo,include=[dirname])\n      files = self.ui.popbuffer().split(\"\\n\")\n      files = filter(lambda x:x != \"\", files)\n      return len(files) > 0\n\n    def show(self, message):\n      self.ui.status(message + \"\\n\")\n\n  def precommit(ui,repo, **kwargs):\n    hg = HG(ui,repo)\n    clean = checkFiles(hg)\n    return not clean;\n\n  def pathsEqual(a,b):\n    return os.path.normcase(a) == os.path.normcase(b)\n\n\n  def checkFiles(hg):\n\n    path = os.path.normcase(\"UnityProject/Assets/\")\n\n    result = True\n    files = hg.files\n    for singleFile in files:\n      if singleFile == '':\n        continue\n\n      if not os.path.normcase(singleFile).startswith(path):\n        continue\n\n      isMetaFile = singleFile.endswith(\".meta\")\n\n      filename = singleFile if not isMetaFile else singleFile.replace(\".meta\", \"\")\n      metaFile = singleFile if isMetaFile else singleFile + \".meta\"\n\n      isFolder = os.path.isdir(os.path.normcase(filename))\n\n      if isMetaFile:\n        if isFolder:\n          if not hg.filesExistInDir(filename):\n            hg.show(\"Commiting a meta file'\" + metaFile +\n              \"' for a directory which contains no files.\" )\n            return False\n        else:\n          if not hg.existsInRepo(filename):\n            hg.show(\"Commiting a meta file'\" + metaFile +\n              \"' without adding associated file '\" + filename + \"'.\")\n            return False\n\n      else:\n        if not hg.existsInRepo(metaFile):\n          hg.show(\"Committing a file '\" + filename +\n            \"' without adding associated meta file '\" + metaFile + \"'.\")\n          return False\n\n\n    return result\n",
+                "post-blank": 0,
+                "post-affiliated": 2731,
+                "mode": null,
+                "granularity": null
+              },
+              "contents": []
+            }
+          ]
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "headline",
+          "ref": "orgcccee8d",
+          "drawer": {},
+          "properties": {
+            "tags-all": [],
+            "raw-value": "Installation",
+            "pre-blank": 0,
+            "robust-begin": 5152,
+            "robust-end": 6050,
+            "level": 2,
+            "priority": null,
+            "tags": [],
+            "todo-keyword": null,
+            "todo-type": null,
+            "post-blank": 2,
+            "footnote-section-p": false,
+            "archivedp": false,
+            "commentedp": false,
+            "post-affiliated": 5134,
+            "title": ["Installation"],
+            "mode": null,
+            "granularity": null,
+            "cached": true
+          },
+          "contents": [
+            {
+              "$$data_type": "org-node",
+              "type": "headline",
+              "ref": "orgd5beb09",
+              "drawer": {},
+              "properties": {
+                "tags-all": [],
+                "raw-value": "Configure your asset folder path",
+                "pre-blank": 1,
+                "robust-begin": 5190,
+                "robust-end": 5481,
+                "level": 3,
+                "priority": null,
+                "tags": [],
+                "todo-keyword": null,
+                "todo-type": null,
+                "post-blank": 1,
+                "footnote-section-p": false,
+                "archivedp": false,
+                "commentedp": false,
+                "post-affiliated": 5150,
+                "title": ["Configure your asset folder path"],
+                "mode": "section",
+                "granularity": null
+              },
+              "contents": [
+                {
+                  "$$data_type": "org-node",
+                  "type": "section",
+                  "ref": "orgfbc6c76",
+                  "properties": {
+                    "robust-begin": 5188,
+                    "robust-end": 5481,
+                    "post-blank": 1,
+                    "post-affiliated": 5188,
+                    "mode": "section",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org3f1ba7d",
+                      "properties": {
+                        "post-blank": 0,
+                        "post-affiliated": 5188,
+                        "mode": "planning",
+                        "granularity": null
+                      },
+                      "contents": [
+                        "in ",
+                        {
+                          "$$data_type": "org-node",
+                          "type": "verbatim",
+                          "ref": "org457b9b6",
+                          "properties": {
+                            "post-blank": 1,
+                            "value": "checkFiles"
+                          },
+                          "contents": []
+                        },
+                        "alter the ",
+                        {
+                          "$$data_type": "org-node",
+                          "type": "verbatim",
+                          "ref": "org057397c",
+                          "properties": {
+                            "post-blank": 1,
+                            "value": "path"
+                          },
+                          "contents": []
+                        },
+                        "variable so that it points to your assets directory.\nThe current value reflects my projects, which generally have the unity project folder start at the path ",
+                        {
+                          "$$data_type": "org-node",
+                          "type": "verbatim",
+                          "ref": "org0dc23f7",
+                          "properties": {
+                            "post-blank": 0,
+                            "value": "UnityProject"
+                          },
+                          "contents": []
+                        },
+                        ".\nThe script only checks the files under that path, and it's relative to your repo's root.\n"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "$$data_type": "org-node",
+              "type": "headline",
+              "ref": "org1eedc55",
+              "drawer": {},
+              "properties": {
+                "tags-all": [],
+                "raw-value": "Add the hook",
+                "pre-blank": 0,
+                "robust-begin": 5503,
+                "robust-end": 6050,
+                "level": 3,
+                "priority": null,
+                "tags": [],
+                "todo-keyword": null,
+                "todo-type": null,
+                "post-blank": 2,
+                "footnote-section-p": false,
+                "archivedp": false,
+                "commentedp": false,
+                "post-affiliated": 5484,
+                "title": ["Add the hook"],
+                "mode": null,
+                "granularity": null,
+                "cached": true,
+                "org-element--cache-sync-key": [23]
+              },
+              "contents": [
+                {
+                  "$$data_type": "org-node",
+                  "type": "section",
+                  "ref": "org7705ec5",
+                  "properties": {
+                    "robust-begin": 5501,
+                    "robust-end": 6050,
+                    "post-blank": 2,
+                    "post-affiliated": 5501,
+                    "mode": "section",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "orgb8c8b97",
+                      "properties": {
+                        "post-blank": 1,
+                        "post-affiliated": 5501,
+                        "mode": "planning",
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Mercurial needs you to ",
+                        {
+                          "$$data_type": "org-node",
+                          "type": "link",
+                          "ref": "orgdc8438f",
+                          "properties": {
+                            "type": "https",
+                            "path": "//mercurial.selenic.com/wiki/Hook",
+                            "format": "bracket",
+                            "raw-link": "https://mercurial.selenic.com/wiki/Hook",
+                            "application": null,
+                            "search-option": null,
+                            "post-blank": 1,
+                            "is-internal": false,
+                            "target-ref": null,
+                            "is-inline-image": false
+                          },
+                          "contents": ["register the hook"]
+                        },
+                        "in your hg config.\nEveryone on the team should register and use this pre-commit hook in order for it to be effective.\nI keep them in hooks directory for the project for that reason.\n"
+                      ]
+                    },
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org301a9f0",
+                      "properties": {
+                        "post-blank": 1,
+                        "post-affiliated": 5770,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "For example, Lets say you saved the above script to a file in your repo at ",
+                        {
+                          "$$data_type": "org-node",
+                          "type": "verbatim",
+                          "ref": "orgfebf4f1",
+                          "properties": {
+                            "post-blank": 0,
+                            "value": "hooks/checkMetas.py"
+                          },
+                          "contents": []
+                        },
+                        ".\n"
+                      ]
+                    },
+                    {
+                      "$$data_type": "org-node",
+                      "type": "paragraph",
+                      "ref": "org6f857c5",
+                      "properties": {
+                        "post-blank": 1,
+                        "post-affiliated": 5869,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": [
+                        "Then you would add these lines to your ",
+                        {
+                          "$$data_type": "org-node",
+                          "type": "verbatim",
+                          "ref": "orga796ef9",
+                          "properties": {
+                            "post-blank": 1,
+                            "value": ".hg/hgrc"
+                          },
+                          "contents": []
+                        },
+                        "file.\n"
+                      ]
+                    },
+                    {
+                      "$$data_type": "org-node",
+                      "type": "src-block",
+                      "ref": "orgbedc369",
+                      "properties": {
+                        "language": "python",
+                        "switches": null,
+                        "parameters": null,
+                        "number-lines": null,
+                        "preserve-indent": false,
+                        "retain-labels": true,
+                        "use-labels": true,
+                        "label-fmt": null,
+                        "value": "    [hooks]\n    precommit.checkMetas = python:/pathToUnityRepo/hooks/checkMetas.py:precommit\n",
+                        "post-blank": 0,
+                        "post-affiliated": 5926,
+                        "mode": null,
+                        "granularity": null
+                      },
+                      "contents": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$$data_type": "org-node",
+          "type": "headline",
+          "ref": "orgc044182",
+          "drawer": {},
+          "properties": {
+            "tags-all": [],
+            "raw-value": "Disclaimer",
+            "pre-blank": 0,
+            "robust-begin": 6070,
+            "robust-end": 6469,
+            "level": 2,
+            "priority": null,
+            "tags": [],
+            "todo-keyword": null,
+            "todo-type": null,
+            "post-blank": 0,
+            "footnote-section-p": false,
+            "archivedp": false,
+            "commentedp": false,
+            "post-affiliated": 6054,
+            "title": ["Disclaimer"],
+            "mode": null,
+            "granularity": null
+          },
+          "contents": [
+            {
+              "$$data_type": "org-node",
+              "type": "section",
+              "ref": "org3c765f5",
+              "properties": {
+                "robust-begin": 6068,
+                "robust-end": 6469,
+                "post-blank": 0,
+                "post-affiliated": 6068,
+                "mode": "section",
+                "granularity": null
+              },
+              "contents": [
+                {
+                  "$$data_type": "org-node",
+                  "type": "plain-list",
+                  "ref": "org6f9350b",
+                  "properties": {
+                    "type": "unordered",
+                    "structure": [
+                      [6068, 0, "- ", null, null, null, 6350],
+                      [6350, 0, "- ", null, null, null, 6438],
+                      [6438, 0, "- ", null, null, null, 6471]
+                    ],
+                    "post-blank": 0,
+                    "post-affiliated": 6068,
+                    "mode": "planning",
+                    "granularity": null
+                  },
+                  "contents": [
+                    {
+                      "$$data_type": "org-node",
+                      "type": "item",
+                      "ref": "orgc96c137",
+                      "properties": {
+                        "bullet": "- ",
+                        "checkbox": null,
+                        "counter": null,
+                        "pre-blank": 0,
+                        "post-blank": 1,
+                        "post-affiliated": 6068,
+                        "tag": [],
+                        "mode": "item",
+                        "granularity": null
+                      },
+                      "contents": [
+                        {
+                          "$$data_type": "org-node",
+                          "type": "paragraph",
+                          "ref": "org5d3942d",
+                          "properties": {
+                            "post-blank": 0,
+                            "post-affiliated": 6070,
+                            "mode": null,
+                            "granularity": null
+                          },
+                          "contents": [
+                            "This ",
+                            {
+                              "$$data_type": "org-node",
+                              "type": "bold",
+                              "ref": "orgb0d6373",
+                              "properties": {
+                                "post-blank": 0
+                              },
+                              "contents": [
+                                "doesn't handle .meta files for directories"
+                              ]
+                            },
+                            ". I couldn't think of an elegant way\nTo locate directories from the hg API. Mercurial has no concept of them, files are just at paths.\nThis isn't such a big deal since, AFAIK, directories aren't referenced in serialized data.\n"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "$$data_type": "org-node",
+                      "type": "item",
+                      "ref": "org6fdab27",
+                      "properties": {
+                        "bullet": "- ",
+                        "checkbox": null,
+                        "counter": null,
+                        "pre-blank": 0,
+                        "post-blank": 0,
+                        "post-affiliated": 6350,
+                        "tag": [],
+                        "mode": "item",
+                        "granularity": null
+                      },
+                      "contents": [
+                        {
+                          "$$data_type": "org-node",
+                          "type": "paragraph",
+                          "ref": "orgbe45d37",
+                          "properties": {
+                            "post-blank": 0,
+                            "post-affiliated": 6352,
+                            "mode": null,
+                            "granularity": null
+                          },
+                          "contents": [
+                            "I don't program in Python much so this likely ",
+                            {
+                              "$$data_type": "org-node",
+                              "type": "bold",
+                              "ref": "org5359b06",
+                              "properties": {
+                                "post-blank": 0
+                              },
+                              "contents": ["isn't idiomatic python"]
+                            },
+                            ". But it works.\n"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "$$data_type": "org-node",
+                      "type": "item",
+                      "ref": "org3b05b6f",
+                      "properties": {
+                        "bullet": "- ",
+                        "checkbox": null,
+                        "counter": null,
+                        "pre-blank": 0,
+                        "post-blank": 0,
+                        "post-affiliated": 6438,
+                        "tag": [],
+                        "mode": "item",
+                        "granularity": null
+                      },
+                      "contents": [
+                        {
+                          "$$data_type": "org-node",
+                          "type": "paragraph",
+                          "ref": "orgc92b1e2",
+                          "properties": {
+                            "post-blank": 0,
+                            "post-affiliated": 6440,
+                            "mode": null,
+                            "granularity": null
+                          },
+                          "contents": ["This script is provided as is.\n"]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
