@@ -8,7 +8,7 @@ export function SrcBlock({ node }: Props) {
             showInlineLineNumbers={true}
             showLineNumbers={true}
             style={darcula}
-            wrapLongLines={true}
+            wrapLongLines={false}
             language={node.properties.language}>
             {node.properties.value}
         </SyntaxHighligher>

@@ -12,14 +12,11 @@ type Props = {
 }
 export function Post(props: Props) {
     return (
-        <VStack>
-            <Heading mb={4} color="brand" size='3xl'>
+        <Container maxWidth='4xl'>
+            <Heading mb={10} textColor="brand.600" fontWeight={"bold"} size='2xl'>
                 {props.summary.title}
             </Heading>
-
-            <Container maxWidth='3xl'>
-                {props.children}
-            </Container>
-        </VStack>
+            {props.children}
+        </Container>
     )
 }
