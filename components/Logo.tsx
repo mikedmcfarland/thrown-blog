@@ -1,4 +1,6 @@
-export default function Logo() {
+import { Icon, IconProps } from "@chakra-ui/react"
+
+export default function Logo(props: IconProps) {
     const styles = {
         avocado_een: { fill: "#231F20" },
         avocado_twee: { fill: "#3D3935" },
@@ -18,8 +20,7 @@ export default function Logo() {
         st8: { fill: "#AF9480" }
     }
     return (
-        <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="32px" height="32px" viewBox="0 0 32 32" enableBackground={"new 0 0 32 32"} xmlSpace="preserve">
+        <Icon viewBox="0 0 32 32" enableBackground={"new 0 0 32 32"} xmlSpace="preserve" x="0px" y="0px" width="32px" height="32px" {...props}>
             <g>
                 <g>
                     <rect x="0.5" y="4.5" style={styles.avocado_twee} width="31" height="21" />
@@ -41,7 +42,8 @@ export default function Logo() {
                     </g>
                 </g>
             </g>
-        </svg>)
+        </Icon>
+    )
 }
 
 

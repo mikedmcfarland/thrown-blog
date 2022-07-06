@@ -5,9 +5,14 @@ import {
     Container,
     Divider,
     HStack,
+    IconButton,
     Link,
+    Menu,
+    MenuButton,
+    MenuItem,
+    MenuList,
     Stack,
-    useColorModeValue
+    useColorModeValue,
 } from '@chakra-ui/react'
 
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
@@ -17,6 +22,7 @@ import ToggleColorButton from './ToggleColorButton'
 
 import { default as NextLink } from 'next/link'
 import CircleIcon from './CircleIcon'
+import { HamburgerIcon } from '@chakra-ui/icons'
 
 type LinkProp = { href: string, name: string }
 type Props = {
@@ -37,10 +43,21 @@ function HeaderTextLink({ href, name }: LinkProp) {
 }
 
 export default function Header(props: Props) {
-    const linkComponents = props.links.map((l, i, ls) => {
+
+    const linkComponents = () => props.links.map((l, i, ls) => {
         const divider = i == ls.length - 1 ? <></> : <CircleIcon alignSelf={"center"} boxSize={1} key={i} />
         return (
             <><HeaderTextLink key={i} {...l} /> {divider} </>
+        )
+    })
+
+    const linkMenuButtons = () => props.links.map((l, i) => {
+        return (
+            <NextLink key={i} href={l.href} passHref>
+                <MenuItem as="a" >
+                    {l.name}
+                </MenuItem>
+            </NextLink>
         )
     })
 
@@ -58,25 +75,39 @@ export default function Header(props: Props) {
                 alignItems={'center'}
                 align={'center'}>
 
+                <Box as="nav" display={{ md: "none" }}>
+                    <Menu isLazy>
+                        <MenuButton
+                            as={IconButton}
+                            aria-label='Naviation'
+                            icon={<HamburgerIcon />}
+                            variant='outline'
+                        />
+                        <MenuList>
+                            {linkMenuButtons()}
+                        </MenuList>
+                    </Menu>
+                </Box>
+
                 <Stack direction={'row'} spacing={4}>
                     <NextLink href="/" >
                         <a style={{ textDecoration: 'none' }}>
                             <Stack direction={'row'} spacing={4}>
-                                <Code fontWeight={"900"} fontSize="2xl" noOfLines={1}>Thrown</Code><Logo />
+                                <Code fontWeight={"900"} fontSize="2xl" noOfLines={1}>Thrown</Code><Logo display={{ base: "none", md: "flex" }} />
                             </Stack>
                         </a>
                     </NextLink>
                 </Stack>
 
-                <Center height='8'>
+                <Center height='8' display={{ base: 'none', md: "flex" }}>
                     <Divider orientation='vertical' />
                 </Center>
 
-                <Stack direction={'row'} spacing={2}>
-                    {linkComponents}
+                <Stack display={{ base: 'none', md: 'flex' }} as={'nav'} direction={'row'} spacing={2}>
+                    {linkComponents()}
                 </Stack>
 
-                <Center height='8'>
+                <Center height='8' display={{ base: 'none', md: "flex" }}>
                     <Divider orientation='vertical' />
                 </Center>
 
@@ -97,8 +128,7 @@ export default function Header(props: Props) {
                 <ToggleColorButton />
             </Container>
 
-        </Box>
+
+        </Box >
     )
 }
-
-
