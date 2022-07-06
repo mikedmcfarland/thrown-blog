@@ -7,20 +7,35 @@ import {
     Text,
     useColorModeValue
 } from '@chakra-ui/react'
+
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import Logo from './Logo'
-import SocialButton from './SocialButton'
+import HeaderButton from './SocialButton'
 import ToggleColorButton from './ToggleColorButton'
 
+import { default as NextLink } from 'next/link'
+
+type LinkProp = { href: string, name: string }
 type Props = {
-    links: { href: string, name: string }[]
+    links: LinkProp[]
     githubHref: string
     linkedInHref: string
 }
 
+function HeaderTextLink({ href, name }: LinkProp) {
+
+    return (
+        <NextLink href={href} passHref>
+            <Link>
+                {name}
+            </Link>
+        </NextLink>
+    )
+}
+
 export default function Header(props: Props) {
     const linkComponents = props.links.map((l, i) => (
-        <Link key={i} href={l.href}>{l.name}</Link>
+        <HeaderTextLink key={i} {...l} />
     ))
 
     return (
@@ -37,9 +52,11 @@ export default function Header(props: Props) {
                 align={'center'}>
 
                 <Stack direction={'row'} spacing={6}>
-                    <Stack direction={'row'} spacing={6}>
-                        <Text>Thrown for a loop</Text> <Logo />
-                    </Stack>
+                    <Link href="/" textDecoration={'none'}>
+                        <Stack direction={'row'} spacing={6}>
+                            <Text noOfLines={1} fontWeight={"bold"} fontSize="2xl" >Thrown for a loop</Text><Logo />
+                        </Stack>
+                    </Link>
                 </Stack>
 
                 <Stack direction={'row'} spacing={6}>
@@ -47,12 +64,12 @@ export default function Header(props: Props) {
                 </Stack>
 
                 <Stack direction={'row'} spacing={6}>
-                    <SocialButton label={'Github'} href={props.githubHref}>
+                    <HeaderButton label={'Github'} href={props.githubHref}>
                         <FaGithub />
-                    </SocialButton>
-                    <SocialButton label={'LinkedIn'} href={props.linkedInHref}>
+                    </HeaderButton>
+                    <HeaderButton label={'LinkedIn'} href={props.linkedInHref}>
                         <FaLinkedin />
-                    </SocialButton>
+                    </HeaderButton>
                 </Stack>
 
                 <ToggleColorButton />

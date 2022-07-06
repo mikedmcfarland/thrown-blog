@@ -50,7 +50,7 @@ export function PostSummary(props: Props) {
                         </Box>
                         <Stack>
                             <Text
-                                color={'green.500'}
+                                color={'brand.500'}
                                 textTransform={'uppercase'}
                                 fontWeight={800}
                                 fontSize={'sm'}
