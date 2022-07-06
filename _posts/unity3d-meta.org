@@ -1,6 +1,6 @@
 #+STARTUP: showall indent
 #+options: num:nil
-#+TITLE: Keep Unity3d meta files in sync
+#+TITLE: Automate Unity3d metafiles
 #+DATE: 2015-06-16
 #+Category: code
 

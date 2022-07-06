@@ -1,7 +1,7 @@
 {
   "$$data_type": "org-document",
   "properties": {
-    "title": ["Keep Unity3d meta files in sync"],
+    "title": ["Automate Unity3d metafiles"],
     "filetags": [],
     "author": ["Michael McFarland"],
     "creator": "Emacs 28.0.60 (Org mode 9.6)",
@@ -14,10 +14,10 @@
     {
       "$$data_type": "org-node",
       "type": "section",
-      "ref": "orgbc550c9",
+      "ref": "orgfc0a479",
       "properties": {
         "robust-begin": 1,
-        "robust-end": 423,
+        "robust-end": 418,
         "post-blank": 1,
         "post-affiliated": 1,
         "mode": "first-section",
@@ -27,7 +27,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org86ea7c8",
+          "ref": "org062a9e9",
           "properties": {
             "key": "STARTUP",
             "value": "showall indent",
@@ -41,7 +41,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orgf06643e",
+          "ref": "orgb7a6172",
           "properties": {
             "key": "OPTIONS",
             "value": "num:nil",
@@ -55,10 +55,10 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org768aa91",
+          "ref": "orgc99d5c4",
           "properties": {
             "key": "TITLE",
-            "value": "Keep Unity3d meta files in sync",
+            "value": "Automate Unity3d metafiles",
             "post-blank": 0,
             "post-affiliated": 46,
             "mode": null,
@@ -69,12 +69,12 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orgee2505a",
+          "ref": "orgcf463df",
           "properties": {
             "key": "DATE",
             "value": "2015-06-16",
             "post-blank": 0,
-            "post-affiliated": 87,
+            "post-affiliated": 82,
             "mode": null,
             "granularity": null
           },
@@ -83,12 +83,12 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org635ec99",
+          "ref": "orgca7393e",
           "properties": {
             "key": "CATEGORY",
             "value": "code",
             "post-blank": 1,
-            "post-affiliated": 106,
+            "post-affiliated": 101,
             "mode": null,
             "granularity": null
           },
@@ -97,10 +97,10 @@
         {
           "$$data_type": "org-node",
           "type": "paragraph",
-          "ref": "org9daa752",
+          "ref": "orged17897",
           "properties": {
             "post-blank": 0,
-            "post-affiliated": 124,
+            "post-affiliated": 119,
             "mode": null,
             "granularity": null
           },
@@ -113,14 +113,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org2e88eed",
+      "ref": "org7bdd64b",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "Why this is a problem",
         "pre-blank": 0,
-        "robust-begin": 452,
-        "robust-end": 719,
+        "robust-begin": 447,
+        "robust-end": 714,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -130,7 +130,7 @@
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
-        "post-affiliated": 426,
+        "post-affiliated": 421,
         "title": ["Why this is a problem"],
         "mode": null,
         "granularity": null
@@ -139,12 +139,12 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "orge82ed75",
+          "ref": "org900ca00",
           "properties": {
-            "robust-begin": 450,
-            "robust-end": 719,
+            "robust-begin": 445,
+            "robust-end": 714,
             "post-blank": 1,
-            "post-affiliated": 450,
+            "post-affiliated": 445,
             "mode": "section",
             "granularity": null
           },
@@ -152,10 +152,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org67c4f8d",
+              "ref": "org3bf6750",
               "properties": {
                 "post-blank": 0,
-                "post-affiliated": 450,
+                "post-affiliated": 445,
                 "mode": "planning",
                 "granularity": null
               },
@@ -170,14 +170,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org67117a3",
+      "ref": "org6af400b",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "What looks like",
         "pre-blank": 0,
-        "robust-begin": 742,
-        "robust-end": 2294,
+        "robust-begin": 737,
+        "robust-end": 2289,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -187,7 +187,7 @@
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
-        "post-affiliated": 722,
+        "post-affiliated": 717,
         "title": ["What looks like"],
         "mode": null,
         "granularity": null
@@ -196,12 +196,12 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "orgf3caadf",
+          "ref": "org5d40946",
           "properties": {
-            "robust-begin": 740,
-            "robust-end": 2294,
+            "robust-begin": 735,
+            "robust-end": 2289,
             "post-blank": 2,
-            "post-affiliated": 740,
+            "post-affiliated": 735,
             "mode": "section",
             "granularity": null
           },
@@ -209,10 +209,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgc5172bf",
+              "ref": "orgebae6a6",
               "properties": {
                 "post-blank": 0,
-                "post-affiliated": 740,
+                "post-affiliated": 735,
                 "mode": "planning",
                 "granularity": null
               },
@@ -221,18 +221,18 @@
             {
               "$$data_type": "org-node",
               "type": "plain-list",
-              "ref": "org38068e6",
+              "ref": "org4c04843",
               "properties": {
                 "type": "unordered",
                 "structure": [
-                  [786, 0, "- ", null, null, null, 831],
-                  [831, 0, "- ", null, null, null, 897],
-                  [897, 0, "- ", null, null, null, 948],
-                  [948, 0, "- ", null, null, null, 1011],
-                  [1011, 0, "- ", null, null, null, 1101]
+                  [781, 0, "- ", null, null, null, 826],
+                  [826, 0, "- ", null, null, null, 892],
+                  [892, 0, "- ", null, null, null, 943],
+                  [943, 0, "- ", null, null, null, 1006],
+                  [1006, 0, "- ", null, null, null, 1096]
                 ],
                 "post-blank": 1,
-                "post-affiliated": 786,
+                "post-affiliated": 781,
                 "mode": null,
                 "granularity": null
               },
@@ -240,14 +240,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org8c82d91",
+                  "ref": "org436fed7",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 786,
+                    "post-affiliated": 781,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -256,10 +256,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org9758666",
+                      "ref": "org160a1bf",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 788,
+                        "post-affiliated": 783,
                         "mode": null,
                         "granularity": null
                       },
@@ -272,14 +272,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgd2bb858",
+                  "ref": "org44d68a4",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 831,
+                    "post-affiliated": 826,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -288,10 +288,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgb1dcda5",
+                      "ref": "org6be67f6",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 833,
+                        "post-affiliated": 828,
                         "mode": null,
                         "granularity": null
                       },
@@ -304,14 +304,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orga94912f",
+                  "ref": "org59dca77",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 897,
+                    "post-affiliated": 892,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -320,10 +320,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgc079959",
+                      "ref": "orgc05e7b9",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 899,
+                        "post-affiliated": 894,
                         "mode": null,
                         "granularity": null
                       },
@@ -336,14 +336,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org0f7c2db",
+                  "ref": "org95eb071",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 948,
+                    "post-affiliated": 943,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -352,10 +352,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgf664441",
+                      "ref": "org04537a7",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 950,
+                        "post-affiliated": 945,
                         "mode": null,
                         "granularity": null
                       },
@@ -368,14 +368,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org4c912e3",
+                  "ref": "orgc5b1ac9",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 1011,
+                    "post-affiliated": 1006,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -384,10 +384,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgd3d781f",
+                      "ref": "org8db26d9",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 1013,
+                        "post-affiliated": 1008,
                         "mode": null,
                         "granularity": null
                       },
@@ -396,7 +396,7 @@
                         {
                           "$$data_type": "org-node",
                           "type": "bold",
-                          "ref": "org47e28bd",
+                          "ref": "org45ccc0f",
                           "properties": {
                             "post-blank": 1
                           },
@@ -412,10 +412,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org51d3510",
+              "ref": "org374950f",
               "properties": {
                 "post-blank": 1,
-                "post-affiliated": 1102,
+                "post-affiliated": 1097,
                 "mode": null,
                 "granularity": null
               },
@@ -426,10 +426,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orga321853",
+              "ref": "orgc56214b",
               "properties": {
                 "post-blank": 0,
-                "post-affiliated": 1296,
+                "post-affiliated": 1291,
                 "mode": null,
                 "granularity": null
               },
@@ -440,22 +440,22 @@
             {
               "$$data_type": "org-node",
               "type": "plain-list",
-              "ref": "org95d70c4",
+              "ref": "orgdc7d612",
               "properties": {
                 "type": "unordered",
                 "structure": [
-                  [1373, 0, "- ", null, null, null, 1441],
-                  [1441, 0, "- ", null, null, null, 1509],
-                  [1509, 0, "- ", null, null, null, 1563],
-                  [1563, 0, "- ", null, null, null, 1601],
-                  [1601, 0, "- ", null, null, null, 1630],
-                  [1630, 0, "- ", null, null, null, 1829],
-                  [1684, 2, "- ", null, null, null, 1756],
-                  [1756, 2, "- ", null, null, null, 1829],
-                  [1829, 0, "- ", null, null, null, 1886]
+                  [1368, 0, "- ", null, null, null, 1436],
+                  [1436, 0, "- ", null, null, null, 1504],
+                  [1504, 0, "- ", null, null, null, 1558],
+                  [1558, 0, "- ", null, null, null, 1596],
+                  [1596, 0, "- ", null, null, null, 1625],
+                  [1625, 0, "- ", null, null, null, 1824],
+                  [1679, 2, "- ", null, null, null, 1751],
+                  [1751, 2, "- ", null, null, null, 1824],
+                  [1824, 0, "- ", null, null, null, 1881]
                 ],
                 "post-blank": 1,
-                "post-affiliated": 1373,
+                "post-affiliated": 1368,
                 "mode": null,
                 "granularity": null
               },
@@ -463,14 +463,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org2d2edf1",
+                  "ref": "orgd7800b5",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 1373,
+                    "post-affiliated": 1368,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -479,10 +479,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org12ec0f8",
+                      "ref": "org72d35ee",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 1375,
+                        "post-affiliated": 1370,
                         "mode": null,
                         "granularity": null
                       },
@@ -495,14 +495,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org92be3fc",
+                  "ref": "org34bda79",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 1441,
+                    "post-affiliated": 1436,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -511,10 +511,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org5f77659",
+                      "ref": "orgc139e1a",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 1443,
+                        "post-affiliated": 1438,
                         "mode": null,
                         "granularity": null
                       },
@@ -527,14 +527,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org612bd8e",
+                  "ref": "orgb376433",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 1509,
+                    "post-affiliated": 1504,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -543,10 +543,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org044f67c",
+                      "ref": "org66e1f4f",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 1511,
+                        "post-affiliated": 1506,
                         "mode": null,
                         "granularity": null
                       },
@@ -559,14 +559,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orga3550a1",
+                  "ref": "orga118951",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 1563,
+                    "post-affiliated": 1558,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -575,10 +575,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org35f2166",
+                      "ref": "org0d8260f",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 1565,
+                        "post-affiliated": 1560,
                         "mode": null,
                         "granularity": null
                       },
@@ -589,14 +589,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org0429b91",
+                  "ref": "orgf923fe0",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 1601,
+                    "post-affiliated": 1596,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -605,10 +605,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org183389e",
+                      "ref": "org50c681b",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 1603,
+                        "post-affiliated": 1598,
                         "mode": null,
                         "granularity": null
                       },
@@ -619,14 +619,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgc7a4563",
+                  "ref": "org5fc8cfe",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 1630,
+                    "post-affiliated": 1625,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -635,10 +635,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org8b69983",
+                      "ref": "org9ee5760",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 1632,
+                        "post-affiliated": 1627,
                         "mode": null,
                         "granularity": null
                       },
@@ -649,22 +649,22 @@
                     {
                       "$$data_type": "org-node",
                       "type": "plain-list",
-                      "ref": "orgd10884f",
+                      "ref": "org7162c07",
                       "properties": {
                         "type": "unordered",
                         "structure": [
-                          [1373, 0, "- ", null, null, null, 1441],
-                          [1441, 0, "- ", null, null, null, 1509],
-                          [1509, 0, "- ", null, null, null, 1563],
-                          [1563, 0, "- ", null, null, null, 1601],
-                          [1601, 0, "- ", null, null, null, 1630],
-                          [1630, 0, "- ", null, null, null, 1829],
-                          [1684, 2, "- ", null, null, null, 1756],
-                          [1756, 2, "- ", null, null, null, 1829],
-                          [1829, 0, "- ", null, null, null, 1886]
+                          [1368, 0, "- ", null, null, null, 1436],
+                          [1436, 0, "- ", null, null, null, 1504],
+                          [1504, 0, "- ", null, null, null, 1558],
+                          [1558, 0, "- ", null, null, null, 1596],
+                          [1596, 0, "- ", null, null, null, 1625],
+                          [1625, 0, "- ", null, null, null, 1824],
+                          [1679, 2, "- ", null, null, null, 1751],
+                          [1751, 2, "- ", null, null, null, 1824],
+                          [1824, 0, "- ", null, null, null, 1881]
                         ],
                         "post-blank": 0,
-                        "post-affiliated": 1684,
+                        "post-affiliated": 1679,
                         "mode": null,
                         "granularity": null
                       },
@@ -672,14 +672,14 @@
                         {
                           "$$data_type": "org-node",
                           "type": "item",
-                          "ref": "org1bcfa2e",
+                          "ref": "org6639d72",
                           "properties": {
                             "bullet": "- ",
                             "checkbox": null,
                             "counter": null,
                             "pre-blank": 0,
                             "post-blank": 0,
-                            "post-affiliated": 1684,
+                            "post-affiliated": 1679,
                             "tag": [],
                             "mode": "item",
                             "granularity": null
@@ -688,10 +688,10 @@
                             {
                               "$$data_type": "org-node",
                               "type": "paragraph",
-                              "ref": "orgcef4981",
+                              "ref": "org309ccbb",
                               "properties": {
                                 "post-blank": 0,
-                                "post-affiliated": 1688,
+                                "post-affiliated": 1683,
                                 "mode": null,
                                 "granularity": null
                               },
@@ -700,7 +700,7 @@
                                 {
                                   "$$data_type": "org-node",
                                   "type": "bold",
-                                  "ref": "orgcab17ed",
+                                  "ref": "orgcbeda07",
                                   "properties": {
                                     "post-blank": 1
                                   },
@@ -714,14 +714,14 @@
                         {
                           "$$data_type": "org-node",
                           "type": "item",
-                          "ref": "org6783c57",
+                          "ref": "orgd62c89d",
                           "properties": {
                             "bullet": "- ",
                             "checkbox": null,
                             "counter": null,
                             "pre-blank": 0,
                             "post-blank": 0,
-                            "post-affiliated": 1756,
+                            "post-affiliated": 1751,
                             "tag": [],
                             "mode": "item",
                             "granularity": null
@@ -730,10 +730,10 @@
                             {
                               "$$data_type": "org-node",
                               "type": "paragraph",
-                              "ref": "org0671b4c",
+                              "ref": "orgb09b04e",
                               "properties": {
                                 "post-blank": 0,
-                                "post-affiliated": 1760,
+                                "post-affiliated": 1755,
                                 "mode": null,
                                 "granularity": null
                               },
@@ -742,7 +742,7 @@
                                 {
                                   "$$data_type": "org-node",
                                   "type": "bold",
-                                  "ref": "org4d09e26",
+                                  "ref": "org8215a36",
                                   "properties": {
                                     "post-blank": 1
                                   },
@@ -760,14 +760,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org614a346",
+                  "ref": "org5a0f8fd",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 1829,
+                    "post-affiliated": 1824,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -776,10 +776,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "org78bbc7e",
+                      "ref": "orge993a71",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 1831,
+                        "post-affiliated": 1826,
                         "mode": null,
                         "granularity": null
                       },
@@ -794,10 +794,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgcef5202",
+              "ref": "orge87047e",
               "properties": {
                 "post-blank": 0,
-                "post-affiliated": 1887,
+                "post-affiliated": 1882,
                 "mode": null,
                 "granularity": null
               },
@@ -812,14 +812,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "orgeb26f66",
+      "ref": "org8d5991e",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "A solution",
         "pre-blank": 0,
-        "robust-begin": 2313,
-        "robust-end": 5130,
+        "robust-begin": 2308,
+        "robust-end": 5125,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -829,7 +829,7 @@
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
-        "post-affiliated": 2298,
+        "post-affiliated": 2293,
         "title": ["A solution"],
         "mode": null,
         "granularity": null,
@@ -840,12 +840,12 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "org18dc156",
+          "ref": "org86caf0c",
           "properties": {
-            "robust-begin": 2311,
-            "robust-end": 5130,
+            "robust-begin": 2306,
+            "robust-end": 5125,
             "post-blank": 2,
-            "post-affiliated": 2311,
+            "post-affiliated": 2306,
             "mode": "section",
             "granularity": null
           },
@@ -853,10 +853,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgee57133",
+              "ref": "orgc691d9f",
               "properties": {
                 "post-blank": 1,
-                "post-affiliated": 2311,
+                "post-affiliated": 2306,
                 "mode": "planning",
                 "granularity": null
               },
@@ -867,10 +867,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org5c50f59",
+              "ref": "org44835cf",
               "properties": {
                 "post-blank": 1,
-                "post-affiliated": 2381,
+                "post-affiliated": 2376,
                 "mode": null,
                 "granularity": null
               },
@@ -881,10 +881,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org75ce96e",
+              "ref": "org669ba7b",
               "properties": {
                 "post-blank": 1,
-                "post-affiliated": 2485,
+                "post-affiliated": 2480,
                 "mode": null,
                 "granularity": null
               },
@@ -895,10 +895,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org3a62fed",
+              "ref": "org6739d72",
               "properties": {
                 "post-blank": 1,
-                "post-affiliated": 2590,
+                "post-affiliated": 2585,
                 "mode": null,
                 "granularity": null
               },
@@ -909,7 +909,7 @@
             {
               "$$data_type": "org-node",
               "type": "src-block",
-              "ref": "org7cdcc02",
+              "ref": "org3059652",
               "properties": {
                 "language": "python",
                 "switches": null,
@@ -921,7 +921,7 @@
                 "label-fmt": null,
                 "value": "  import os\n  import mercurial.commands\n\n  class HG:\n    def __init__(self,ui,repo):\n      self.ui = ui\n      self.repo = repo\n      self.files = self.getAddedFiles()\n\n    def existsInRepo(self, filename):\n      self.ui.pushbuffer()\n      mercurial.commands.locate(self.ui,self.repo,include=[filename])\n      files = self.ui.popbuffer().split(\"\\n\")\n\n      for repoFile in files:\n        if(pathsEqual(filename,repoFile)):\n          return True\n\n      return False\n\n    def getAddedFiles(self):\n      self.ui.pushbuffer()\n      mercurial.commands.status(self.ui,self.repo,no_status=True, added = True)\n      files = self.ui.popbuffer().split(\"\\n\")\n      return files\n\n    def filesExistInDir(self,dirname):\n      self.ui.pushbuffer()\n      mercurial.commands.locate(self.ui,self.repo,include=[dirname])\n      files = self.ui.popbuffer().split(\"\\n\")\n      files = filter(lambda x:x != \"\", files)\n      return len(files) > 0\n\n    def show(self, message):\n      self.ui.status(message + \"\\n\")\n\n  def precommit(ui,repo, **kwargs):\n    hg = HG(ui,repo)\n    clean = checkFiles(hg)\n    return not clean;\n\n  def pathsEqual(a,b):\n    return os.path.normcase(a) == os.path.normcase(b)\n\n\n  def checkFiles(hg):\n\n    path = os.path.normcase(\"UnityProject/Assets/\")\n\n    result = True\n    files = hg.files\n    for singleFile in files:\n      if singleFile == '':\n        continue\n\n      if not os.path.normcase(singleFile).startswith(path):\n        continue\n\n      isMetaFile = singleFile.endswith(\".meta\")\n\n      filename = singleFile if not isMetaFile else singleFile.replace(\".meta\", \"\")\n      metaFile = singleFile if isMetaFile else singleFile + \".meta\"\n\n      isFolder = os.path.isdir(os.path.normcase(filename))\n\n      if isMetaFile:\n        if isFolder:\n          if not hg.filesExistInDir(filename):\n            hg.show(\"Commiting a meta file'\" + metaFile +\n              \"' for a directory which contains no files.\" )\n            return False\n        else:\n          if not hg.existsInRepo(filename):\n            hg.show(\"Commiting a meta file'\" + metaFile +\n              \"' without adding associated file '\" + filename + \"'.\")\n            return False\n\n      else:\n        if not hg.existsInRepo(metaFile):\n          hg.show(\"Committing a file '\" + filename +\n            \"' without adding associated meta file '\" + metaFile + \"'.\")\n          return False\n\n\n    return result\n",
                 "post-blank": 0,
-                "post-affiliated": 2731,
+                "post-affiliated": 2726,
                 "mode": null,
                 "granularity": null
               },
@@ -934,14 +934,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org785e675",
+      "ref": "orga100893",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "Installation",
         "pre-blank": 0,
-        "robust-begin": 5151,
-        "robust-end": 6047,
+        "robust-begin": 5146,
+        "robust-end": 6042,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -951,7 +951,7 @@
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
-        "post-affiliated": 5134,
+        "post-affiliated": 5129,
         "title": ["Installation"],
         "mode": null,
         "granularity": null,
@@ -962,14 +962,14 @@
         {
           "$$data_type": "org-node",
           "type": "headline",
-          "ref": "org561f263",
+          "ref": "orgd23f0e7",
           "drawer": {},
           "properties": {
             "tags-all": [],
             "raw-value": "Configure your asset folder path",
             "pre-blank": 1,
-            "robust-begin": 5188,
-            "robust-end": 5479,
+            "robust-begin": 5183,
+            "robust-end": 5474,
             "level": 2,
             "priority": null,
             "tags": [],
@@ -979,7 +979,7 @@
             "footnote-section-p": false,
             "archivedp": false,
             "commentedp": false,
-            "post-affiliated": 5149,
+            "post-affiliated": 5144,
             "title": ["Configure your asset folder path"],
             "mode": "section",
             "granularity": null
@@ -988,12 +988,12 @@
             {
               "$$data_type": "org-node",
               "type": "section",
-              "ref": "org586f4bb",
+              "ref": "orgb6ffe00",
               "properties": {
-                "robust-begin": 5186,
-                "robust-end": 5479,
+                "robust-begin": 5181,
+                "robust-end": 5474,
                 "post-blank": 1,
-                "post-affiliated": 5186,
+                "post-affiliated": 5181,
                 "mode": "section",
                 "granularity": null
               },
@@ -1001,10 +1001,10 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "org1fb687b",
+                  "ref": "orgfc7b916",
                   "properties": {
                     "post-blank": 0,
-                    "post-affiliated": 5186,
+                    "post-affiliated": 5181,
                     "mode": "planning",
                     "granularity": null
                   },
@@ -1013,7 +1013,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "verbatim",
-                      "ref": "org4cf9725",
+                      "ref": "org70e80ac",
                       "properties": {
                         "post-blank": 1,
                         "value": "checkFiles"
@@ -1024,7 +1024,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "verbatim",
-                      "ref": "org4e5f303",
+                      "ref": "orgb7f98bd",
                       "properties": {
                         "post-blank": 1,
                         "value": "path"
@@ -1035,7 +1035,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "verbatim",
-                      "ref": "orgc29a6ef",
+                      "ref": "orga69b6a2",
                       "properties": {
                         "post-blank": 0,
                         "value": "UnityProject"
@@ -1052,14 +1052,14 @@
         {
           "$$data_type": "org-node",
           "type": "headline",
-          "ref": "orgd184a72",
+          "ref": "orgdcf45ff",
           "drawer": {},
           "properties": {
             "tags-all": [],
             "raw-value": "Add the hook",
             "pre-blank": 0,
-            "robust-begin": 5500,
-            "robust-end": 6047,
+            "robust-begin": 5495,
+            "robust-end": 6042,
             "level": 2,
             "priority": null,
             "tags": [],
@@ -1069,7 +1069,7 @@
             "footnote-section-p": false,
             "archivedp": false,
             "commentedp": false,
-            "post-affiliated": 5482,
+            "post-affiliated": 5477,
             "title": ["Add the hook"],
             "mode": null,
             "granularity": null,
@@ -1080,12 +1080,12 @@
             {
               "$$data_type": "org-node",
               "type": "section",
-              "ref": "org7a16227",
+              "ref": "org487cbfd",
               "properties": {
-                "robust-begin": 5498,
-                "robust-end": 6047,
+                "robust-begin": 5493,
+                "robust-end": 6042,
                 "post-blank": 2,
-                "post-affiliated": 5498,
+                "post-affiliated": 5493,
                 "mode": "section",
                 "granularity": null
               },
@@ -1093,10 +1093,10 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "org89b8e47",
+                  "ref": "org0d9f3c4",
                   "properties": {
                     "post-blank": 1,
-                    "post-affiliated": 5498,
+                    "post-affiliated": 5493,
                     "mode": "planning",
                     "granularity": null
                   },
@@ -1105,7 +1105,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "link",
-                      "ref": "org49c255a",
+                      "ref": "orgad118ad",
                       "properties": {
                         "type": "https",
                         "path": "//mercurial.selenic.com/wiki/Hook",
@@ -1126,10 +1126,10 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "org50ceb27",
+                  "ref": "org491f1f4",
                   "properties": {
                     "post-blank": 1,
-                    "post-affiliated": 5767,
+                    "post-affiliated": 5762,
                     "mode": null,
                     "granularity": null
                   },
@@ -1138,7 +1138,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "verbatim",
-                      "ref": "org621f9c8",
+                      "ref": "org08510bd",
                       "properties": {
                         "post-blank": 0,
                         "value": "hooks/checkMetas.py"
@@ -1151,10 +1151,10 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "org740b404",
+                  "ref": "orge7f018b",
                   "properties": {
                     "post-blank": 1,
-                    "post-affiliated": 5866,
+                    "post-affiliated": 5861,
                     "mode": null,
                     "granularity": null
                   },
@@ -1163,7 +1163,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "verbatim",
-                      "ref": "org558fbb0",
+                      "ref": "orgff4a1d3",
                       "properties": {
                         "post-blank": 1,
                         "value": ".hg/hgrc"
@@ -1176,7 +1176,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "src-block",
-                  "ref": "orgfc8667b",
+                  "ref": "org1f64a54",
                   "properties": {
                     "language": "python",
                     "switches": null,
@@ -1188,7 +1188,7 @@
                     "label-fmt": null,
                     "value": "    [hooks]\n    precommit.checkMetas = python:/pathToUnityRepo/hooks/checkMetas.py:precommit\n",
                     "post-blank": 0,
-                    "post-affiliated": 5923,
+                    "post-affiliated": 5918,
                     "mode": null,
                     "granularity": null
                   },
@@ -1203,14 +1203,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org1ebbfbe",
+      "ref": "orgda8bb8e",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "Disclaimer",
         "pre-blank": 0,
-        "robust-begin": 6066,
-        "robust-end": 6465,
+        "robust-begin": 6061,
+        "robust-end": 6460,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -1220,7 +1220,7 @@
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
-        "post-affiliated": 6051,
+        "post-affiliated": 6046,
         "title": ["Disclaimer"],
         "mode": null,
         "granularity": null
@@ -1229,12 +1229,12 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "org1890276",
+          "ref": "orgf35c310",
           "properties": {
-            "robust-begin": 6064,
-            "robust-end": 6465,
+            "robust-begin": 6059,
+            "robust-end": 6460,
             "post-blank": 0,
-            "post-affiliated": 6064,
+            "post-affiliated": 6059,
             "mode": "section",
             "granularity": null
           },
@@ -1242,16 +1242,16 @@
             {
               "$$data_type": "org-node",
               "type": "plain-list",
-              "ref": "orgfb4f718",
+              "ref": "orgeca3eb2",
               "properties": {
                 "type": "unordered",
                 "structure": [
-                  [6064, 0, "- ", null, null, null, 6346],
-                  [6346, 0, "- ", null, null, null, 6434],
-                  [6434, 0, "- ", null, null, null, 6467]
+                  [6059, 0, "- ", null, null, null, 6341],
+                  [6341, 0, "- ", null, null, null, 6429],
+                  [6429, 0, "- ", null, null, null, 6462]
                 ],
                 "post-blank": 0,
-                "post-affiliated": 6064,
+                "post-affiliated": 6059,
                 "mode": "planning",
                 "granularity": null
               },
@@ -1259,14 +1259,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org344b3ec",
+                  "ref": "org90ef092",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 1,
-                    "post-affiliated": 6064,
+                    "post-affiliated": 6059,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -1275,10 +1275,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgaf17619",
+                      "ref": "org329c9ce",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 6066,
+                        "post-affiliated": 6061,
                         "mode": null,
                         "granularity": null
                       },
@@ -1287,7 +1287,7 @@
                         {
                           "$$data_type": "org-node",
                           "type": "bold",
-                          "ref": "org694654c",
+                          "ref": "org1170eaf",
                           "properties": {
                             "post-blank": 0
                           },
@@ -1303,14 +1303,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "orgf4242e1",
+                  "ref": "org5ac087a",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 6346,
+                    "post-affiliated": 6341,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -1319,10 +1319,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgb0bc9ae",
+                      "ref": "org12ef1d4",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 6348,
+                        "post-affiliated": 6343,
                         "mode": null,
                         "granularity": null
                       },
@@ -1331,7 +1331,7 @@
                         {
                           "$$data_type": "org-node",
                           "type": "bold",
-                          "ref": "org6c5f450",
+                          "ref": "org78b4a00",
                           "properties": {
                             "post-blank": 0
                           },
@@ -1345,14 +1345,14 @@
                 {
                   "$$data_type": "org-node",
                   "type": "item",
-                  "ref": "org774f64c",
+                  "ref": "orgc9b8b6a",
                   "properties": {
                     "bullet": "- ",
                     "checkbox": null,
                     "counter": null,
                     "pre-blank": 0,
                     "post-blank": 0,
-                    "post-affiliated": 6434,
+                    "post-affiliated": 6429,
                     "tag": [],
                     "mode": "item",
                     "granularity": null
@@ -1361,10 +1361,10 @@
                     {
                       "$$data_type": "org-node",
                       "type": "paragraph",
-                      "ref": "orgc8be51f",
+                      "ref": "orgf60c362",
                       "properties": {
                         "post-blank": 0,
-                        "post-affiliated": 6436,
+                        "post-affiliated": 6431,
                         "mode": null,
                         "granularity": null
                       },
