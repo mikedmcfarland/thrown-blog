@@ -32,11 +32,12 @@ export function getChildrenNodes(node: AnyNode): AnyNode[] {
 export function getSummaryData(doc: OrgDoc) {
     const defaults = {
         author: "Michael McFarland",
-        image: "https://placekitten.com/500/400",
+        // image: "https://placekitten.com/500/400",
         authorImage: "https://placekitten.com/200/300"
     }
     const metadata = getMetaData(doc)
     const fromMetaData = {
+        icon: metadata['ICON'],
         title: metadata['TITLE'],
         author: metadata['AUTHOR'],
         image: metadata['IMAGE'],

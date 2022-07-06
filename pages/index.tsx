@@ -1,5 +1,4 @@
 import { Container, Text, Box, Heading, Icon, Stack, useColorModeValue } from '@chakra-ui/react'
-import ArrowIcon from 'components/ArrowIcon'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
@@ -43,14 +42,6 @@ const Home: NextPage = () => {
                         </Text>
 
                         <Box>
-                            <Icon
-                                as={ArrowIcon}
-                                color={useColorModeValue('gray.800', 'gray.300')}
-                                w={71}
-                                position={'absolute'}
-                                right={-71}
-                                top={'10px'}
-                            />
                             <Text
                                 fontSize={'lg'}
                                 fontFamily={'Caveat'}

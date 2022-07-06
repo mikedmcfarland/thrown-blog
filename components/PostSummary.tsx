@@ -5,10 +5,14 @@ import {
     Heading,
     Text,
     Stack,
-    Avatar,
     useColorModeValue,
+    HStack,
+    Tag,
+    TagLabel,
+    Icon,
 } from '@chakra-ui/react';
 import Link from 'next/link';
+import { FaBook, FaCalendarAlt } from 'react-icons/fa';
 
 export type Props = {
     category: string
@@ -38,25 +42,34 @@ export function PostSummary(props: Props) {
 
                         <Box
                             h={'210px'}
-                            bg={'gray.100'}
+                            bg={useColorModeValue('gray.100', 'gray.700')}
                             mt={-6}
                             mx={-6}
                             mb={6}
                             pos={'relative'}>
-                            <Image
-                                src={props.image}
-                                layout={'fill'}
-                            />
+                            {!!props.image ?
+                                <Image
+                                    src={props.image}
+                                    layout={'fill'}
+                                />
+                                : <Center> <Icon w={"210px"} h="100%" as={FaBook} /></Center>}
+
                         </Box>
                         <Stack>
-                            <Text
-                                color={'brand.500'}
-                                textTransform={'uppercase'}
-                                fontWeight={800}
-                                fontSize={'sm'}
-                                letterSpacing={1.1}>
-                                {props.category}
-                            </Text>
+                            {!!props.category ? (
+                                <HStack>
+                                    <Tag >
+                                        <TagLabel
+                                            color={'brand.500'}
+                                            textTransform={'uppercase'}
+                                            fontWeight={800}
+                                            fontSize={'sm'}
+                                            letterSpacing={1.1}>
+                                            {props.category}
+                                        </TagLabel>
+                                    </Tag>
+                                </HStack>
+                            ) : null}
                             <Heading
                                 color={useColorModeValue('gray.700', 'white')}
                                 fontSize={'2xl'}
@@ -68,11 +81,12 @@ export function PostSummary(props: Props) {
                             </Text>
                         </Stack>
                         <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-                            <Avatar
+                            <FaCalendarAlt />
+                            {/* <Avatar
                                 src={props.authorImage}
-                            />
+                            /> */}
                             <Stack direction={'column'} spacing={0} fontSize={'sm'}>
-                                <Text fontWeight={600}>{props.author}</Text>
+                                {/* <Text fontWeight={600}>{props.author}</Text> */}
                                 <Text color={'gray.500'}>{props.date}</Text>
                             </Stack>
                         </Stack>
@@ -81,6 +95,6 @@ export function PostSummary(props: Props) {
 
                 </Center >
             </a>
-        </Link>
+        </Link >
     );
 }
