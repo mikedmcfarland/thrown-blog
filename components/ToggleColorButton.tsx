@@ -1,6 +1,6 @@
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { useColorMode } from "@chakra-ui/react";
-import HeaderButton from "./SocialButton";
+import HeaderButton from "./HeaderButton";
 
 export default function ToggleColorButton() {
     const { colorMode, toggleColorMode } = useColorMode()

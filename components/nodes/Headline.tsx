@@ -13,18 +13,15 @@ const sizes = [
 ]
 
 
-export const Headline: NodeComponent<HeadlineNode> = ({ node, children }) => {
+export const Headline: NodeComponent<HeadlineNode> = ({ node, children, i }) => {
     const level = node.properties.level
     const title = node.properties.title
     const size = sizes[level - 1]
     const h = `h${level}`
     const margins = [1, 2]
     return (
-
-
         <>
             <Heading mb={margins} mt={margins} as={h} size={size}>{title}</Heading>
-            {/* <Box ml={3} > */}
             <Box>
                 {children}
             </Box>

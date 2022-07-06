@@ -1,19 +1,22 @@
 import {
     Box,
+    Center,
+    Code,
     Container,
+    Divider,
     HStack,
     Link,
     Stack,
-    Text,
     useColorModeValue
 } from '@chakra-ui/react'
 
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import Logo from './Logo'
-import HeaderButton from './SocialButton'
+import HeaderButton from './HeaderButton'
 import ToggleColorButton from './ToggleColorButton'
 
 import { default as NextLink } from 'next/link'
+import CircleIcon from './CircleIcon'
 
 type LinkProp = { href: string, name: string }
 type Props = {
@@ -34,9 +37,12 @@ function HeaderTextLink({ href, name }: LinkProp) {
 }
 
 export default function Header(props: Props) {
-    const linkComponents = props.links.map((l, i) => (
-        <HeaderTextLink key={i} {...l} />
-    ))
+    const linkComponents = props.links.map((l, i, ls) => {
+        const divider = i == ls.length - 1 ? <></> : <CircleIcon alignSelf={"center"} boxSize={1} key={i} />
+        return (
+            <><HeaderTextLink key={i} {...l} /> {divider} </>
+        )
+    })
 
     return (
         <Box
@@ -45,25 +51,37 @@ export default function Header(props: Props) {
 
             <Container
                 as={HStack}
-                maxW={'6xl'}
+                maxW={'4xl'}
                 py={4}
-                spacing={20}
                 justify={'center'}
+                justifyContent={'space-between'}
+                alignItems={'center'}
                 align={'center'}>
 
-                <Stack direction={'row'} spacing={6}>
-                    <Link href="/" textDecoration={'none'}>
-                        <Stack direction={'row'} spacing={6}>
-                            <Text noOfLines={1} fontWeight={"bold"} fontSize="2xl" >Thrown for a loop</Text><Logo />
-                        </Stack>
-                    </Link>
+                <Stack direction={'row'} spacing={4}>
+                    <NextLink href="/" >
+                        <a style={{ textDecoration: 'none' }}>
+                            <Stack direction={'row'} spacing={4}>
+                                <Code fontWeight={"900"} fontSize="2xl" noOfLines={1}>Thrown</Code><Logo />
+                            </Stack>
+                        </a>
+                    </NextLink>
                 </Stack>
 
-                <Stack direction={'row'} spacing={6}>
+                <Center height='8'>
+                    <Divider orientation='vertical' />
+                </Center>
+
+                <Stack direction={'row'} spacing={2}>
                     {linkComponents}
                 </Stack>
 
-                <Stack direction={'row'} spacing={6}>
+                <Center height='8'>
+                    <Divider orientation='vertical' />
+                </Center>
+
+
+                <Stack direction={'row'} spacing={4}>
                     <HeaderButton label={'Github'} href={props.githubHref}>
                         <FaGithub />
                     </HeaderButton>
@@ -71,6 +89,10 @@ export default function Header(props: Props) {
                         <FaLinkedin />
                     </HeaderButton>
                 </Stack>
+
+                <Center height='8'>
+                    <Divider orientation='vertical' />
+                </Center>
 
                 <ToggleColorButton />
             </Container>

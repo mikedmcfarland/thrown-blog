@@ -3,7 +3,9 @@ export function getHeaderConfig() {
         linkedInHref: "https://www.linkedin.com/in/mikedmcfarland/",
         githubHref: "https://github.com/mikedmcfarland",
         links: [
-            { name: "Blog", href: "/posts" },
+            { name: "Articles", href: "/posts" },
+            { name: "Snippets", href: "/snippets" },
+            { name: "Projects", href: "/projects" },
             { name: "About", href: "/about" },
         ]
     }

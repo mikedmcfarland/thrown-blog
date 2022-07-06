@@ -35,7 +35,7 @@ export default function PostPage(props: Props) {
 function renderComponent(node: Exclude<AnyNode, OrgDoc>, i: number): JSX.Element {
     const key = `${node.ref}:${i}`
     const id = node.ref
-    const props = { key, id }
+    const props = { key, id, i }
 
     switch (node.type) {
         case NodeType.HEADLINE:
