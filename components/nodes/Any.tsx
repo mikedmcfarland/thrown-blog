@@ -1,6 +1,8 @@
 import { AnyNode, NodeType, OrgDoc } from "src/org/types"
 import { Bold } from "./Bold"
+import { ExampleBlock } from "./ExampleBlock"
 import { Headline } from "./Headline"
+import { Italic } from "./Italic"
 import { Item } from "./Item"
 import { Keyword } from "./Keyword"
 import { OrgLink } from "./Link"
@@ -80,6 +82,15 @@ export default function Any({ node, i }: Props): JSX.Element {
         case NodeType.BOLD:
             return (
                 <Bold {...props} node={node}>{node.contents}</Bold>
+            )
+        case NodeType.ITALIC:
+            return (
+                <Italic {...props} node={node}>{node.contents}</Italic>
+            )
+
+        case NodeType.EXAMPLE_BLOCK:
+            return (
+                <ExampleBlock {...props} node={node} />
             )
         default:
             return (

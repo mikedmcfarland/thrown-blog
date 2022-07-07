@@ -6,8 +6,8 @@ export interface OrgDoc {
     contents: Exclude<AnyNode, OrgDoc>[]
 }
 
-type ContentNode = SectionNode | ParagraphNode | HeadlineNode | SourceBlockNode | VerbatimNode | LinkNode | BoldNode
-export type AnyNode = OrgDoc | SectionNode | KeywordNode | ParagraphNode | HeadlineNode | ItemNode | PlainListNode | VerbatimNode | SourceBlockNode | LinkNode | BoldNode
+type ContentNode = SectionNode | ParagraphNode | HeadlineNode | SourceBlockNode | VerbatimNode | LinkNode | BoldNode | ItalicNode | ExampleBlockNode
+export type AnyNode = OrgDoc | SectionNode | KeywordNode | ParagraphNode | HeadlineNode | ItemNode | PlainListNode | VerbatimNode | SourceBlockNode | LinkNode | BoldNode | ItalicNode | ExampleBlockNode
 
 export enum DataType {
     ORG_NODE = 'org-node',
@@ -24,7 +24,9 @@ export enum NodeType {
     VERBATIM = 'verbatim',
     SRC_BLOCK = 'src-block',
     LINK = 'link',
-    BOLD = 'bold'
+    BOLD = 'bold',
+    ITALIC = 'italic',
+    EXAMPLE_BLOCK = "example-block"
 }
 
 
@@ -107,4 +109,17 @@ export interface LinkNode extends Node<string[]> {
 
 export interface BoldNode extends Node<string[]> {
     "type": NodeType.BOLD
+}
+
+export interface ItalicNode extends Node<string[]> {
+    "type": NodeType.ITALIC
+}
+
+
+export interface ExampleBlockNode extends Node<never> {
+    "type": NodeType.EXAMPLE_BLOCK
+    properties: {
+        value: string
+    }
+
 }
