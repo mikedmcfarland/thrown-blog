@@ -1,0 +1,162 @@
+#+TITLE: Fun with scalajs lenses and react
+#+DATE: 2015-06-16
+#+CATEGORY: Scala
+#+DESCRIPTION: Examples where lenses simplified scalajs react code
+
+I've been working (freelance) on a single page app using [[https://github.com/japgolly/scalajs-react][scalajs-react]]
+
+and lenses helped me cleanup some code.
+They were fun and straightforward to get started with, so I wanted to quickly share my experience.
+
+
+* The model
+
+Lets say our app has some configuration that can be edited by the user.
+We'll model it with some case classes:
+
+#+begin_src scala
+  case class Config(restricted: String, mailConfig:MailConfig)
+
+  object Config{
+
+    lazy val default = Config("thrownforaloop.com",MailConfig("localhost",9000,"mike"))
+  }
+
+  case class MailConfig(
+    host:String,
+    port:Int,
+    user:String
+  )
+#+end_src
+
+
+*  The editable form
+Lets make a few react components so that we can construct our form.
+We'll add bootstrap classes to make it a littler more friendly.
+
+#+begin_src scala
+  object Form{
+    case class Field(name:String,value:String,onChange:ReactEventI=>Unit)
+
+
+    val field = ReactComponentB[Field]("form-field")
+      .render(P=>{
+        val Field(name,value,onChange) = P
+        <.div(^.`class`:="form-group",
+          <.label(
+            ^.`for` :=name,
+            name.capitalize),
+          <.input(
+            ^.tpe := "text",
+            ^.`class`:="form-control",
+            ^.id := name,
+            ^.value := value,
+            ^.onChange ==> onChange
+          ))
+      })
+      .build
+
+    val form = ReactComponentB[Seq[Field]]("form")
+      .render(P=>{
+        <.div(^.`class`:="panel panel-default",
+          <.div(^.`class`:="panel",
+            <.div(^.`class`:="panel-heading",
+              "Config Edit"
+            ),
+            <.div(^.`class`:="panel-body",
+              <.form(
+                P.map(f => field.withKey(f.name)(f))
+              )
+            )
+          )
+        )
+      })
+    .build
+
+    // a static construction of our form
+    def static() = {
+      val Config(restricted,MailConfig(host,port,user)) = Config.default
+      val noOp = (e:ReactEventI) => {}
+      val fields = Seq(
+          Field("restricted" ,restricted    ,noOp),
+          Field("host"       ,host          ,noOp),
+          Field("user"       ,user          ,noOp),
+          Field("port"       ,port.toString ,noOp))
+
+      form(fields)
+    }
+  }
+#+end_src
+
+Now we have a form component that'll build or inputs given a sequence of =Field='s.
+
+* Making it dynamic
+
+Lets make this form actually edit the model.
+We'll do that by making another component which will construct the form.
+
+#+begin_src scala
+  object ConfigForm{
+    case class Props(onSubmit:Config=>Unit)
+    case class State(config:Config)
+
+    class Backend(t:BackendScope[Unit,State]){
+      def modifyRestricted(e:ReactEventI) = {
+        t.modState(
+          s=>s.copy(
+            config=s.config.copy(
+              restricted=e.currentTarget.value)))
+      }
+      def modifyHost(e:ReactEventI) = {
+        t.modState(
+          s=>s.copy(
+            config=s.config.copy(
+              mailConfig=s.config.mailConfig.copy(
+                host=e.currentTarget.value))))
+      }
+      def modifyUser(e:ReactEventI) = {
+        t.modState(
+          s=>s.copy(
+            config=s.config.copy(
+              mailConfig=s.config.mailConfig.copy(
+                user=e.currentTarget.value))))
+      }
+
+    }
+
+    val form = ReactComponentB[Unit]("config-form")
+      .initialState(State(Config.default))
+      .backend(new Backend(_))
+      .render((P,S,B) =>{
+        val Config(restricted,MailConfig(host,port,user)) = S.config
+        val Field = Form.Field
+
+        val fields = Seq(
+          Field("restricted" ,restricted ,B.modifyRestricted),
+          Field("host"       ,host       ,B.modifyHost),
+          Field("user"       ,user       ,B.modifyUser))
+
+        Form.form(fields)
+      })
+      .buildU
+
+  }
+#+end_src
+
+Those modify functions work, but man there's a lot of copying of case classes, it'd be nice if we could build functions that take care of that for us cleanly, especially as these structures grow.
+* Enter lenses
+
+Lenses give us a way to cleanly and safely edit a piece of a larger immutable structure.
+
+#+begin_src scala
+  val _config     = Lens[State,ConfigItem]      (_.config)     (v => s => s.copy(config=v))
+  val _restricted = Lens[ConfigItem,String]     (_.restricted) (v => c => c.copy(restricted=v))
+  val _mail       = Lens[ConfigItem,MailConfig] (_.mailConfig) (v => c => c.copy(mailConfig=v))
+  val _host       = Lens[MailConfig,String]     (_.host)       (v => m => m.copy(host=v))
+  val _port       = Lens[MailConfig,Int]        (_.port)       (v => m => m.copy(port=v))
+  val _user       = Lens[MailConfig,String]     (_.user)       (v => m => m.copy(user=v))
+  val _password   = Lens[MailConfig,String]     (_.password)   (v => m => m.copy(password=v))
+
+  val _eventV     = Lens[ReactEventI,String]    (_.currentTarget.value)   (v => m => m.copy(password=v))
+  val _mailconfig = _config composeLens _mail
+#+end_src
