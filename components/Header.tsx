@@ -33,16 +33,20 @@ type Props = {
     linkedInHref: string
 }
 
-function HeaderTextLink({ href, name }: LinkProp) {
+function HeaderTextLink({ href, name, hasDivider }: LinkProp & { hasDivider: boolean }) {
     const router = useRouter()
 
     const active = () => (<Text fontWeight={"800"}> {name} </Text>)
     const notActive = () => (
-        <NextLink href={href} passHref >
-            <Link>
-                {name}
-            </Link>
-        </NextLink>
+        <>
+            <NextLink href={href} passHref >
+                <Link>
+                    {name}
+                </Link>
+            </NextLink>
+
+            {hasDivider ? (<CircleIcon alignSelf={"center"} boxSize={1} />) : <></>}
+        </>
     )
 
     return router.asPath === href ? active() : notActive()
@@ -63,9 +67,9 @@ function HeaderMenuLink({ href, name }: LinkProp) {
 export default function Header(props: Props) {
 
     const linkComponents = () => props.links.map((l, i, ls) => {
-        const divider = i == ls.length - 1 ? <></> : <CircleIcon alignSelf={"center"} boxSize={1} key={i} />
+        const hasDivider = i !== ls.length - 1
         return (
-            <><HeaderTextLink key={i} {...l} /> {divider} </>
+            <HeaderTextLink key={i} {...l} hasDivider={hasDivider} />
         )
     })
 

@@ -12,7 +12,7 @@ export default function PostPage(props: Props) {
         summary
     }
 
-    const content = props.post.contents.map((n, i) => (<Any node={n} i={i} />))
+    const content = props.post.contents.map((n, i) => (<Any key={i} node={n} i={i} />))
     return (
         <Post {...postProps} >
             {content}
