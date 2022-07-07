@@ -3,7 +3,6 @@ import {
     Center,
     Container,
     Heading,
-    VStack,
 } from '@chakra-ui/react';
 type Props = {
     summary: {
