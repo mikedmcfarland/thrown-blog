@@ -14,10 +14,10 @@
     {
       "$$data_type": "org-node",
       "type": "section",
-      "ref": "org191f088",
+      "ref": "orgae3fbb5",
       "properties": {
         "robust-begin": 1,
-        "robust-end": 419,
+        "robust-end": 531,
         "post-blank": 1,
         "post-affiliated": 1,
         "mode": "first-section",
@@ -27,7 +27,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org574e49e",
+          "ref": "org6e3706e",
           "properties": {
             "key": "STARTUP",
             "value": "showall indent",
@@ -41,7 +41,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org1b4a8df",
+          "ref": "org459b356",
           "properties": {
             "key": "OPTIONS",
             "value": "num:nil",
@@ -55,7 +55,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "orgd0de080",
+          "ref": "orgc9e890d",
           "properties": {
             "key": "TITLE",
             "value": "Fix Unity3d \"Missing Script\" issues",
@@ -69,7 +69,7 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org8192a5c",
+          "ref": "org15eaf0b",
           "properties": {
             "key": "DATE",
             "value": "2015-06-16",
@@ -83,11 +83,11 @@
         {
           "$$data_type": "org-node",
           "type": "keyword",
-          "ref": "org536ea29",
+          "ref": "org600d3f2",
           "properties": {
             "key": "CATEGORY",
-            "value": "code",
-            "post-blank": 1,
+            "value": "Unity3D",
+            "post-blank": 0,
             "post-affiliated": 110,
             "mode": null,
             "granularity": null
@@ -96,11 +96,25 @@
         },
         {
           "$$data_type": "org-node",
+          "type": "keyword",
+          "ref": "org575c6c3",
+          "properties": {
+            "key": "DESCRIPTION",
+            "value": "Fix the annoying \"Missing Script\" errors that occur when you start sharing assets on a team.",
+            "post-blank": 3,
+            "post-affiliated": 130,
+            "mode": null,
+            "granularity": null
+          },
+          "contents": []
+        },
+        {
+          "$$data_type": "org-node",
           "type": "paragraph",
-          "ref": "orgdd5bb2c",
+          "ref": "org4e7741f",
           "properties": {
             "post-blank": 0,
-            "post-affiliated": 128,
+            "post-affiliated": 240,
             "mode": null,
             "granularity": null
           },
@@ -113,14 +127,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "orgc84e134",
+      "ref": "org9fb6518",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "Why does this happen",
         "pre-blank": 0,
-        "robust-begin": 447,
-        "robust-end": 714,
+        "robust-begin": 559,
+        "robust-end": 826,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -130,7 +144,7 @@
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
-        "post-affiliated": 422,
+        "post-affiliated": 534,
         "title": ["Why does this happen"],
         "mode": null,
         "granularity": null
@@ -139,12 +153,12 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "orge547c85",
+          "ref": "org93d2ae3",
           "properties": {
-            "robust-begin": 445,
-            "robust-end": 714,
+            "robust-begin": 557,
+            "robust-end": 826,
             "post-blank": 1,
-            "post-affiliated": 445,
+            "post-affiliated": 557,
             "mode": "section",
             "granularity": null
           },
@@ -152,10 +166,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org685ce60",
+              "ref": "orgfef6630",
               "properties": {
                 "post-blank": 0,
-                "post-affiliated": 445,
+                "post-affiliated": 557,
                 "mode": "planning",
                 "granularity": null
               },
@@ -170,14 +184,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "orga06a6d7",
+      "ref": "org6209497",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "The solution",
         "pre-blank": 0,
-        "robust-begin": 734,
-        "robust-end": 3811,
+        "robust-begin": 846,
+        "robust-end": 3923,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -187,7 +201,7 @@
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
-        "post-affiliated": 717,
+        "post-affiliated": 829,
         "title": ["The solution"],
         "mode": null,
         "granularity": null,
@@ -198,12 +212,12 @@
         {
           "$$data_type": "org-node",
           "type": "section",
-          "ref": "org9759f1c",
+          "ref": "org30f2c49",
           "properties": {
-            "robust-begin": 732,
-            "robust-end": 3811,
+            "robust-begin": 844,
+            "robust-end": 3923,
             "post-blank": 1,
-            "post-affiliated": 732,
+            "post-affiliated": 844,
             "mode": "section",
             "granularity": null
           },
@@ -211,10 +225,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org9039ad3",
+              "ref": "orgba2bf54",
               "properties": {
                 "post-blank": 1,
-                "post-affiliated": 732,
+                "post-affiliated": 844,
                 "mode": "planning",
                 "granularity": null
               },
@@ -225,10 +239,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgda683b8",
+              "ref": "orgd859b64",
               "properties": {
                 "post-blank": 1,
-                "post-affiliated": 788,
+                "post-affiliated": 900,
                 "mode": null,
                 "granularity": null
               },
@@ -239,10 +253,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "orgaf7a2aa",
+              "ref": "org7e69cc2",
               "properties": {
                 "post-blank": 1,
-                "post-affiliated": 892,
+                "post-affiliated": 1004,
                 "mode": null,
                 "granularity": null
               },
@@ -253,10 +267,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org30d7d80",
+              "ref": "orgbae1abf",
               "properties": {
                 "post-blank": 1,
-                "post-affiliated": 997,
+                "post-affiliated": 1109,
                 "mode": null,
                 "granularity": null
               },
@@ -267,7 +281,7 @@
             {
               "$$data_type": "org-node",
               "type": "src-block",
-              "ref": "orga4671e8",
+              "ref": "org0e98dd1",
               "properties": {
                 "language": "python",
                 "switches": null,
@@ -279,7 +293,7 @@
                 "label-fmt": null,
                 "value": "  import os\n  import mercurial.commands\n\n  class HG:\n    def __init__(self,ui,repo):\n      self.ui = ui\n      self.repo = repo\n      self.files = self.getAddedFiles()\n\n    def existsInRepo(self, filename):\n      self.ui.pushbuffer()\n      mercurial.commands.locate(self.ui,self.repo,include=[filename])\n      files = self.ui.popbuffer().split(\"\\n\")\n\n      for repoFile in files:\n        if(pathsEqual(filename,repoFile)):\n          return True\n\n      return False\n\n    def getAddedFiles(self):\n      self.ui.pushbuffer()\n      mercurial.commands.status(self.ui,self.repo,no_status=True, added = True)\n      files = self.ui.popbuffer().split(\"\\n\")\n      return files\n\n    def filesExistInDir(self,dirname):\n      self.ui.pushbuffer()\n      mercurial.commands.locate(self.ui,self.repo,include=[dirname])\n      files = self.ui.popbuffer().split(\"\\n\")\n      files = filter(lambda x:x != \"\", files)\n      return len(files) > 0\n\n    def show(self, message):\n      self.ui.status(message + \"\\n\")\n\n  def precommit(ui,repo, **kwargs):\n    hg = HG(ui,repo)\n    clean = checkFiles(hg)\n    return not clean;\n\n  def pathsEqual(a,b):\n    return os.path.normcase(a) == os.path.normcase(b)\n\n\n  def checkFiles(hg):\n\n    path = os.path.normcase(\"UnityProject/Assets/\")\n\n    result = True\n    files = hg.files\n    for singleFile in files:\n      if singleFile == '':\n        continue\n\n      if not os.path.normcase(singleFile).startswith(path):\n        continue\n\n      isMetaFile = singleFile.endswith(\".meta\")\n\n      filename = singleFile if not isMetaFile else singleFile.replace(\".meta\", \"\")\n      metaFile = singleFile if isMetaFile else singleFile + \".meta\"\n\n      isFolder = os.path.isdir(os.path.normcase(filename))\n\n      if isMetaFile:\n        if isFolder:\n          if not hg.filesExistInDir(filename):\n            hg.show(\"Commiting a meta file'\" + metaFile +\n              \"' for a directory which contains no files.\" )\n            return False\n        else:\n          if not hg.existsInRepo(filename):\n            hg.show(\"Commiting a meta file'\" + metaFile +\n              \"' without adding associated file '\" + filename + \"'.\")\n            return False\n\n      else:\n        if not hg.existsInRepo(metaFile):\n          hg.show(\"Committing a file '\" + filename +\n            \"' without adding associated meta file '\" + metaFile + \"'.\")\n          return False\n\n\n    return result\n",
                 "post-blank": 1,
-                "post-affiliated": 1138,
+                "post-affiliated": 1250,
                 "mode": null,
                 "granularity": null
               },
@@ -288,10 +302,10 @@
             {
               "$$data_type": "org-node",
               "type": "paragraph",
-              "ref": "org40f639c",
+              "ref": "orgc5a3b6f",
               "properties": {
                 "post-blank": 0,
-                "post-affiliated": 3540,
+                "post-affiliated": 3652,
                 "mode": null,
                 "granularity": null
               },
@@ -300,7 +314,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "bold",
-                  "ref": "org320a8b1",
+                  "ref": "org494e235",
                   "properties": {
                     "post-blank": 0
                   },
@@ -316,14 +330,14 @@
     {
       "$$data_type": "org-node",
       "type": "headline",
-      "ref": "org99ae6e1",
+      "ref": "org72c3b44",
       "drawer": {},
       "properties": {
         "tags-all": [],
         "raw-value": "Usage",
         "pre-blank": 0,
-        "robust-begin": 3824,
-        "robust-end": 4720,
+        "robust-begin": 3936,
+        "robust-end": 4832,
         "level": 1,
         "priority": null,
         "tags": [],
@@ -333,7 +347,7 @@
         "footnote-section-p": false,
         "archivedp": false,
         "commentedp": false,
-        "post-affiliated": 3814,
+        "post-affiliated": 3926,
         "title": ["Usage"],
         "mode": null,
         "granularity": null,
@@ -344,14 +358,14 @@
         {
           "$$data_type": "org-node",
           "type": "headline",
-          "ref": "org96f93ff",
+          "ref": "org0a44073",
           "drawer": {},
           "properties": {
             "tags-all": [],
             "raw-value": "Configure your asset folder path",
             "pre-blank": 1,
-            "robust-begin": 3861,
-            "robust-end": 4152,
+            "robust-begin": 3973,
+            "robust-end": 4264,
             "level": 2,
             "priority": null,
             "tags": [],
@@ -361,7 +375,7 @@
             "footnote-section-p": false,
             "archivedp": false,
             "commentedp": false,
-            "post-affiliated": 3822,
+            "post-affiliated": 3934,
             "title": ["Configure your asset folder path"],
             "mode": "section",
             "granularity": null
@@ -370,12 +384,12 @@
             {
               "$$data_type": "org-node",
               "type": "section",
-              "ref": "orgf3aa136",
+              "ref": "orgbb73c97",
               "properties": {
-                "robust-begin": 3859,
-                "robust-end": 4152,
+                "robust-begin": 3971,
+                "robust-end": 4264,
                 "post-blank": 1,
-                "post-affiliated": 3859,
+                "post-affiliated": 3971,
                 "mode": "section",
                 "granularity": null
               },
@@ -383,10 +397,10 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "orgb7f8372",
+                  "ref": "orge73e678",
                   "properties": {
                     "post-blank": 0,
-                    "post-affiliated": 3859,
+                    "post-affiliated": 3971,
                     "mode": "planning",
                     "granularity": null
                   },
@@ -395,7 +409,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "verbatim",
-                      "ref": "org83da387",
+                      "ref": "orgf87322f",
                       "properties": {
                         "post-blank": 1,
                         "value": "checkFiles"
@@ -406,7 +420,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "verbatim",
-                      "ref": "orga8f1323",
+                      "ref": "org59aaa02",
                       "properties": {
                         "post-blank": 1,
                         "value": "path"
@@ -417,7 +431,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "verbatim",
-                      "ref": "org42c47dc",
+                      "ref": "org1a7a0d1",
                       "properties": {
                         "post-blank": 0,
                         "value": "UnityProject"
@@ -434,14 +448,14 @@
         {
           "$$data_type": "org-node",
           "type": "headline",
-          "ref": "orga7628ef",
+          "ref": "org6c197d9",
           "drawer": {},
           "properties": {
             "tags-all": [],
             "raw-value": "Add the hook",
             "pre-blank": 0,
-            "robust-begin": 4173,
-            "robust-end": 4720,
+            "robust-begin": 4285,
+            "robust-end": 4832,
             "level": 2,
             "priority": null,
             "tags": [],
@@ -451,7 +465,7 @@
             "footnote-section-p": false,
             "archivedp": false,
             "commentedp": false,
-            "post-affiliated": 4155,
+            "post-affiliated": 4267,
             "title": ["Add the hook"],
             "mode": null,
             "granularity": null,
@@ -462,12 +476,12 @@
             {
               "$$data_type": "org-node",
               "type": "section",
-              "ref": "org0857e42",
+              "ref": "org6057091",
               "properties": {
-                "robust-begin": 4171,
-                "robust-end": 4720,
+                "robust-begin": 4283,
+                "robust-end": 4832,
                 "post-blank": 0,
-                "post-affiliated": 4171,
+                "post-affiliated": 4283,
                 "mode": "section",
                 "granularity": null
               },
@@ -475,10 +489,10 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "orgcb50976",
+                  "ref": "org906fcd5",
                   "properties": {
                     "post-blank": 1,
-                    "post-affiliated": 4171,
+                    "post-affiliated": 4283,
                     "mode": "planning",
                     "granularity": null
                   },
@@ -487,7 +501,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "link",
-                      "ref": "org1106383",
+                      "ref": "org84ec200",
                       "properties": {
                         "type": "https",
                         "path": "//www.mercurial-scm.org/wiki/Hook",
@@ -508,10 +522,10 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "org4cac133",
+                  "ref": "orgfe57b21",
                   "properties": {
                     "post-blank": 1,
-                    "post-affiliated": 4440,
+                    "post-affiliated": 4552,
                     "mode": null,
                     "granularity": null
                   },
@@ -520,7 +534,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "verbatim",
-                      "ref": "orgc634117",
+                      "ref": "org4572ffc",
                       "properties": {
                         "post-blank": 0,
                         "value": "hooks/checkMetas.py"
@@ -533,10 +547,10 @@
                 {
                   "$$data_type": "org-node",
                   "type": "paragraph",
-                  "ref": "org978dfef",
+                  "ref": "org00d1402",
                   "properties": {
                     "post-blank": 1,
-                    "post-affiliated": 4539,
+                    "post-affiliated": 4651,
                     "mode": null,
                     "granularity": null
                   },
@@ -545,7 +559,7 @@
                     {
                       "$$data_type": "org-node",
                       "type": "verbatim",
-                      "ref": "orgdf79e82",
+                      "ref": "org69cdd96",
                       "properties": {
                         "post-blank": 1,
                         "value": ".hg/hgrc"
@@ -558,7 +572,7 @@
                 {
                   "$$data_type": "org-node",
                   "type": "src-block",
-                  "ref": "org594f64a",
+                  "ref": "orgb11d2be",
                   "properties": {
                     "language": "python",
                     "switches": null,
@@ -570,7 +584,7 @@
                     "label-fmt": null,
                     "value": "    [hooks]\n    precommit.checkMetas = python:/pathToUnityRepo/hooks/checkMetas.py:precommit\n",
                     "post-blank": 0,
-                    "post-affiliated": 4596,
+                    "post-affiliated": 4708,
                     "mode": null,
                     "granularity": null
                   },

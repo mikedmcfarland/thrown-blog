@@ -2,7 +2,10 @@
 #+options: num:nil
 #+TITLE: Fix Unity3d "Missing Script" issues
 #+DATE: 2015-06-16
-#+Category: code
+#+Category: Unity3D
+#+DESCRIPTION:Fix the annoying "Missing Script" errors that occur when you start sharing assets on a team.
+
+
 
 If you've ever worked on a team using Unity3d, somebody has forgotten to commit a .meta file.
 It's fairly easy to do, and pretty hard to notice you're doing it (things still work for you, just not others who pull your work in). I've been bitten by this mistake plenty, from myself and others.
