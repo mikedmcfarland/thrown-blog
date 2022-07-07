@@ -3,7 +3,12 @@ const withTM = require('next-transpile-modules')(["react-syntax-highlighter"])
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['placekitten.com']
+    domains: ['placekitten.com'],
+  },
+  experimental: {
+    images: {
+      unoptimized: true
+    }
   }
 }
 

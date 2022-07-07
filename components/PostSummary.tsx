@@ -50,6 +50,7 @@ export function PostSummary(props: Props) {
                             {!!props.image ?
                                 <Image
                                     src={props.image}
+                                    alt={"Post Image"}
                                     layout={'fill'}
                                 />
                                 : <Center> <Icon w={"210px"} h="100%" as={FaBook} /></Center>}

@@ -1,4 +1,3 @@
-import { mode } from '@chakra-ui/theme-tools';
 
 import { extendTheme, ThemeConfig, withDefaultColorScheme } from '@chakra-ui/react'
 
