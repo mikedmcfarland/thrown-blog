@@ -1,0 +1,13 @@
+#+title: About
+
+Hi, I'm Michael McFarland.
+
+I have an infatuation with programming which has lead me to creating sites, games and other interactive applications. I enjoy talking about technology, and made thrown for a loop to help me do so.
+
+[[file:resume.pdf][Here is My Resume]].
+
+* This site is made with...
+- [[https://nextjs.org/][Next.js by Vercel - The React Framework]]
+- [[https://chakra-ui.com/][Chakra UI]]
+- [[https://orgmode.org/][Org mode for Emacs]]
+- A Logo by Shannon E. Thomas license, used under [[https://creativecommons.org/licenses/by/3.0/us/][CC BY]]

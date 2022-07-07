@@ -6,7 +6,10 @@ import { LinkNode } from "src/org/types"
 import { NodeComponent } from "./types"
 
 export const OrgLink: NodeComponent<LinkNode, (string | JSX.Element)[]> = ({ node, children }) => {
-    const href = `${node.properties.type}:${node.properties.path}`
+
+
+    const properties = node.properties
+    const href = determineHref(properties.type, properties.path)
     const isExternal = !node.properties["is-internal"]
 
     return (
@@ -16,4 +19,15 @@ export const OrgLink: NodeComponent<LinkNode, (string | JSX.Element)[]> = ({ nod
             </Link>
         </NextLink>
     )
+}
+
+function determineHref(linkType: string, path: string): string {
+
+    switch (linkType) {
+        case "file":
+            return `/${path}`
+        default:
+            return `${linkType}:${path}`
+
+    }
 }
