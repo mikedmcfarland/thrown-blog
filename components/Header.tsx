@@ -1,5 +1,6 @@
 import {
     Box,
+    Text,
     Center,
     Code,
     Container,
@@ -23,6 +24,7 @@ import ToggleColorButton from './ToggleColorButton'
 import { default as NextLink } from 'next/link'
 import CircleIcon from './CircleIcon'
 import { HamburgerIcon } from '@chakra-ui/icons'
+import { useRouter } from 'next/router'
 
 type LinkProp = { href: string, name: string }
 type Props = {
@@ -32,14 +34,18 @@ type Props = {
 }
 
 function HeaderTextLink({ href, name }: LinkProp) {
+    const router = useRouter()
 
-    return (
-        <NextLink href={href} passHref>
+    const active = () => (<Text fontWeight={"800"}> {name} </Text>)
+    const notActive = () => (
+        <NextLink href={href} passHref >
             <Link>
                 {name}
             </Link>
         </NextLink>
     )
+
+    return router.pathname === href ? active() : notActive()
 }
 
 export default function Header(props: Props) {

@@ -25,7 +25,7 @@ const scheme = withDefaultColorScheme({
 
 export const config: ThemeConfig = {
     initialColorMode: "dark",
-    useSystemColorMode: false
+    useSystemColorMode: true
 }
 
 
