@@ -38,18 +38,19 @@ function HeaderTextLink({ href, name, hasDivider }: LinkProp & { hasDivider: boo
 
     const active = () => (<Text fontWeight={"800"}> {name} </Text>)
     const notActive = () => (
-        <>
-            <NextLink href={href} passHref >
-                <Link>
-                    {name}
-                </Link>
-            </NextLink>
+        <NextLink href={href} passHref >
+            <Link>
+                {name}
+            </Link>
+        </NextLink>
+    )
 
+    return (
+        <>
+            {router.asPath === href ? active() : notActive()}
             {hasDivider ? (<CircleIcon alignSelf={"center"} boxSize={1} />) : <></>}
         </>
     )
-
-    return router.asPath === href ? active() : notActive()
 }
 
 function HeaderMenuLink({ href, name }: LinkProp) {
