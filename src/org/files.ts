@@ -6,7 +6,7 @@ const DIR = '_posts'
 const EXT = '.json'
 const ENCODING = 'utf8'
 
-export async function getAllPosts() {
+export async function getAllDocs() {
     const files = await fs.promises.readdir(path.join(process.cwd(), DIR))
     const jsonFiles = files.filter(f => path.extname(f).toLowerCase() === EXT)
     const posts = await Promise.all(

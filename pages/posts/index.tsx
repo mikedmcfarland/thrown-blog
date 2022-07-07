@@ -1,5 +1,4 @@
-import { getAllPosts } from "src/org/files"
-import { Grid } from "@chakra-ui/layout"
+import { getAllDocs } from "src/org/files"
 import { PostSummary } from 'components/PostSummary'
 import { getSummaryData } from "src/org/metadata"
 import { Container, SimpleGrid } from "@chakra-ui/react"
@@ -23,7 +22,7 @@ export default function Posts(props: Props) {
 export async function getStaticProps() {
     return {
         props: {
-            posts: await getAllPosts()
+            posts: await getAllDocs()
         }
     }
 }
