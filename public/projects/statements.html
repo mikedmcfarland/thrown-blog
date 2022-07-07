@@ -1,0 +1,829 @@
+<!-- saved from url=(0043)http://thrownforaloop.com/pages/statements/ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=us-ascii" />
+
+  <title>Statements</title><!-- 2015-08-14 Fri 16:17 -->
+  <meta name="generator" content="Org-mode" />
+  <meta name="author" content="Mike McFarland" />
+  <style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+  </style>
+  <link rel="stylesheet" type="text/css" href=
+  "./Statements_files/htmlize.css" />
+  <link rel="stylesheet" type="text/css" href=
+  "./Statements_files/readtheorg.css" />
+  <script src="./Statements_files/jquery.min.js" type=
+  "text/javascript">
+</script>
+  <script src="./Statements_files/bootstrap.min.js" type=
+  "text/javascript">
+</script>
+  <script type="text/javascript" src=
+  "./Statements_files/jquery.stickytableheaders.js">
+</script>
+  <script type="text/javascript" src=
+  "./Statements_files/readtheorg.js">
+</script>
+  <link rel="stylesheet" type="text/css" href=
+  "./Statements_files/galleria.classic.css" />
+  <script src="./Statements_files/galleria-1.4.2.min.js" type=
+  "text/javascript">
+</script>
+  <script src="./Statements_files/galleria.classic.min.js" type=
+  "text/javascript">
+</script>
+  <script type="text/javascript">
+/*
+  @licstart  The following is the entire license notice for the
+  JavaScript code in this tag.
+
+  Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+  The JavaScript code in this tag is free software: you can
+  redistribute it and/or modify it under the terms of the GNU
+  General Public License (GNU GPL) as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option)
+  any later version.  The code is distributed WITHOUT ANY WARRANTY;
+  without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+  As additional permission under GNU GPL version 3 section 7, you
+  may distribute non-source (e.g., minimized or compacted) forms of
+  that code without the copy of the GNU GPL normally required by
+  section 4, provided you include this license notice and a URL
+  through which recipients can access the Corresponding Source.
+
+
+  @licend  The above is the entire license notice
+  for the JavaScript code in this tag.
+  */
+  <!--/*--><![CDATA[/*><!--*/
+  function CodeHighlightOn(elem, id)
+  {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+  }
+  function CodeHighlightOff(elem, id)
+  {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+  }
+  /*]]>*///-->
+  </script>
+  <style type="text/css">
+/*<![CDATA[*/
+  .galleria{
+  width:700px;
+  height:500px;
+  background:#1f1d1d;
+  }
+  body .galleria-container{background:#1f1d1d}
+  /*]]>*/
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <h1 class="title">Statements</h1>
+
+    <div id="table-of-contents">
+      <h2>Table of Contents</h2>
+
+      <div id="text-table-of-contents">
+        <ul class="nav">
+          <li>
+            <a href="#sec-1">1. Introduction</a>
+
+            <ul>
+              <li>
+                <a href=
+                "#sec-1-1">
+                1.1. Terms</a>
+
+                <ul>
+                  <li><a href=
+                  "#sec-1-1-1">
+                  User</a></li>
+
+                  <li><a href=
+                  "#sec-1-1-2">
+                  Client</a></li>
+
+                  <li><a href=
+                  "#sec-1-1-3">
+                  Platform</a></li>
+
+                  <li><a href=
+                  "#sec-1-1-4">
+                  Statements</a></li>
+
+                  <li><a href=
+                  "#sec-1-1-5">
+                  Template</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="active">
+            <a href=
+            "#sec-2">2.
+            Scenarios</a>
+
+            <ul>
+              <li class=""><a href=
+              "#sec-2-1">
+              2.1. Setting up a platform</a></li>
+
+              <li class=""><a href=
+              "#sec-2-2">
+              2.2. Preparing/sending a statement</a></li>
+            </ul>
+          </li>
+
+          <li class="">
+            <a href=
+            "#sec-3">3.
+            UI</a>
+
+            <ul>
+              <li class=""><a href=
+              "#sec-3-1">
+              3.1. Splash</a></li>
+
+              <li class=""><a href=
+              "#sec-3-2">
+
+
+              <li class=""><a href=
+              "#sec-3-3">
+              3.3. Platform</a></li>
+
+              <li><a href=
+              "#sec-3-4">
+              3.4. Edit/New Platform</a></li>
+
+              <li><a href=
+              "#sec-3-5">
+              3.5. Settings</a></li>
+
+              <li><a href=
+              "#sec-3-6">
+              3.6. Records</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href=
+            "#sec-4">4.
+            Assumptions</a>
+
+            <ul>
+              <li><a href=
+              "#sec-4-1">
+              4.1. No handling of overlap with users between
+              platforms</a></li>
+
+              <li><a href=
+              "#sec-4-2">
+              4.2. No storage of data files</a></li>
+
+              <li><a href=
+              "#sec-4-3">
+              4.3. No automatic triggers for sending mail</a></li>
+
+              <li><a href=
+              "#sec-4-4">
+              4.4. Modern browser support only</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="outline-container-sec-1" class="outline-2">
+      <h2 id="sec-1"><span class="section-number-2">1</span>
+      Introduction</h2>
+
+      <div class="outline-text-2" id="text-1">
+        <p>The "Statements" application is a hosted web application
+        (built with playframework 2 and mongodb), which helps a
+        company of brokers to send a set of statements to their
+        clients, via data received by external services.</p>
+
+        <div class="galleria">
+          <div class=
+          "galleria-container notouch galleria-theme-classic"
+          style="width: 700px; height: 500px;">
+            <div class="galleria-stage">
+              <div class="galleria-images" style=
+              "position: relative; top: 0px; left: 0px; width: 100%; height: 100%;">
+              <div class="galleria-image" style=
+              "overflow: hidden; position: absolute; top: 0px; left: 0px; transition: none 0s ease 0s; opacity: 1; z-index: 1; width: 680px; height: 430px;">
+                <div class="galleria-layer" style=
+                "position: absolute; inset: 0px 0px 0px 35px; z-index: 2; display: none; width: 610px; height: 430px;">
+                  </div>
+
+                  <div class="galleria-frame" style=
+                  "overflow: hidden; position: absolute; top: 0px; left: 0px; z-index: 4; background: rgb(0, 0, 0); display: none; width: 680px; height: 430px;">
+                  </div><img src="./Statements_files/splash.png"
+                  width="610" style=
+                  "display: block; opacity: 1; min-width: 0px; min-height: 0px; max-width: none; max-height: none; transform: translate3d(0px, 0px, 0px); width: 610px; height: 430px; position: absolute; top: 0px; left: 35px; cursor: pointer;"
+                  height="430" />
+                </div>
+
+                <div class="galleria-image" style=
+                "overflow: hidden; position: absolute; top: 0px; left: 0px; opacity: 0; width: 680px; height: 430px; transition: none 0s ease 0s; z-index: 0;">
+                <div class="galleria-layer" style=
+                "position: absolute; inset: 0px 0px 0px 90px; z-index: 2; display: none; width: 501px; height: 430px;">
+                  </div>
+
+                  <div class="galleria-frame" style=
+                  "overflow: hidden; position: absolute; top: 0px; left: 0px; z-index: 4; background: rgb(0, 0, 0); display: none;">
+                  </div><img src=
+                  "./Statements_files/edit-platform.png" style=
+                  "display: block; opacity: 1; min-width: 0px; min-height: 0px; max-width: none; max-height: none; transform: translate3d(0px, 0px, 0px); width: 501px; height: 430px; position: absolute; top: 0px; left: 90px; cursor: pointer;"
+                  width="501" height="430" />
+                </div>
+              </div>
+
+              <div class="galleria-loader" style=
+              "display: none; opacity: 0.4;"></div>
+
+              <div class="galleria-counter" style=
+              "opacity: 0; transition: none 0s ease 0s;">
+                <span class="galleria-current">4</span> /
+                <span class="galleria-total">4</span>
+              </div>
+
+              <div class="galleria-image-nav">
+                <div class="galleria-image-nav-right" style=
+                "right: -50px; transition: none 0s ease 0s;"></div>
+
+                <div class="galleria-image-nav-left" style=
+                "left: -50px; transition: none 0s ease 0s;"></div>
+              </div>
+            </div>
+
+            <div class="galleria-thumbnails-container">
+              <div class="galleria-thumb-nav-left disabled"></div>
+
+              <div class="galleria-thumbnails-list" style=
+              "overflow: hidden; position: relative;">
+                <div class="galleria-thumbnails" style=
+                "overflow: hidden; position: relative; width: 228px; height: 40px; left: 0px;">
+                <div class="galleria-image" style=
+                "overflow: hidden; position: relative; visibility: visible; width: 57px; height: 40px;">
+                  <img src="./Statements_files/home.png" style=
+                  "display: block; opacity: 0.6; min-width: 0px; min-height: 0px; max-width: none; max-height: none; transform: translate3d(0px, 0px, 0px); width: 57px; height: 40px; position: absolute; top: 0px; left: 0px;"
+                    width="57" height="40" />
+                  </div>
+
+                  <div class="galleria-image" style=
+                  "overflow: hidden; position: relative; visibility: visible; width: 47px; height: 40px;">
+                  <img src="./Statements_files/platform.png"
+                    style="display: block; opacity: 0.6; min-width: 0px; min-height: 0px; max-width: none; max-height: none; transform: translate3d(0px, 0px, 0px); width: 47px; height: 40px; position: absolute; top: 0px; left: 0px;"
+                    width="47" height="40" />
+                  </div>
+
+                  <div class="galleria-image" style=
+                  "overflow: hidden; position: relative; visibility: visible; width: 47px; height: 40px;">
+                  <img src="./Statements_files/edit-platform.png"
+                  style=
+                  "display: block; opacity: 0.6; min-width: 0px; min-height: 0px; max-width: none; max-height: none; transform: translate3d(0px, 0px, 0px); width: 47px; height: 40px; position: absolute; top: 0px; left: 0px;"
+                    width="47" height="40" />
+                  </div>
+
+                  <div class="galleria-image active" style=
+                  "overflow: hidden; position: relative; visibility: visible; width: 57px; height: 40px;">
+                  <img src="./Statements_files/splash.png" style=
+                  "display: block; opacity: 1; min-width: 0px; min-height: 0px; max-width: none; max-height: none; transform: translate3d(0px, 0px, 0px); width: 57px; height: 40px; position: absolute; top: 0px; left: 0px;"
+                    width="57" height="40" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="galleria-thumb-nav-right disabled"></div>
+            </div>
+
+            <div class="galleria-info">
+              <div class="galleria-info-text">
+                <div class="galleria-info-title" style=
+                "display: none;"></div>
+
+                <div class="galleria-info-description">
+                  splash.png
+                </div>
+              </div>
+
+              <div class="galleria-info-link"></div>
+
+              <div class="galleria-info-close"></div>
+            </div>
+
+            <div class="galleria-tooltip" style="opacity: 0;">
+            </div>
+          </div>
+        </div><script type="text/javascript">
+//<![CDATA[
+        Galleria.run('.galleria',{
+        autoplay: true,
+        lightbox: true
+        })
+        //]]>
+        </script>
+      </div>
+
+      <div id="outline-container-sec-1-1" class="outline-3">
+        <h3 id="sec-1-1"><span class="section-number-3">1.1</span>
+        Terms</h3>
+
+        <div class="outline-text-3" id="text-1-1">
+          <p>The following are some terms used in the rest of the
+          document.</p>
+        </div>
+
+        <div id="outline-container-sec-1-1-1" class="outline-4">
+          <h4 id="sec-1-1-1">User</h4>
+
+          <div class="outline-text-4" id="text-1-1-1">
+            <p>A person using the "Statements" application.</p>
+          </div>
+        </div>
+
+        <div id="outline-container-sec-1-1-2" class="outline-4">
+          <h4 id="sec-1-1-2">Client</h4>
+
+          <div class="outline-text-4" id="text-1-1-2">
+            <p>A person receiving an emailed statement.</p>
+          </div>
+        </div>
+
+        <div id="outline-container-sec-1-1-3" class="outline-4">
+          <h4 id="sec-1-1-3">Platform</h4>
+
+          <div class="outline-text-4" id="text-1-1-3">
+            <p>These represent an integration with Interactive
+            Brokers, Betterment, ADP, or whatever the source of the
+            data is. They are separately configured, with their own
+            settings, template, and data files. All users see and
+            edit the same list of platforms.</p>
+          </div>
+        </div>
+
+        <div id="outline-container-sec-1-1-4" class="outline-4">
+          <h4 id="sec-1-1-4">Statements</h4>
+
+          <div class="outline-text-4" id="text-1-1-4">
+            <p>This is the list of statements that are eventually
+            emailed. This is a collection of tabular data (from a
+            uploaded file), and a template. There is only one
+            active set of statements per platform. The user creates
+            and reviews the statements, and then sends them. The
+            statements are sent to the clients, as well as the
+            archive address. After the statements are sent they are
+            removed from the platform page.</p>
+          </div>
+        </div>
+
+        <div id="outline-container-sec-1-1-5" class="outline-4">
+          <h4 id="sec-1-1-5">Template</h4>
+
+          <div class="outline-text-4" id="text-1-1-5">
+            <p>A text file that's used to produce an email. It can
+            have parts of it substituted for variables within the
+            tabular data. The substitutions also support filters
+            (for manipulating the data inline,if needed)</p>
+
+            <p>For example, lets say we have a table that looks
+            like:</p>
+
+            <table border="2" cellspacing="0" cellpadding="6"
+            rules="groups" frame="hsides">
+              <colgroup>
+                <col class="left" />
+                <col class="right" />
+                <col class="right" />
+                <col class="right" />
+                <col class="left" />
+              </colgroup>
+
+              <thead>
+                <tr>
+                  <th scope="col" class="left">name</th>
+
+                  <th scope="col" class="right">accountNum</th>
+
+                  <th scope="col" class="right">fee</th>
+
+                  <th scope="col" class="right">quarterlyFee</th>
+
+                  <th scope="col" class="left">email</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="left">John Doe</td>
+
+                  <td class="right">111223334</td>
+
+                  <td class="right">200.00</td>
+
+                  <td class="right">50.00</td>
+
+                  <td class="left">johndoe@mailer.com</td>
+                </tr>
+
+                <tr>
+                  <td class="left">Jane Doe</td>
+
+                  <td class="right">999933449</td>
+
+                  <td class="right">100.00</td>
+
+                  <td class="right">25.00</td>
+
+                  <td class="left">janedoe@mailer.com</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p>And a template that looks like:</p>
+            <pre class="example">
+Hi &lt;%= name %&gt;,
+
+Your Account &lt;%= showLast(4)(accountNum) %&gt;, is currently being billed and annual fee of &lt;%= fee %&gt;, billed daily over 252 business days. Your quarterly fee is &lt;%= quarterlyfee %&gt;,
+please compare this with the statements you receive directly from the custodian, Interactive Brokers.
+</pre>
+
+            <p>This would result in emails written like:</p>
+            <pre class="example">
+Hi John Doe,
+
+Your Account xxxxx3334, is currently being billed and annual fee of 200.00, billed daily over 252 business days. Your quarterly fee is 50.00,
+please compare this with the statements you receive directly from the custodian, Interactive Brokers.
+</pre>
+
+            <p>This showed an example of</p>
+
+            <ul class="org-ul">
+              <li>Variable substitution:
+                <pre class="example">
+&lt;%= name %&gt;
+</pre>
+              </li>
+
+              <li>Variable substitution with filter:
+                <pre class="example">
+&lt;%= showLast(4)(accountNum) %&gt;
+</pre>
+
+                <p>"showLast" being a custom filter that will be
+                added to the application.</p>
+              </li>
+            </ul>
+
+            <p>More information on available syntax for the
+            templates can be found <a href=
+            "https://lodash.com/docs#template">here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="outline-container-sec-2" class="outline-2">
+      <h2 id="sec-2"><span class="section-number-2">2</span>
+      Scenarios</h2>
+
+      <div class="outline-text-2" id="text-2"></div>
+
+      <div id="outline-container-sec-2-1" class="outline-3">
+        <h3 id="sec-2-1"><span class="section-number-3">2.1</span>
+        Setting up a platform</h3>
+
+        <div class="outline-text-3" id="text-2-1">
+          <p>Joe doesn't have the data for statements, but he wants
+          to be prepared when it's time to send them out. He Logs
+          into the app using his works google account. He starts by
+          creating a new platform, naming it 'Interactive Brokers'.
+          Joe then edits the template file to create the copy for
+          the emails. He doesn't have the tabular data now, but he
+          knows what form it will take, so he fills in some
+          examples (with his own email). Joe takes a look at the
+          imported data in the statement view and everything looks
+          OK. Joe then chooses one of the rows to preview what the
+          email will look like. Noticing problems he goes back and
+          edits the template file, correcting a typo in one of the
+          substitution variables. Now the email preview looks
+          correct to Joe. Joe then sends the statements, and they
+          arrive in his email box.</p>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-2-2" class="outline-3">
+        <h3 id="sec-2-2"><span class="section-number-3">2.2</span>
+        Preparing/sending a statement</h3>
+
+        <div class="outline-text-3" id="text-2-2">
+          <p>It's time to send statements out, So Bob logs into the
+          app using his work's Google account. Bob has a CSV file
+          he exported from Interactive Brokers. From the list of
+          platforms, he chooses 'Interactive Brokers', then 'upload
+          file'. After the CSV uploads, Bob skims looks over the
+          data in the table preview to confirm the import. Bob then
+          quickly previews an email that would be sent for one row,
+          and confirms everything looks ok. Bob then chooses to
+          send the statements. The statements are emailed to all
+          clients listed, and to the archive address.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="outline-container-sec-3" class="outline-2">
+      <h2 id="sec-3"><span class="section-number-2">3</span>
+      UI</h2>
+
+      <div class="outline-text-2" id="text-3">
+        <p>Here's a breakdown of how the UI, and what the different
+        sections are for.</p>
+
+        <div class="figure">
+          <p><img src="./Statements_files/ui.png" alt=
+          "ui.png" /></p>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-3-1" class="outline-3">
+        <h3 id="sec-3-1"><span class="section-number-3">3.1</span>
+        Splash</h3>
+
+        <div class="outline-text-3" id="text-3-1">
+          <div class="figure">
+            <p><a href="./Statements_files/splash.png" width=
+            "400"><img src="./Statements_files/splash.png" alt=
+            "splash.png" width="400" /></a></p>
+          </div>
+
+          <ul class="org-ul">
+            <li>Simple splash screen with a login button.
+            Authenticate through Google via OAuth2.</li>
+
+            <li>Login can be restricted to a configured domain
+            (i.e. only Google accounts with the email
+            user@dutchasset.com).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-3-2" class="outline-3">
+        <h3 id="sec-3-2"><span class="section-number-3">3.2</span>
+        Home</h3>
+
+        <div class="outline-text-3" id="text-3-2">
+          <div class="figure">
+            <p><a href="./Statements_files/home.png" width=
+            "400"><img src="./Statements_files/home.png" alt=
+            "home.png" width="400" /></a></p>
+          </div>
+
+          <ul class="org-ul">
+            <li>Create, edit, or delete a platform.</li>
+
+            <li>Access a platform.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-3-3" class="outline-3">
+        <h3 id="sec-3-3"><span class="section-number-3">3.3</span>
+        Platform</h3>
+
+        <div class="outline-text-3" id="text-3-3">
+          <div class="figure">
+            <p><a href="./Statements_files/platform.png" width=
+            "400"><img src="./Statements_files/platform.png" alt=
+            "platform.png" width="400" /></a></p>
+          </div>
+
+          <ul class="org-ul">
+            <li>Upload tabular data with CSV file.</li>
+
+            <li>View the current tabular data.</li>
+
+            <li>Make changes to tabular data inline.</li>
+
+            <li>Clear the tabular data.</li>
+
+            <li>Preview email for a given row in the tabular
+            data.</li>
+
+            <li>Send statements via email.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-3-4" class="outline-3">
+        <h3 id="sec-3-4"><span class="section-number-3">3.4</span>
+        Edit/New Platform</h3>
+
+        <div class="outline-text-3" id="text-3-4">
+          <div class="figure">
+            <p><a href="./Statements_files/edit-platform.png"
+            width="400"><img src=
+            "./Statements_files/edit-platform.png" alt=
+            "edit-platform.png" width="400" /></a></p>
+          </div>
+
+          <ul class="org-ul">
+            <li>Edit the name of the platform.</li>
+
+            <li>Select the name of the field for retrieving email
+            addresses (from the tabular data).</li>
+
+            <li>Edit the email body and subject templates.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-3-5" class="outline-3">
+        <h3 id="sec-3-5"><span class="section-number-3">3.5</span>
+        Settings</h3>
+
+        <div class="outline-text-3" id="text-3-5">
+          <div class="figure">
+            <p><a href="./Statements_files/settings.png" width=
+            "400"><img src="./Statements_files/settings.png" alt=
+            "settings.png" width="400" /></a></p>
+          </div>
+
+          <ul class="org-ul">
+            <li>Configure smtp settings.</li>
+
+            <li>Configure archive email address.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-3-6" class="outline-3">
+        <h3 id="sec-3-6"><span class="section-number-3">3.6</span>
+        Records</h3>
+
+        <div class="outline-text-3" id="text-3-6">
+          <ul class="org-ul">
+            <li>View list of all attempted batch emails.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="outline-container-sec-4" class="outline-2">
+      <h2 id="sec-4"><span class="section-number-2">4</span>
+      Assumptions</h2>
+
+      <div class="outline-text-2" id="text-4"></div>
+
+      <div id="outline-container-sec-4-1" class="outline-3">
+        <h3 id="sec-4-1"><span class="section-number-3">4.1</span>
+        No handling of overlap with users between platforms</h3>
+
+        <div class="outline-text-3" id="text-4-1">
+          <p>If a user exists in two separate platforms (and
+          therefore two sets of statements) it's expected that
+          they'll receive an email for each statement their in.</p>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-4-2" class="outline-3">
+        <h3 id="sec-4-2"><span class="section-number-3">4.2</span>
+        No storage of data files</h3>
+
+        <div class="outline-text-3" id="text-4-2">
+          <p>After the emails are sent for a set of statements, the
+          data that produced the emails is cleared. Data entered
+          into the system is completely local, when one user
+          uploads the csv data, it isn't available for other
+          users.</p>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-4-3" class="outline-3">
+        <h3 id="sec-4-3"><span class="section-number-3">4.3</span>
+        No automatic triggers for sending mail</h3>
+
+        <div class="outline-text-3" id="text-4-3">
+          <p>Nothing fires these emails off automatically. A user
+          must login, enter data, and press send on a given
+          platform in order for the statements to be sent.</p>
+        </div>
+      </div>
+
+      <div id="outline-container-sec-4-4" class="outline-3">
+        <h3 id="sec-4-4"><span class="section-number-3">4.4</span>
+        Modern browser support only</h3>
+      </div>
+    </div>
+  </div>
+
+  <div id="postamble" class="status">
+    <p class="author">Author: Mike McFarland</p>
+
+    <p class="date">Created: 2015-08-14 Fri 16:17</p>
+
+    <p class="creator"><a href=
+    "http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href=
+    "http://orgmode.org/">Org</a> mode 8.2.10)</p>
+
+    <p class="validation"><a href=
+    "http://validator.w3.org/check?uri=referer">Validate</a></p>
+  </div>
+</body>
+</html>
