@@ -2,6 +2,7 @@ import { getAllDocs, getPostBySlug } from "src/org/files"
 import { getSummaryData } from "src/org/metadata"
 import { Post } from 'components/Post'
 import Any from "components/nodes/Any";
+import { getDocTypes } from "src/org/config"
 
 type Props = Awaited<ReturnType<typeof getStaticProps>>["props"]
 
@@ -21,24 +22,28 @@ export default function PostPage(props: Props) {
 
 
 
-type RouteParams = { params: { slug: string } }
+type RouteParams = { params: { slug: string, docType: string } }
 
 export async function getStaticProps(route: RouteParams) {
     return {
         props: {
-            post: await getPostBySlug(route.params.slug)
+            post: await getPostBySlug(route.params.slug, route.params.docType)
         }
     }
 }
 
 export async function getStaticPaths() {
-    const posts = await getAllDocs()
+    const docsByType = await Promise.all(getDocTypes().map(getAllDocs))
+    const allDocTypes = docsByType.flatMap(d => d)
+    const paths = allDocTypes.map(doc => ({
+        params: {
+            docType: doc.docType,
+            slug: doc.name.replace(".json", "")
+        }
+    }))
+
     return {
         fallback: false,
-        paths: posts.map(post => ({
-            params: {
-                slug: post.name.replace(".json", "")
-            }
-        }))
+        paths
     }
 }

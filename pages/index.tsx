@@ -38,7 +38,7 @@ const Home: NextPage = () => {
                         position={'relative'}>
 
                         <Text color={'gray.500'}>
-                            Simple articles, snippets, thoughts, and projects...
+                            Some articles, projects, snippets and thoughts...
                         </Text>
 
                         <Box>

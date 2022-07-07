@@ -2,6 +2,7 @@ import { getAllDocs } from "src/org/files"
 import { PostSummary } from 'components/PostSummary'
 import { getSummaryData } from "src/org/metadata"
 import { Container, SimpleGrid } from "@chakra-ui/react"
+import { getDocTypes } from "src/org/config"
 
 type Props = Awaited<ReturnType<typeof getStaticProps>>["props"]
 
@@ -9,9 +10,9 @@ export default function Posts(props: Props) {
     return (
         <Container maxWidth="7xl">
             <SimpleGrid columns={{ sm: 1, md: 2, lg: 3 }} spacing={10}>
-                {props.posts.map(({ name, post }, i) => {
-                    const summaryProps = getSummaryData(post)
-                    const href = `posts/${name}`
+                {props.posts.map(({ name, doc, docType }, i) => {
+                    const summaryProps = getSummaryData(doc)
+                    const href = `${docType}/${name}`
                     return (<PostSummary href={href} key={i} {...summaryProps} />)
                 })}
             </SimpleGrid>
@@ -19,10 +20,26 @@ export default function Posts(props: Props) {
     )
 }
 
-export async function getStaticProps() {
+type RouteParams = { params: { docType: string } }
+
+export async function getStaticProps(route: RouteParams) {
     return {
         props: {
-            posts: await getAllDocs()
+            posts: await getAllDocs(route.params.docType)
         }
+    }
+}
+
+
+export function getStaticPaths() {
+    const paths = getDocTypes().map(docType => ({
+        params: {
+            docType
+        }
+    }))
+
+    return {
+        fallback: false,
+        paths
     }
 }

@@ -2,25 +2,28 @@ import fs from 'fs'
 import path from 'path'
 import { OrgDoc } from 'src/org/types'
 
-const DIR = '_posts'
 const EXT = '.json'
 const ENCODING = 'utf8'
 
-export async function getAllDocs() {
-    const files = await fs.promises.readdir(path.join(process.cwd(), DIR))
+export async function getAllDocs(docType: string) {
+    const files = await fs.promises.readdir(path.join(process.cwd(), getDir(docType)))
     const jsonFiles = files.filter(f => path.extname(f).toLowerCase() === EXT)
-    const posts = await Promise.all(
-        jsonFiles.map(name => getPostByName(name).then(post => ({ name: name.replace(".json", ""), post })))
+    const docs = await Promise.all(
+        jsonFiles.map(name => getPostByName(name, docType).then(doc => ({ name: name.replace(".json", ""), doc, docType })))
     )
-    return posts
+    return docs
 }
 
-async function getPostByName(filename: string) {
-    const contents = await fs.promises.readFile(path.join(process.cwd(), DIR, filename), ENCODING)
+async function getPostByName(filename: string, docType: string) {
+    const contents = await fs.promises.readFile(path.join(process.cwd(), getDir(docType), filename), ENCODING)
     return JSON.parse(contents) as OrgDoc
 }
 
-export async function getPostBySlug(slug: string): Promise<OrgDoc> {
-    return getPostByName(`${slug}.json`)
+export async function getPostBySlug(slug: string, docType: string): Promise<OrgDoc> {
+    return getPostByName(`${slug}.json`, docType)
 
+}
+
+function getDir(docType: string) {
+    return `_${docType.toLowerCase()}`
 }

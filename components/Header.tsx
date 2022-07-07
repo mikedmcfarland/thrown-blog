@@ -23,7 +23,7 @@ import ToggleColorButton from './ToggleColorButton'
 
 import { default as NextLink } from 'next/link'
 import CircleIcon from './CircleIcon'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { CheckCircleIcon, CheckIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
 
 type LinkProp = { href: string, name: string }
@@ -45,7 +45,19 @@ function HeaderTextLink({ href, name }: LinkProp) {
         </NextLink>
     )
 
-    return router.pathname === href ? active() : notActive()
+    return router.asPath === href ? active() : notActive()
+}
+
+function HeaderMenuLink({ href, name }: LinkProp) {
+    const router = useRouter()
+    const isActive = router.asPath === href
+    return (
+        <NextLink href={href} passHref>
+            <MenuItem icon={isActive ? <CheckCircleIcon color="green" /> : undefined} as="a" isDisabled={isActive} >
+                {name}
+            </MenuItem>
+        </NextLink>
+    )
 }
 
 export default function Header(props: Props) {
@@ -58,13 +70,7 @@ export default function Header(props: Props) {
     })
 
     const linkMenuButtons = () => props.links.map((l, i) => {
-        return (
-            <NextLink key={i} href={l.href} passHref>
-                <MenuItem as="a" >
-                    {l.name}
-                </MenuItem>
-            </NextLink>
-        )
+        return (<HeaderMenuLink key={i} {...l} />)
     })
 
     return (
