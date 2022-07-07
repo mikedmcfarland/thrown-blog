@@ -1,48 +1,18 @@
 #+STARTUP: showall indent
 #+options: num:nil
-#+TITLE: Automate Unity3d metafiles
+#+TITLE: Fix Unity3d "Missing Script" issues
 #+DATE: 2015-06-16
 #+Category: code
 
 If you've ever worked on a team using Unity3d, somebody has forgotten to commit a .meta file.
-It's fairly easy to do, and pretty hard to notice you're doing it (things still work for you).
-I've been bitten by this mistake plenty, from myself and others.
-It really sucks, but there's an easy solution.
+It's fairly easy to do, and pretty hard to notice you're doing it (things still work for you, just not others who pull your work in). I've been bitten by this mistake plenty, from myself and others.
 
-* Why this is a problem
+* Why does this happen
 The .meta file holds GUID for the given asset, which is how the editor associates assets for serialized data (your prefabs and scenes).
 When you're serialized data references the wrong id, then you get missing references that show up like "Missing Script" in the editor.
 
-* What looks like
-Lets say we have two developers, Bob and Sue.
-- Bob creates a new behaviour called Foo.cs.
-- Unity automatically generates Foo.cs.meta with a new unique ID.
-- Bob adds and pushes Foo.cs, but not Foo.cs.meta.
-- Sue pulls down the code, and Foo.cs is added to her project.
-- Unity generates a Foo.cs.meta with a *new* unique ID (different then Bob's Foo.cs.meta)
-
-Now Bob and Sue have their own IDs for the asset. At best, whoever pushes their meta second
-will have a merge conflict (Which you then need to resolve by not merging! Choose one or the other.)
-
-But often it's not caught until later, and something like this happens next:
-- Bob creates a new prefab Bob.prefab, which has the behaviour Foo.
-- Sue creates a new prefab Sue.prefab, which has the behaviour Foo.
-- Each prefab is referencing Foo with a different ID.
-- Bob adds and pushes his Bob.prefab.
-- Sue pushes her Sue.prefab.
-- Bob pulls, get's a merge conflict with Foo.cs.meta.
-  - If he resolves with *his* he gets a "Missing Script" on Sue.prefab.
-  - If he resolves with *hers* he gets a "Missing Script" on Bob.prefab.
-- Sue pulls, and see's a "Missing Script" on Bob.prefab.
-
-Add a few more developers into the mix and you can easily have a more complicated example,
-Where people have repeated "fixed" the meta only to cause a different reference to go missing.
-And it can happen to more then just scripts, materials and prefabs can also have faulty references.
-Figuring these things out requires too much time, and it's not that fun to explain to new developers (especially artists).
-
-
-* A solution
-Solve it with software, don't let people share assets without metas.
+* The solution
+Don't let people commit and push assets without metas.
 
 Most version control systems have hooks that you can run your own scripts in,
 Mercurials no different.
@@ -141,8 +111,11 @@ and some version of it has been in every unity project I've done since.
     return result
 #+end_src
 
+This *doesn't handle .meta files for directories*. I couldn't think of an elegant way
+To locate directories from the hg API. Mercurial has no concept of them, files are just at paths.
+This hasn't been a problem and, AFAIK, directories aren't referenced in serialized data.
 
-* Installation
+* Usage
 ** Configure your asset folder path
 
 in =checkFiles= alter the =path= variable so that it points to your assets directory.
@@ -150,7 +123,7 @@ The current value reflects my projects, which generally have the unity project f
 The script only checks the files under that path, and it's relative to your repo's root.
 
 ** Add the hook
-Mercurial needs you to [[https://mercurial.selenic.com/wiki/Hook][register the hook]] in your hg config.
+Mercurial needs you to [[https://www.mercurial-scm.org/wiki/Hook][register the hook]] in your hg config.
 Everyone on the team should register and use this pre-commit hook in order for it to be effective.
 I keep them in hooks directory for the project for that reason.
 
@@ -162,12 +135,3 @@ Then you would add these lines to your =.hg/hgrc= file.
     [hooks]
     precommit.checkMetas = python:/pathToUnityRepo/hooks/checkMetas.py:precommit
   #+end_src
-
-
-* Disclaimer
-- This *doesn't handle .meta files for directories*. I couldn't think of an elegant way
-  To locate directories from the hg API. Mercurial has no concept of them, files are just at paths.
-  This isn't such a big deal since, AFAIK, directories aren't referenced in serialized data.
-
-- I don't program in Python much so this likely *isn't idiomatic python*. But it works.
-- This script is provided as is.
