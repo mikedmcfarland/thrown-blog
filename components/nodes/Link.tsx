@@ -5,7 +5,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { LinkNode } from "src/org/types"
 import { NodeComponent } from "./types"
 
-export const OrgLink: NodeComponent<LinkNode> = ({ node, children }) => {
+export const OrgLink: NodeComponent<LinkNode, (string | JSX.Element)[]> = ({ node, children }) => {
     const href = `${node.properties.type}:${node.properties.path}`
     const isExternal = !node.properties["is-internal"]
 

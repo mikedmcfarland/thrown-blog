@@ -23,7 +23,7 @@ import ToggleColorButton from './ToggleColorButton'
 
 import { default as NextLink } from 'next/link'
 import CircleIcon from './CircleIcon'
-import { CheckCircleIcon, CheckIcon, HamburgerIcon } from '@chakra-ui/icons'
+import { CheckCircleIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { useRouter } from 'next/router'
 
 type LinkProp = { href: string, name: string }
