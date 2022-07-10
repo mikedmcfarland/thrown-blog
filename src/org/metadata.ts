@@ -29,14 +29,13 @@ export function getChildrenNodes(node: AnyNode): AnyNode[] {
     return childNodes.concat(childNodes.map(c => getChildrenNodes(c)).reduce((a, b) => a.concat(b), []))
 }
 
-export function getSummaryData(doc: OrgDoc) {
-    const defaults = {
-        author: "Michael McFarland",
-        // image: "https://placekitten.com/500/400",
-        authorImage: "https://placekitten.com/200/300"
-    }
+const defaults = {
+    author: "Michael McFarland",
+}
+
+function fromMetaData(doc: OrgDoc) {
     const metadata = getMetaData(doc)
-    const fromMetaData = {
+    return {
         icon: metadata['ICON'],
         title: metadata['TITLE'],
         author: metadata['AUTHOR'],
@@ -46,12 +45,16 @@ export function getSummaryData(doc: OrgDoc) {
         date: metadata['DATE'],
     }
 
-    type Result = typeof defaults & typeof fromMetaData
-    type MetaDataKey = keyof typeof fromMetaData
+}
 
-    const summaryData = (Object.keys(fromMetaData) as MetaDataKey[])
-        .filter((k: MetaDataKey) => fromMetaData[k] !== undefined)
-        .reduce((data, k) => ({ ...data, [k]: fromMetaData[k] }), defaults as Result)
+type Result = typeof defaults & ReturnType<typeof fromMetaData>
+
+export function getSummaryData(doc: OrgDoc): Result {
+    const metadata = fromMetaData(doc)
+    type MetaDataKey = keyof typeof metadata
+    const summaryData = (Object.keys(metadata) as MetaDataKey[])
+        .filter((k: MetaDataKey) => metadata[k] !== undefined)
+        .reduce((data, k) => ({ ...data, [k]: metadata[k] }), defaults as Result)
 
 
     return summaryData
