@@ -1,9 +1,10 @@
 import fs from 'fs'
 import path from 'path'
-import { OrgDoc } from 'src/org/types'
+import { OrgDoc, MetaDoc, isOrgDoc } from 'src/org/types'
 
 const EXT = '.json'
 const ENCODING = 'utf8'
+
 
 export async function getAllDocs(docType: string) {
     const files = await fs.promises.readdir(path.join(process.cwd(), getDir(docType)))
@@ -16,13 +17,18 @@ export async function getAllDocs(docType: string) {
 
 async function getPostByName(filename: string, docType: string) {
     const contents = await fs.promises.readFile(path.join(process.cwd(), getDir(docType), filename), ENCODING)
-    return JSON.parse(contents) as OrgDoc
+    return JSON.parse(contents) as (OrgDoc | MetaDoc)
 }
 
-export async function getPostBySlug(slug: string, docType: string): Promise<OrgDoc> {
-    return getPostByName(`${slug}.json`, docType)
+export async function getDocBySlug(slug: string, docType: string): Promise<OrgDoc> {
 
+    const result = await getPostByName(`${slug}.json`, docType)
+    if (!isOrgDoc(result)) {
+        throw new Error(`Expected org doc result from ${docType}/${slug}`)
+    }
+    return result
 }
+
 
 function getDir(docType: string) {
     return `_${docType.toLowerCase()}`

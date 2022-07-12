@@ -1,6 +1,6 @@
 import { KeywordNode, NodeType, OrgDoc, AnyNode, DataType } from "./types"
 
-export function getMetaData(doc: OrgDoc) {
+export function getOrgKeywords(doc: OrgDoc) {
     const metadata: { [key: string]: string } = {}
     for (const node of getChildrenNodes(doc)) {
 
@@ -34,7 +34,7 @@ const defaults = {
 }
 
 function fromMetaData(doc: OrgDoc) {
-    const metadata = getMetaData(doc)
+    const metadata = getOrgKeywords(doc)
     return {
         icon: metadata['ICON'],
         title: metadata['TITLE'],
@@ -47,14 +47,14 @@ function fromMetaData(doc: OrgDoc) {
 
 }
 
-type Result = typeof defaults & ReturnType<typeof fromMetaData>
+type MetaData = typeof defaults & ReturnType<typeof fromMetaData>
 
-export function getSummaryData(doc: OrgDoc): Result {
+export function getMetaData(doc: OrgDoc): MetaData {
     const metadata = fromMetaData(doc)
     type MetaDataKey = keyof typeof metadata
     const summaryData = (Object.keys(metadata) as MetaDataKey[])
         .filter((k: MetaDataKey) => metadata[k] !== undefined)
-        .reduce((data, k) => ({ ...data, [k]: metadata[k] }), defaults as Result)
+        .reduce((data, k) => ({ ...data, [k]: metadata[k] }), defaults as MetaData)
 
 
     return summaryData

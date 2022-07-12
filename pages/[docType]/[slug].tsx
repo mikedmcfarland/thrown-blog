@@ -1,5 +1,5 @@
-import { getAllDocs, getPostBySlug } from "src/org/files"
-import { getSummaryData } from "src/org/metadata"
+import { getAllDocs, getDocBySlug } from "src/org/files"
+import { getMetaData } from "src/org/metadata"
 import { Post } from 'components/Post'
 import Any from "components/nodes/Any";
 import { getDocTypes } from "src/org/config"
@@ -7,7 +7,7 @@ import { getDocTypes } from "src/org/config"
 type Props = Awaited<ReturnType<typeof getStaticProps>>["props"]
 
 export default function PostPage(props: Props) {
-    const summary = getSummaryData(props.post)
+    const summary = getMetaData(props.post)
     const postProps = {
         summary
     }
@@ -27,7 +27,7 @@ type RouteParams = { params: { slug: string, docType: string } }
 export async function getStaticProps(route: RouteParams) {
     return {
         props: {
-            post: await getPostBySlug(route.params.slug, route.params.docType)
+            post: await getDocBySlug(route.params.slug, route.params.docType)
         }
     }
 }

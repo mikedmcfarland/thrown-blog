@@ -1,5 +1,22 @@
+
+export type Doc = MetaDoc | OrgDoc
+
+export const DATA_TYPE_KEY = "$$data_type$$"
+
+export function isOrgDoc(doc: Doc): doc is OrgDoc {
+    return DATA_TYPE_KEY in doc
+}
+
+export type MetaDoc = {
+    "type": string
+    "title": string,
+    "description": string,
+    "path": string
+    "category": string
+}
+
 export interface OrgDoc {
-    "$$data_type$$": DataType.ORG_DOCUMENT
+    [DATA_TYPE_KEY]: DataType.ORG_DOCUMENT
     properties: {
         title: string
     }
@@ -31,18 +48,11 @@ export enum NodeType {
 
 
 type Node<CT = ContentNode[]> = {
-    "$$data_type$$": DataType.ORG_NODE,
+    [DATA_TYPE_KEY]: DataType.ORG_NODE,
     contents: CT
     ref?: string
 }
 
-// type Node<NT extends NodeType, CT, PT extends { [k: string]: string } = {}> = {
-//     "$$data_type$$": DataType.ORG_NODE,
-//     "type": keyof NT
-//     properties: PT
-//     contents: CT
-//     ref?: string
-// }
 
 export interface SectionNode extends Node {
     "type": NodeType.SECTION

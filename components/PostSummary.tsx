@@ -15,12 +15,11 @@ import Link from 'next/link';
 import { FaBook, FaCalendarAlt } from 'react-icons/fa';
 
 export type Props = {
-    category: string
+    category?: string
     title: string
-    author: string
-    image: string
-    description: string
-    date: string
+    image?: string
+    description?: string
+    date?: string
     href: string
 }
 
