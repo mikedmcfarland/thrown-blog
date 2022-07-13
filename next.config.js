@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const withTM = require('next-transpile-modules')(["react-syntax-highlighter"])
+const withTM = require('next-transpile-modules')(['react-syntax-highlighter'])
 const nextConfig = {
   reactStrictMode: true,
   images: {
@@ -7,9 +7,9 @@ const nextConfig = {
   },
   experimental: {
     images: {
-      unoptimized: true
-    }
-  }
+      unoptimized: true,
+    },
+  },
 }
 
 module.exports = withTM(nextConfig)

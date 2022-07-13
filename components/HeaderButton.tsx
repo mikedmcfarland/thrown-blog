@@ -1,12 +1,12 @@
-import { chakra, useColorModeValue, VisuallyHidden } from "@chakra-ui/react";
-import { ReactNode } from "react";
+import { chakra, useColorModeValue, VisuallyHidden } from '@chakra-ui/react'
+import { ReactNode } from 'react'
 
 type Props = {
-  children: ReactNode;
-  label?: string;
-  href?: string;
-  onClick?: () => void;
-};
+  children: ReactNode
+  label?: string
+  href?: string
+  onClick?: () => void
+}
 
 export default function HeaderButton({
   children,
@@ -16,24 +16,24 @@ export default function HeaderButton({
 }: Props) {
   return (
     <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
-      rounded={"full"}
+      bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
+      rounded={'full'}
       w={8}
       h={8}
-      cursor={"pointer"}
-      as={"a"}
+      cursor={'pointer'}
+      as={'a'}
       onClick={onClick}
       href={href}
-      display={"inline-flex"}
-      alignItems={"center"}
-      justifyContent={"center"}
-      transition={"background 0.3s ease"}
+      display={'inline-flex'}
+      alignItems={'center'}
+      justifyContent={'center'}
+      transition={'background 0.3s ease'}
       _hover={{
-        bg: useColorModeValue("blackAlpha.400", "whiteAlpha.400"),
+        bg: useColorModeValue('blackAlpha.400', 'whiteAlpha.400'),
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
     </chakra.button>
-  );
+  )
 }
