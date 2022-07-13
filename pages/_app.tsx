@@ -6,19 +6,14 @@ import Header from 'components/Header'
 import { getHeaderConfig } from 'src/org/config'
 
 function MyApp({ Component, pageProps }: AppProps) {
-
-    return (
-        <ChakraProvider theme={theme}>
-            <ColorModeProvider>
-                <Header {...getHeaderConfig()} />
-                <Component {...pageProps} />
-            </ColorModeProvider>
-        </ChakraProvider >
-    )
-
+  return (
+    <ChakraProvider theme={theme}>
+      <ColorModeProvider>
+        <Header {...getHeaderConfig()} />
+        <Component {...pageProps} />
+      </ColorModeProvider>
+    </ChakraProvider>
+  )
 }
-
-
-
 
 export default MyApp
