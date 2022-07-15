@@ -1,7 +1,8 @@
 {
-  "type": "public-asset",
+  "$$data_type": "asset-document",
   "title": "Statements",
   "description": "Statements is a web application which helps a company of brokers to send a set of statements to their clients, via data received by external services.",
-  "path": "/projects/statements",
-  "category": "Proprietary"
+  "path": "/projects/statements/",
+  "category": "Proprietary",
+  "date": "2015-08-14"
 }

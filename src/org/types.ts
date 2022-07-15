@@ -1,5 +1,25 @@
+export const DATA_TYPE_KEY = '$$data_type'
+
+export type Doc = AssetDoc | OrgDoc
+
+export function isOrgDoc(doc: Doc): doc is OrgDoc {
+  return doc[DATA_TYPE_KEY] === DataType.ORG_DOCUMENT
+}
+export function isAssetDoc(doc: Doc): doc is AssetDoc {
+  return doc[DATA_TYPE_KEY] === DataType.ASSET
+}
+
+export interface AssetDoc {
+  [DATA_TYPE_KEY]: DataType.ASSET
+  title: string
+  description: string
+  path: string
+  category: string
+  date: string
+}
+
 export interface OrgDoc {
-  $$data_type$$: DataType.ORG_DOCUMENT
+  [DATA_TYPE_KEY]: DataType.ORG_DOCUMENT
   properties: {
     title: string
   }
@@ -32,6 +52,7 @@ export type AnyNode =
   | ExampleBlockNode
 
 export enum DataType {
+  ASSET = 'asset-document',
   ORG_NODE = 'org-node',
   ORG_DOCUMENT = 'org-document',
 }
@@ -52,7 +73,7 @@ export enum NodeType {
 }
 
 type Node<CT = ContentNode[]> = {
-  $$data_type$$: DataType.ORG_NODE
+  [DATA_TYPE_KEY]: DataType.ORG_NODE
   contents: CT
   ref?: string
 }

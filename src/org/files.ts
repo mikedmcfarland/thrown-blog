@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { OrgDoc } from 'src/org/types'
+import { DATA_TYPE_KEY, Doc } from 'src/org/types'
 
 const EXT = '.json'
 const ENCODING = 'utf8'
@@ -12,7 +12,7 @@ export async function getAllDocs(docType: string) {
   const jsonFiles = files.filter((f) => path.extname(f).toLowerCase() === EXT)
   const docs = await Promise.all(
     jsonFiles.map((name) =>
-      getPostByName(name, docType).then((doc) => ({
+      getDocByName(name, docType).then((doc) => ({
         name: name.replace('.json', ''),
         doc,
         docType,
@@ -22,21 +22,26 @@ export async function getAllDocs(docType: string) {
   return docs
 }
 
-async function getPostByName(filename: string, docType: string) {
+async function getDocByName(filename: string, docType: string): Promise<Doc> {
   const contents = await fs.promises.readFile(
     path.join(process.cwd(), getDir(docType), filename),
     ENCODING
   )
-  return JSON.parse(contents) as OrgDoc
+
+  const doc = JSON.parse(contents)
+  if (!(DATA_TYPE_KEY in doc)) {
+    throw new Error(
+      `Expected a document for ${docType}/${filename} instead got ${contents}`
+    )
+  }
+
+  return doc as Doc
 }
 
-export async function getPostBySlug(
-  slug: string,
-  docType: string
-): Promise<OrgDoc> {
-  return getPostByName(`${slug}.json`, docType)
+export async function getDocBySlug(slug: string, docType: string) {
+  return getDocByName(`${slug}.json`, docType)
 }
 
-function getDir(docType: string) {
+function getDir(docType: string): string {
   return `_${docType.toLowerCase()}`
 }

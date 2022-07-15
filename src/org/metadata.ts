@@ -1,12 +1,9 @@
-import { KeywordNode, NodeType, OrgDoc, AnyNode, DataType } from './types'
+import { KeywordNode, NodeType, OrgDoc, AnyNode } from './types'
 
 export function getMetaData(doc: OrgDoc) {
   const metadata: { [key: string]: string } = {}
   for (const node of getChildrenNodes(doc)) {
-    if (
-      node.$$data_type$$ != DataType.ORG_DOCUMENT &&
-      node.type == NodeType.KEYWORD
-    ) {
+    if ('type' in node && node.type == NodeType.KEYWORD) {
       const keyword: KeywordNode = node
       metadata[keyword.properties.key] = keyword.properties.value
     }
@@ -32,7 +29,7 @@ export function getChildrenNodes(node: AnyNode): AnyNode[] {
   )
 }
 
-export function getSummaryData(doc: OrgDoc) {
+export function getOrgSummaryData(doc: OrgDoc) {
   const defaults = {
     author: 'Michael McFarland',
     // image: "https://placekitten.com/500/400",

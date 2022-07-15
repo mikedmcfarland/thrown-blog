@@ -17,9 +17,7 @@ import { FaBook, FaCalendarAlt } from 'react-icons/fa'
 export type Props = {
   category: string
   title: string
-  author: string
-  authorImage: string
-  image: string
+  image?: string
   description: string
   date: string
   href: string
@@ -83,11 +81,7 @@ export function PostSummary(props: Props) {
             </Stack>
             <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
               <FaCalendarAlt />
-              {/* <Avatar
-                                src={props.authorImage}
-                            /> */}
               <Stack direction={'column'} spacing={0} fontSize={'sm'}>
-                {/* <Text fontWeight={600}>{props.author}</Text> */}
                 <Text color={'gray.500'}>{props.date}</Text>
               </Stack>
             </Stack>
