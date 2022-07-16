@@ -1,6 +1,5 @@
-/* import { Tag, Text } from "@chakra-ui/react" */
-import { BoldNode } from 'src/org/types'
 import { chakra } from '@chakra-ui/react'
+import { BoldNode } from 'src/org/BoldNode'
 
 const Span = chakra('span', {
   baseStyle: {
@@ -9,6 +8,6 @@ const Span = chakra('span', {
 })
 
 type Props = { node: BoldNode; children: string[] }
-export function Bold({ node, children }: Props) {
+export function Bold({ children }: Props) {
   return <Span>{children.join(' ')}</Span>
 }

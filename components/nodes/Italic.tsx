@@ -1,5 +1,5 @@
-import { ItalicNode } from 'src/org/types'
 import { chakra } from '@chakra-ui/react'
+import { ItalicNode } from 'src/org/ItalicNode'
 
 const Span = chakra('i')
 

@@ -1,8 +1,9 @@
 import { Text } from '@chakra-ui/react'
-import { AnyNode, OrgDoc, ParagraphNode } from 'src/org/types'
+import { ContentNode } from 'src/org/ContentNode'
+import { ParagraphNode } from 'src/org/ParagraphNode'
 
 type Props = { node: ParagraphNode; renderFn: RenderFn }
-type RenderFn = (n: Exclude<AnyNode, OrgDoc>, i: number) => JSX.Element
+type RenderFn = (n: ContentNode, i: number) => JSX.Element
 type Content = ParagraphNode['contents'][number]
 export function Paragraph({ renderFn, node }: Props) {
   /* const textElements = Array.isArray(children) ? interleave(children, " ") : children */
@@ -24,6 +25,6 @@ function handlePostBlank(list: Content[], renderFn: RenderFn): TextElement[] {
   }, [] as TextElement[])
 }
 
-function hasPostBlank(node: Exclude<AnyNode, OrgDoc>): boolean {
+function hasPostBlank(node: ContentNode): boolean {
   return (node as any)['properties']['post-blank'] === 1
 }

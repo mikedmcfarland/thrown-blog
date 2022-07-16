@@ -1,7 +1,7 @@
 import { Code } from '@chakra-ui/react'
-import { VerbatimNode } from 'src/org/types'
+import { VerbatimBlockNode } from 'src/org/VerbatimBlockNode'
 
-type Props = { node: VerbatimNode }
+type Props = { node: VerbatimBlockNode }
 export function Verbatim({ node }: Props) {
   return <Code>{node.properties.value}</Code>
 }

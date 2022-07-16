@@ -1,10 +1,10 @@
 import { Prism as SyntaxHighligher } from 'react-syntax-highlighter'
-import { SourceBlockNode } from 'src/org/types'
 import {
   darcula,
   solarizedlight,
 } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { useColorModeValue } from '@chakra-ui/react'
+import { SourceBlockNode } from 'src/org/SourceBlockNode'
 type Props = { node: SourceBlockNode }
 export function SrcBlock({ node }: Props) {
   return (

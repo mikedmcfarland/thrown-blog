@@ -1,5 +1,5 @@
 import { Box, Heading } from '@chakra-ui/react'
-import { HeadlineNode } from 'src/org/types'
+import { HeadlineNode } from 'src/org/HeadlineNode'
 import { NodeComponent } from './types'
 
 const sizes = [
