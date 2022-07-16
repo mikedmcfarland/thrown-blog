@@ -1,5 +1,7 @@
 import '@testing-library/jest-dom'
-import { AssetDoc, isAssetDoc, isOrgDoc, OrgDoc } from '../../src/org/types'
+import { AssetDoc } from 'src/org/AssetDoc'
+import { OrgDoc } from 'src/org/OrgDoc'
+import { isAssetDoc, isOrgDoc } from '../../src/org/types'
 
 const mockAssetDoc: AssetDoc = JSON.parse(`{
   "$$data_type": "asset-document",

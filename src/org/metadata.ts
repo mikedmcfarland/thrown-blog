@@ -1,4 +1,10 @@
-import { KeywordNode, NodeType, OrgDoc, AnyNode } from './types'
+import { ContentNode } from './ContentNode'
+import { ItemNode } from './ItemNode'
+import { KeywordNode } from './KeywordNode'
+import { OrgDoc } from './OrgDoc'
+import { NodeType } from './types'
+
+type AnyNode = ContentNode | ItemNode
 
 export function getMetaData(doc: OrgDoc) {
   const metadata: { [key: string]: string } = {}
@@ -21,7 +27,7 @@ function getNodesFromContent(content: (string | AnyNode)[]): AnyNode[] {
   )
 }
 
-export function getChildrenNodes(node: AnyNode): AnyNode[] {
+export function getChildrenNodes(node: AnyNode | OrgDoc): AnyNode[] {
   const contents = node.contents
   const childNodes = getNodesFromContent(contents)
   return childNodes.concat(

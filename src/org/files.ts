@@ -1,6 +1,9 @@
 import fs from 'fs'
 import path from 'path'
-import { DATA_TYPE_KEY, Doc } from 'src/org/types'
+import { Doc } from 'src/org/types'
+import { PathReporter } from 'io-ts/PathReporter'
+import { isLeft } from 'fp-ts/lib/These'
+import DocIO from './Doc'
 
 const EXT = '.json'
 const ENCODING = 'utf8'
@@ -28,14 +31,15 @@ async function getDocByName(filename: string, docType: string): Promise<Doc> {
     ENCODING
   )
 
-  const doc = JSON.parse(contents)
-  if (!(DATA_TYPE_KEY in doc)) {
-    throw new Error(
-      `Expected a document for ${docType}/${filename} instead got ${contents}`
-    )
-  }
+  const result = DocIO.decode(JSON.parse(contents))
 
-  return doc as Doc
+  if (isLeft(result)) {
+    throw new Error(
+      `error parsing ${docType}/${filename} ${PathReporter.report(result)} `
+    )
+  } else {
+    return result.right
+  }
 }
 
 export async function getDocBySlug(slug: string, docType: string) {

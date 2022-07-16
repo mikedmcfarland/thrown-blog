@@ -1,8 +1,8 @@
 import { Link } from '@chakra-ui/react'
 import { default as NextLink } from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { LinkNode } from 'src/org/types'
 import { NodeComponent } from './types'
+import { LinkNode } from 'src/org/LinkNode'
 
 export const OrgLink: NodeComponent<LinkNode, (string | JSX.Element)[]> = ({
   node,

@@ -1,4 +1,6 @@
-import { AnyNode, NodeType, OrgDoc } from 'src/org/types'
+import { ContentNode } from 'src/org/ContentNode'
+import { ItemNode } from 'src/org/ItemNode'
+import { NodeType } from 'src/org/types'
 import { Bold } from './Bold'
 import { ExampleBlock } from './ExampleBlock'
 import { Headline } from './Headline'
@@ -13,11 +15,13 @@ import { SrcBlock } from './SrcBlock'
 import { Unknown } from './Unknown'
 import { Verbatim } from './Verbatim'
 
-type Node = Exclude<AnyNode, OrgDoc>
 type Props = { node: Node; i: number }
+type Node = ContentNode | ItemNode
+
 export default function Any({ node, i }: Props): JSX.Element {
-  const key = `${node.ref}:${i}`
-  const id = node.ref
+  const hasRef = 'ref' in node
+  const key = hasRef ? `${node.ref}:${i}` : `${i}`
+  const id = hasRef ? node.ref : undefined
   const props = { key, id, i }
 
   const renderAny = (node: Node, i: number) => <Any i={i} node={node} key={i} />
@@ -54,18 +58,12 @@ export default function Any({ node, i }: Props): JSX.Element {
     case NodeType.SRC_BLOCK:
       return <SrcBlock {...props} node={node} />
 
-    case NodeType.VERBATIM:
+    case NodeType.VERBATIM_BLOCK:
       return <Verbatim {...props} node={node} />
     case NodeType.LINK:
       return (
         <OrgLink {...props} node={node}>
-          {node.contents.map((c, i) => {
-            if (typeof c === 'string') {
-              return c
-            } else {
-              return renderAny(c, i)
-            }
-          })}
+          {node.contents}
         </OrgLink>
       )
 
@@ -85,6 +83,8 @@ export default function Any({ node, i }: Props): JSX.Element {
     case NodeType.EXAMPLE_BLOCK:
       return <ExampleBlock {...props} node={node} />
     default:
-      return <Unknown {...props} node={node} />
+      const unexpectedNode: never = node
+      console.error('unexpected node', unexpectedNode)
+      return <Unknown {...props} node={unexpectedNode} />
   }
 }
