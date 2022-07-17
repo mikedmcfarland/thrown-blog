@@ -1,621 +1,688 @@
 {
-  "$$data_type": "org-document",
-  "properties": {
-    "title": ["Repl Jack"],
-    "filetags": [],
-    "author": ["Michael McFarland"],
-    "creator": "Emacs 28.0.60 (Org mode 9.6)",
-    "date": ["2015-02-21"],
-    "description": [],
-    "email": "michaelmcfarland@michaels-air.lan",
-    "language": "en"
-  },
-  "contents": [
-    {
-      "$$data_type": "org-node",
-      "type": "section",
-      "ref": "org9050c7d",
-      "properties": {
-        "robust-begin": 1,
-        "robust-end": 725,
-        "post-blank": 1,
-        "post-affiliated": 1,
-        "mode": "first-section",
-        "granularity": null
-      },
-      "contents": [
-        {
-          "$$data_type": "org-node",
-          "type": "keyword",
-          "ref": "org1d1f8dc",
-          "properties": {
-            "key": "TITLE",
-            "value": "Repl Jack",
-            "post-blank": 0,
-            "post-affiliated": 1,
-            "mode": "top-comment",
-            "granularity": null
-          },
-          "contents": []
-        },
-        {
-          "$$data_type": "org-node",
-          "type": "keyword",
-          "ref": "orgdfd25fb",
-          "properties": {
-            "key": "CATEGORY",
-            "value": "NodeJS",
-            "post-blank": 0,
-            "post-affiliated": 20,
-            "mode": null,
-            "granularity": null
-          },
-          "contents": []
-        },
-        {
-          "$$data_type": "org-node",
-          "type": "keyword",
-          "ref": "org116258c",
-          "properties": {
-            "key": "DATE",
-            "value": "2015-02-21",
-            "post-blank": 0,
-            "post-affiliated": 39,
-            "mode": null,
-            "granularity": null
-          },
-          "contents": []
-        },
-        {
-          "$$data_type": "org-node",
-          "type": "keyword",
-          "ref": "orge256cab",
-          "properties": {
-            "key": "DESCRIPTION",
-            "value": "Repl Jack is a utility for connecting to a remote node application utilizing one or more node js REPLs.",
-            "post-blank": 1,
-            "post-affiliated": 58,
-            "mode": null,
-            "granularity": null
-          },
-          "contents": []
-        },
-        {
-          "$$data_type": "org-node",
-          "type": "paragraph",
-          "ref": "orgb3b8139",
-          "properties": {
-            "post-blank": 1,
-            "post-affiliated": 178,
-            "mode": null,
-            "granularity": null
-          },
-          "contents": [
-            {
-              "$$data_type": "org-node",
-              "type": "link",
-              "ref": "org1752a2b",
-              "properties": {
-                "type": "https",
-                "path": "//github.com/mikedmcfarland/repl-jack",
-                "format": "bracket",
-                "raw-link": "https://github.com/mikedmcfarland/repl-jack",
-                "application": null,
-                "search-option": null,
-                "post-blank": 1,
-                "is-internal": false,
-                "target-ref": null,
-                "is-inline-image": false
-              },
-              "contents": ["Repl Jack"]
-            },
-            "is a utility for connecting to a remote node application utilizing one or more node js REPLs.\n"
-          ]
-        },
-        {
-          "$$data_type": "org-node",
-          "type": "paragraph",
-          "ref": "org234da3f",
-          "properties": {
-            "post-blank": 1,
-            "post-affiliated": 332,
-            "mode": null,
-            "granularity": null
-          },
-          "contents": [
-            "Essentially you run a Jack server, giving it a context for your REPLs. Then any client connecting to the jack will be given its own node js\nREPL. This allows you to run a node js application on a remote server, run this Jack alongside it, and have multiple REPLs jack into the running applications.\n"
-          ]
-        },
-        {
-          "$$data_type": "org-node",
-          "type": "paragraph",
-          "ref": "orgd24f7c0",
-          "properties": {
-            "post-blank": 0,
-            "post-affiliated": 632,
-            "mode": null,
-            "granularity": null
-          },
-          "contents": [
-            "This can be very helpful for debugging or executing commands in a running server in real time.\n"
-          ]
-        }
-      ]
-    },
-    {
-      "$$data_type": "org-node",
-      "type": "headline",
-      "ref": "orge2f3e2c",
-      "drawer": {},
-      "properties": {
-        "tags-all": [],
-        "raw-value": "installation",
-        "pre-blank": 0,
-        "robust-begin": 745,
-        "robust-end": 794,
-        "level": 1,
-        "priority": null,
-        "tags": [],
-        "todo-keyword": null,
-        "todo-type": null,
-        "post-blank": 1,
-        "footnote-section-p": false,
-        "archivedp": false,
-        "commentedp": false,
-        "post-affiliated": 728,
-        "title": ["installation"],
-        "mode": null,
-        "granularity": null
-      },
-      "contents": [
-        {
-          "$$data_type": "org-node",
-          "type": "section",
-          "ref": "org0fae83e",
-          "properties": {
-            "robust-begin": 743,
-            "robust-end": 794,
-            "post-blank": 1,
-            "post-affiliated": 743,
-            "mode": "section",
-            "granularity": null
-          },
-          "contents": [
-            {
-              "$$data_type": "org-node",
-              "type": "paragraph",
-              "ref": "org0d5b2d0",
-              "properties": {
-                "post-blank": 0,
-                "post-affiliated": 743,
-                "mode": "planning",
-                "granularity": null
-              },
-              "contents": [
-                "You can use npm to install : ",
-                {
-                  "$$data_type": "org-node",
-                  "type": "verbatim",
-                  "ref": "orgd3a6419",
-                  "properties": {
-                    "post-blank": 0,
-                    "value": "npm install repl-jack"
-                  },
-                  "contents": []
-                },
-                "\n"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "$$data_type": "org-node",
-      "type": "headline",
-      "ref": "org6f266e3",
-      "drawer": {},
-      "properties": {
-        "tags-all": [],
-        "raw-value": "Running a jack",
-        "pre-blank": 0,
-        "robust-begin": 816,
-        "robust-end": 1879,
-        "level": 1,
-        "priority": null,
-        "tags": [],
-        "todo-keyword": null,
-        "todo-type": null,
-        "post-blank": 1,
-        "footnote-section-p": false,
-        "archivedp": false,
-        "commentedp": false,
-        "post-affiliated": 797,
-        "title": ["Running a jack"],
-        "mode": null,
-        "granularity": null,
-        "cached": true,
-        "org-element--cache-sync-key": [22]
-      },
-      "contents": [
-        {
-          "$$data_type": "org-node",
-          "type": "headline",
-          "ref": "orgad6a84a",
-          "drawer": {},
-          "properties": {
-            "tags-all": [],
-            "raw-value": "Command Line",
-            "pre-blank": 0,
-            "robust-begin": 832,
-            "robust-end": 1653,
-            "level": 2,
-            "priority": null,
-            "tags": [],
-            "todo-keyword": null,
-            "todo-type": null,
-            "post-blank": 1,
-            "footnote-section-p": false,
-            "archivedp": false,
-            "commentedp": false,
-            "post-affiliated": 814,
-            "title": ["Command Line"],
-            "mode": "section",
-            "granularity": null
-          },
-          "contents": [
-            {
-              "$$data_type": "org-node",
-              "type": "section",
-              "ref": "org0670d4f",
-              "properties": {
-                "robust-begin": 830,
-                "robust-end": 1653,
-                "post-blank": 1,
-                "post-affiliated": 830,
-                "mode": "section",
-                "granularity": null
-              },
-              "contents": [
-                {
-                  "$$data_type": "org-node",
-                  "type": "paragraph",
-                  "ref": "orgc1631b6",
-                  "properties": {
-                    "post-blank": 1,
-                    "post-affiliated": 830,
-                    "mode": "planning",
-                    "granularity": null
-                  },
-                  "contents": [
-                    "A command line script, jack-make is included that can host the jack and\ncreate a context. Here's an example:\n"
-                  ]
-                },
-                {
-                  "$$data_type": "org-node",
-                  "type": "src-block",
-                  "ref": "orga581ef8",
-                  "properties": {
-                    "language": "sh",
-                    "switches": null,
-                    "parameters": null,
-                    "number-lines": null,
-                    "preserve-indent": false,
-                    "retain-labels": true,
-                    "use-labels": true,
-                    "label-fmt": null,
-                    "value": "\n# make a jack, and run FooModule and insert it into the REPL context\njack-make -c FooModule\n",
-                    "post-blank": 1,
-                    "post-affiliated": 940,
-                    "mode": null,
-                    "granularity": null
-                  },
-                  "contents": []
-                },
-                {
-                  "$$data_type": "org-node",
-                  "type": "paragraph",
-                  "ref": "org9962ce9",
-                  "properties": {
-                    "post-blank": 1,
-                    "post-affiliated": 1059,
-                    "mode": null,
-                    "granularity": null
-                  },
-                  "contents": ["To see its usage use --help\n"]
-                },
-                {
-                  "$$data_type": "org-node",
-                  "type": "example-block",
-                  "ref": "org6d3fc50",
-                  "properties": {
-                    "value": "\n$ jack-make --help                                                                                                                                                            1 ↵\n\nUsage: run-jack-make [options]\n\nOptions:\n   -s, --start     starting port, this is the port that clients will need to use to connect  [9001]\n   -e, --end       ending port, the server will utilize the range of ports from start to end for handshaking and REPLs  [9006]\n   -c, --context   comma seperated list of modules to require and add to the context  []\n",
-                    "switches": null,
-                    "number-lines": null,
-                    "preserve-indent": false,
-                    "retain-labels": true,
-                    "use-labels": true,
-                    "label-fmt": null,
-                    "post-blank": 0,
-                    "post-affiliated": 1088,
-                    "mode": null,
-                    "granularity": null
-                  },
-                  "contents": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "$$data_type": "org-node",
-          "type": "headline",
-          "ref": "org9e43c0f",
-          "drawer": {},
-          "properties": {
-            "tags-all": [],
-            "raw-value": "Node API",
-            "pre-blank": 0,
-            "robust-begin": 1670,
-            "robust-end": 1879,
-            "level": 2,
-            "priority": null,
-            "tags": [],
-            "todo-keyword": null,
-            "todo-type": null,
-            "post-blank": 1,
-            "footnote-section-p": false,
-            "archivedp": false,
-            "commentedp": false,
-            "post-affiliated": 1656,
-            "title": ["Node API"],
-            "mode": null,
-            "granularity": null,
-            "cached": true,
-            "org-element--cache-sync-key": [33]
-          },
-          "contents": [
-            {
-              "$$data_type": "org-node",
-              "type": "section",
-              "ref": "orgc93b824",
-              "properties": {
-                "robust-begin": 1668,
-                "robust-end": 1879,
-                "post-blank": 1,
-                "post-affiliated": 1668,
-                "mode": "section",
-                "granularity": null
-              },
-              "contents": [
-                {
-                  "$$data_type": "org-node",
-                  "type": "paragraph",
-                  "ref": "orga5d5d60",
-                  "properties": {
-                    "post-blank": 1,
-                    "post-affiliated": 1668,
-                    "mode": "planning",
-                    "granularity": null
-                  },
-                  "contents": ["Here's the node jS API\n"]
-                },
-                {
-                  "$$data_type": "org-node",
-                  "type": "src-block",
-                  "ref": "org2129ae5",
-                  "properties": {
-                    "language": "js",
-                    "switches": null,
-                    "parameters": null,
-                    "number-lines": null,
-                    "preserve-indent": false,
-                    "retain-labels": true,
-                    "use-labels": true,
-                    "label-fmt": null,
-                    "value": "\nvar FooModule = require('FooModule');\nvar Jack = require('repl-jack');\n\nvar jack = new Jack({\n  context : { FooModule : FooModule},\n  ports : [9001,9002,9003]\n});\n",
-                    "post-blank": 0,
-                    "post-affiliated": 1692,
-                    "mode": null,
-                    "granularity": null
-                  },
-                  "contents": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "$$data_type": "org-node",
-      "type": "headline",
-      "ref": "org7232176",
-      "drawer": {},
-      "properties": {
-        "tags-all": [],
-        "raw-value": "Connecting to a jack",
-        "pre-blank": 0,
-        "robust-begin": 1907,
-        "robust-end": 2339,
-        "level": 1,
-        "priority": null,
-        "tags": [],
-        "todo-keyword": null,
-        "todo-type": null,
-        "post-blank": 1,
-        "footnote-section-p": false,
-        "archivedp": false,
-        "commentedp": false,
-        "post-affiliated": 1882,
-        "title": ["Connecting to a jack"],
-        "mode": null,
-        "granularity": null,
-        "cached": true,
-        "org-element--cache-sync-key": [33]
-      },
-      "contents": [
-        {
-          "$$data_type": "org-node",
-          "type": "section",
-          "ref": "org3d5ec39",
-          "properties": {
-            "robust-begin": 1905,
-            "robust-end": 2339,
-            "post-blank": 1,
-            "post-affiliated": 1905,
-            "mode": "section",
-            "granularity": null
-          },
-          "contents": [
-            {
-              "$$data_type": "org-node",
-              "type": "paragraph",
-              "ref": "orgea50a70",
-              "properties": {
-                "post-blank": 1,
-                "post-affiliated": 1905,
-                "mode": "planning",
-                "granularity": null
-              },
-              "contents": [
-                "A command line script, jack-connect, is included that can connect to the\nREPL jack. Example:\n"
-              ]
-            },
-            {
-              "$$data_type": "org-node",
-              "type": "src-block",
-              "ref": "orgcf30dd6",
-              "properties": {
-                "language": "sh",
-                "switches": null,
-                "parameters": null,
-                "number-lines": null,
-                "preserve-indent": false,
-                "retain-labels": true,
-                "use-labels": true,
-                "label-fmt": null,
-                "value": "\n#connect to a jack at 172.16.254.1 running on port 9001\njack-connect -h 172.16.254.1 -p 9001\n",
-                "post-blank": 1,
-                "post-affiliated": 1999,
-                "mode": null,
-                "granularity": null
-              },
-              "contents": []
-            },
-            {
-              "$$data_type": "org-node",
-              "type": "paragraph",
-              "ref": "org5093826",
-              "properties": {
-                "post-blank": 1,
-                "post-affiliated": 2119,
-                "mode": null,
-                "granularity": null
-              },
-              "contents": ["To its usage use --help\n"]
-            },
-            {
-              "$$data_type": "org-node",
-              "type": "example-block",
-              "ref": "org37bbb29",
-              "properties": {
-                "value": "$ run-jack-connect --help\n\nUsage: jack-connect [options]\n\nOptions:\n   -h, --host\n   -p, --port   the port of the jack to connect to (should be the start port)  [9001]\n",
-                "switches": null,
-                "number-lines": null,
-                "preserve-indent": false,
-                "retain-labels": true,
-                "use-labels": true,
-                "label-fmt": null,
-                "post-blank": 0,
-                "post-affiliated": 2144,
-                "mode": null,
-                "granularity": null
-              },
-              "contents": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "$$data_type": "org-node",
-      "type": "headline",
-      "ref": "orge981b2b",
-      "drawer": {},
-      "properties": {
-        "tags-all": [],
-        "raw-value": "Development",
-        "pre-blank": 0,
-        "robust-begin": 2358,
-        "robust-end": 2574,
-        "level": 1,
-        "priority": null,
-        "tags": [],
-        "todo-keyword": null,
-        "todo-type": null,
-        "post-blank": 0,
-        "footnote-section-p": false,
-        "archivedp": false,
-        "commentedp": false,
-        "post-affiliated": 2342,
-        "title": ["Development"],
-        "mode": null,
-        "granularity": null
-      },
-      "contents": [
-        {
-          "$$data_type": "org-node",
-          "type": "section",
-          "ref": "orgef77c10",
-          "properties": {
-            "robust-begin": 2356,
-            "robust-end": 2574,
-            "post-blank": 0,
-            "post-affiliated": 2356,
-            "mode": "section",
-            "granularity": null
-          },
-          "contents": [
-            {
-              "$$data_type": "org-node",
-              "type": "paragraph",
-              "ref": "org9681aee",
-              "properties": {
-                "post-blank": 0,
-                "post-affiliated": 2356,
-                "mode": "planning",
-                "granularity": null
-              },
-              "contents": [
-                "This is written in es6. There are a few build tasks that utilize gulp\nthat allow you to test and run the applications in node. ",
-                {
-                  "$$data_type": "org-node",
-                  "type": "verbatim",
-                  "ref": "org49b62ca",
-                  "properties": {
-                    "post-blank": 1,
-                    "value": "gulp\nrun-jack-connect"
-                  },
-                  "contents": []
-                },
-                "and ",
-                {
-                  "$$data_type": "org-node",
-                  "type": "verbatim",
-                  "ref": "org8da2ddc",
-                  "properties": {
-                    "post-blank": 1,
-                    "value": "gulp run-jack-make"
-                  },
-                  "contents": []
-                },
-                "should get you started when\nmaking changes.\n"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+"$$data_type": "org-document",
+"properties": {
+"title": [
+"Repl Jack"
+],
+"filetags": [
+"javascript",
+"node"
+],
+"author": [
+"Michael McFarland"
+],
+"creator": "Emacs 28.0.60 (Org mode 9.6)",
+"date": [
+"2015-02-21"
+],
+"description": [],
+"email": "michaelmcfarland@michaels-air.lan",
+"language": "en"
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org84cdcf4",
+"properties": {
+"robust-begin": 1,
+"robust-end": 754,
+"post-blank": 1,
+"post-affiliated": 1,
+"mode": "first-section",
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "keyword",
+"ref": "org68c2018",
+"properties": {
+"key": "TITLE",
+"value": "Repl Jack",
+"post-blank": 0,
+"post-affiliated": 1,
+"mode": "top-comment",
+"granularity": null
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "keyword",
+"ref": "org8d848c1",
+"properties": {
+"key": "CATEGORY",
+"value": "NodeJS",
+"post-blank": 0,
+"post-affiliated": 20,
+"mode": null,
+"granularity": null
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "keyword",
+"ref": "org252ceaf",
+"properties": {
+"key": "DATE",
+"value": "2015-02-21",
+"post-blank": 0,
+"post-affiliated": 39,
+"mode": null,
+"granularity": null
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "keyword",
+"ref": "org28ea6ef",
+"properties": {
+"key": "FILETAGS",
+"value": ":javascript:node",
+"post-blank": 0,
+"post-affiliated": 58,
+"mode": null,
+"granularity": null
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "keyword",
+"ref": "orgcf9690e",
+"properties": {
+"key": "DESCRIPTION",
+"value": "Repl Jack is a utility for connecting to a remote node application utilizing one or more node js REPLs.",
+"post-blank": 1,
+"post-affiliated": 87,
+"mode": null,
+"granularity": null
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orga78e17e",
+"properties": {
+"post-blank": 1,
+"post-affiliated": 207,
+"mode": null,
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "link",
+"ref": "org094948e",
+"properties": {
+"type": "https",
+"path": "//github.com/mikedmcfarland/repl-jack",
+"format": "bracket",
+"raw-link": "https://github.com/mikedmcfarland/repl-jack",
+"application": null,
+"search-option": null,
+"post-blank": 1,
+"is-internal": false,
+"target-ref": null,
+"is-inline-image": false
+},
+"contents": [
+"Repl Jack"
+]
+},
+"is a utility for connecting to a remote node application utilizing one or more node js REPLs.\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orgf7f5716",
+"properties": {
+"post-blank": 1,
+"post-affiliated": 361,
+"mode": null,
+"granularity": null
+},
+"contents": [
+"Essentially you run a Jack server, giving it a context for your REPLs. Then any client connecting to the jack will be given its own node js\nREPL. This allows you to run a node js application on a remote server, run this Jack alongside it, and have multiple REPLs jack into the running applications.\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org63afe72",
+"properties": {
+"post-blank": 0,
+"post-affiliated": 661,
+"mode": null,
+"granularity": null
+},
+"contents": [
+"This can be very helpful for debugging or executing commands in a running server in real time.\n"
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orgaf5726f",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [
+"javascript",
+"node"
+],
+"raw-value": "installation",
+"pre-blank": 0,
+"robust-begin": 774,
+"robust-end": 823,
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"post-blank": 1,
+"footnote-section-p": false,
+"archivedp": false,
+"commentedp": false,
+"post-affiliated": 757,
+"title": [
+"installation"
+],
+"mode": null,
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org32fb634",
+"properties": {
+"robust-begin": 772,
+"robust-end": 823,
+"post-blank": 1,
+"post-affiliated": 772,
+"mode": "section",
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orgb8412ae",
+"properties": {
+"post-blank": 0,
+"post-affiliated": 772,
+"mode": "planning",
+"granularity": null
+},
+"contents": [
+"You can use npm to install : ",
+{
+"$$data_type": "org-node",
+"type": "verbatim",
+"ref": "org1e8a657",
+"properties": {
+"post-blank": 0,
+"value": "npm install repl-jack"
+},
+"contents": []
+},
+"\n"
+]
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orge364519",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [
+"javascript",
+"node"
+],
+"raw-value": "Running a jack",
+"pre-blank": 0,
+"robust-begin": 845,
+"robust-end": 1908,
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"post-blank": 1,
+"footnote-section-p": false,
+"archivedp": false,
+"commentedp": false,
+"post-affiliated": 826,
+"title": [
+"Running a jack"
+],
+"mode": null,
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "orga36e095",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [
+"javascript",
+"node"
+],
+"raw-value": "Command Line",
+"pre-blank": 0,
+"robust-begin": 861,
+"robust-end": 1682,
+"level": 2,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"post-blank": 1,
+"footnote-section-p": false,
+"archivedp": false,
+"commentedp": false,
+"post-affiliated": 843,
+"title": [
+"Command Line"
+],
+"mode": "section",
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "orge4a22f3",
+"properties": {
+"robust-begin": 859,
+"robust-end": 1682,
+"post-blank": 1,
+"post-affiliated": 859,
+"mode": "section",
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org672207d",
+"properties": {
+"post-blank": 1,
+"post-affiliated": 859,
+"mode": "planning",
+"granularity": null
+},
+"contents": [
+"A command line script, jack-make is included that can host the jack and\ncreate a context. Here's an example:\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "src-block",
+"ref": "orgc693f11",
+"properties": {
+"language": "sh",
+"switches": null,
+"parameters": null,
+"number-lines": null,
+"preserve-indent": false,
+"retain-labels": true,
+"use-labels": true,
+"label-fmt": null,
+"value": "\n# make a jack, and run FooModule and insert it into the REPL context\njack-make -c FooModule\n",
+"post-blank": 1,
+"post-affiliated": 969,
+"mode": null,
+"granularity": null
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org0c31b87",
+"properties": {
+"post-blank": 1,
+"post-affiliated": 1088,
+"mode": null,
+"granularity": null
+},
+"contents": [
+"To see its usage use --help\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "example-block",
+"ref": "orge312f32",
+"properties": {
+"value": "\n$ jack-make --help                                                                                                                                                            1 ↵\n\nUsage: run-jack-make [options]\n\nOptions:\n   -s, --start     starting port, this is the port that clients will need to use to connect  [9001]\n   -e, --end       ending port, the server will utilize the range of ports from start to end for handshaking and REPLs  [9006]\n   -c, --context   comma seperated list of modules to require and add to the context  []\n",
+"switches": null,
+"number-lines": null,
+"preserve-indent": false,
+"retain-labels": true,
+"use-labels": true,
+"label-fmt": null,
+"post-blank": 0,
+"post-affiliated": 1117,
+"mode": null,
+"granularity": null
+},
+"contents": []
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org867ddfe",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [
+"javascript",
+"node"
+],
+"raw-value": "Node API",
+"pre-blank": 0,
+"robust-begin": 1699,
+"robust-end": 1908,
+"level": 2,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"post-blank": 1,
+"footnote-section-p": false,
+"archivedp": false,
+"commentedp": false,
+"post-affiliated": 1685,
+"title": [
+"Node API"
+],
+"mode": null,
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "orgde26c9a",
+"properties": {
+"robust-begin": 1697,
+"robust-end": 1908,
+"post-blank": 1,
+"post-affiliated": 1697,
+"mode": "section",
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orgc6e9c8c",
+"properties": {
+"post-blank": 1,
+"post-affiliated": 1697,
+"mode": "planning",
+"granularity": null
+},
+"contents": [
+"Here's the node jS API\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "src-block",
+"ref": "org55b9d17",
+"properties": {
+"language": "js",
+"switches": null,
+"parameters": null,
+"number-lines": null,
+"preserve-indent": false,
+"retain-labels": true,
+"use-labels": true,
+"label-fmt": null,
+"value": "\nvar FooModule = require('FooModule');\nvar Jack = require('repl-jack');\n\nvar jack = new Jack({\n  context : { FooModule : FooModule},\n  ports : [9001,9002,9003]\n});\n",
+"post-blank": 0,
+"post-affiliated": 1721,
+"mode": null,
+"granularity": null
+},
+"contents": []
+}
+]
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org9e75ea0",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [
+"javascript",
+"node"
+],
+"raw-value": "Connecting to a jack",
+"pre-blank": 0,
+"robust-begin": 1936,
+"robust-end": 2368,
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"post-blank": 1,
+"footnote-section-p": false,
+"archivedp": false,
+"commentedp": false,
+"post-affiliated": 1911,
+"title": [
+"Connecting to a jack"
+],
+"mode": null,
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org15cfc8e",
+"properties": {
+"robust-begin": 1934,
+"robust-end": 2368,
+"post-blank": 1,
+"post-affiliated": 1934,
+"mode": "section",
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "org937e3b9",
+"properties": {
+"post-blank": 1,
+"post-affiliated": 1934,
+"mode": "planning",
+"granularity": null
+},
+"contents": [
+"A command line script, jack-connect, is included that can connect to the\nREPL jack. Example:\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "src-block",
+"ref": "orgdfe2d5e",
+"properties": {
+"language": "sh",
+"switches": null,
+"parameters": null,
+"number-lines": null,
+"preserve-indent": false,
+"retain-labels": true,
+"use-labels": true,
+"label-fmt": null,
+"value": "\n#connect to a jack at 172.16.254.1 running on port 9001\njack-connect -h 172.16.254.1 -p 9001\n",
+"post-blank": 1,
+"post-affiliated": 2028,
+"mode": null,
+"granularity": null
+},
+"contents": []
+},
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orgbcffd11",
+"properties": {
+"post-blank": 1,
+"post-affiliated": 2148,
+"mode": null,
+"granularity": null
+},
+"contents": [
+"To its usage use --help\n"
+]
+},
+{
+"$$data_type": "org-node",
+"type": "example-block",
+"ref": "org0b541e9",
+"properties": {
+"value": "$ run-jack-connect --help\n\nUsage: jack-connect [options]\n\nOptions:\n   -h, --host\n   -p, --port   the port of the jack to connect to (should be the start port)  [9001]\n",
+"switches": null,
+"number-lines": null,
+"preserve-indent": false,
+"retain-labels": true,
+"use-labels": true,
+"label-fmt": null,
+"post-blank": 0,
+"post-affiliated": 2173,
+"mode": null,
+"granularity": null
+},
+"contents": []
+}
+]
+}
+]
+},
+{
+"$$data_type": "org-node",
+"type": "headline",
+"ref": "org5823cf4",
+"drawer": {
+
+},
+"properties": {
+"tags-all": [
+"javascript",
+"node"
+],
+"raw-value": "Development",
+"pre-blank": 0,
+"robust-begin": 2387,
+"robust-end": 2603,
+"level": 1,
+"priority": null,
+"tags": [],
+"todo-keyword": null,
+"todo-type": null,
+"post-blank": 0,
+"footnote-section-p": false,
+"archivedp": false,
+"commentedp": false,
+"post-affiliated": 2371,
+"title": [
+"Development"
+],
+"mode": null,
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "section",
+"ref": "org3493a75",
+"properties": {
+"robust-begin": 2385,
+"robust-end": 2603,
+"post-blank": 0,
+"post-affiliated": 2385,
+"mode": "section",
+"granularity": null
+},
+"contents": [
+{
+"$$data_type": "org-node",
+"type": "paragraph",
+"ref": "orgc9d5e91",
+"properties": {
+"post-blank": 0,
+"post-affiliated": 2385,
+"mode": "planning",
+"granularity": null
+},
+"contents": [
+"This is written in es6. There are a few build tasks that utilize gulp\nthat allow you to test and run the applications in node. ",
+{
+"$$data_type": "org-node",
+"type": "verbatim",
+"ref": "org071f3e8",
+"properties": {
+"post-blank": 1,
+"value": "gulp\nrun-jack-connect"
+},
+"contents": []
+},
+"and ",
+{
+"$$data_type": "org-node",
+"type": "verbatim",
+"ref": "org752f38e",
+"properties": {
+"post-blank": 1,
+"value": "gulp run-jack-make"
+},
+"contents": []
+},
+"should get you started when\nmaking changes.\n"
+]
+}
+]
+}
+]
+}
+]
 }

@@ -4,5 +4,6 @@
   "description": "Statements is a web application which helps a company of brokers to send a set of statements to their clients, via data received by external services.",
   "path": "/projects/statements/",
   "category": "Proprietary",
+  "tags": ["scala"],
   "date": "2015-08-14"
 }

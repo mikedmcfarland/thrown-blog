@@ -1,6 +1,7 @@
 #+TITLE: Repl Jack
 #+CATEGORY: NodeJS
 #+DATE: 2015-02-21
+#+FILETAGS: :javascript:node
 #+DESCRIPTION: Repl Jack is a utility for connecting to a remote node application utilizing one or more node js REPLs.
 
 [[https://github.com/mikedmcfarland/repl-jack][Repl Jack]] is a utility for connecting to a remote node application utilizing one or more node js REPLs.

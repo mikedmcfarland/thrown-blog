@@ -1,6 +1,7 @@
 #+TITLE: Fun with scalajs lenses and react
 #+DATE: 2015-06-16
 #+CATEGORY: Scala
+#+FILETAGS: :scala:fp
 #+DESCRIPTION: Examples where lenses simplified scalajs react code
 
 I've been working (freelance) on a single page app using [[https://github.com/japgolly/scalajs-react][scalajs-react]]

@@ -8,6 +8,7 @@ const AssetDocIO = t.type({
   path: t.string,
   category: t.string,
   date: t.string,
+  tags: t.array(t.string),
 })
 
 export type AssetDoc = t.TypeOf<typeof AssetDocIO>

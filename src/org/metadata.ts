@@ -50,6 +50,7 @@ export function getOrgSummaryData(doc: OrgDoc) {
     description: metadata['DESCRIPTION'],
     category: metadata['CATEGORY'],
     date: metadata['DATE'],
+    tags: doc.properties.filetags,
   }
 
   type Result = typeof defaults & typeof fromMetaData

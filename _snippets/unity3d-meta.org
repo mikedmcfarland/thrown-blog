@@ -3,6 +3,7 @@
 #+TITLE: Fix Unity3d "Missing Script" issues
 #+DATE: 2015-06-16
 #+Category: Unity3D
+#+filetags: Unity3D
 #+DESCRIPTION:Fix the annoying "Missing Script" errors that occur when you start sharing assets on a team.
 
 
