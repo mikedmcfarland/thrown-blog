@@ -114,7 +114,7 @@ export default function Header(props: Props) {
             <a style={{ textDecoration: 'none' }}>
               <Stack direction={'row'} spacing={4}>
                 <Code fontWeight={'900'} fontSize="2xl" noOfLines={1}>
-                  Thrown
+                  Throw n;
                 </Code>
                 <Logo display={{ base: 'none', md: 'flex' }} />
               </Stack>
