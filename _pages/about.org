@@ -10,4 +10,4 @@ I have an infatuation with programming which has lead me to creating sites, game
 - [[https://nextjs.org/][Next.js by Vercel - The React Framework]]
 - [[https://chakra-ui.com/][Chakra UI]]
 - [[https://orgmode.org/][Org mode for Emacs]]
-- A Logo by Shannon E. Thomas license, used under [[https://creativecommons.org/licenses/by/3.0/us/][CC BY]]
+- [[https://commons.wikimedia.org/wiki/File:Toicon-icon-stone-code.svg][An Icon]] by Shannon E. Thomas, with license [[https://creativecommons.org/licenses/by/4.0/deed.en][CC BY 4.0]]
