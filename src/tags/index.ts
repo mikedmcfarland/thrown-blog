@@ -12,10 +12,6 @@ const tagToIcon: [RegExp, FC][] = [
   [/node/gi, FaNodeJs],
 ]
 
-export function heroIcon(tags: string[]) {
-  return firstIcon(tags) || FaBook
-}
-
 export function firstIcon(tags: string[]) {
   return tags.map((t) => iconForTag(t)).find((i) => i !== undefined)
 }

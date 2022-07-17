@@ -1,10 +1,8 @@
 import {
   Box,
-  Center,
   Container,
   Heading,
   HStack,
-  Text,
   useColorModeValue,
   VStack,
 } from '@chakra-ui/react'
@@ -36,35 +34,33 @@ export function Post({ summary, children }: Props) {
         rounded={'md'}
         overflow={'hidden'}
       >
-        <Center>
-          <VStack mb={10} mt={10}>
-            <HStack>
-              <VStack>
-                <Heading
-                  textColor="brand.400"
-                  textAlign={'center'}
-                  fontWeight={800}
-                  size="xl"
-                  mb={[3, 7]}
-                >
-                  {title}
-                </Heading>
+        <VStack mb={10} mt={10}>
+          <HStack>
+            <VStack alignItems={'left'} ml={[3, 7]}>
+              <Heading
+                textColor="brand.400"
+                textAlign={'center'}
+                fontWeight={800}
+                size="xl"
+                mb={[3, 7]}
+              >
+                {title}
+              </Heading>
 
-                {tags.length > 0 && (
-                  <HStack>
-                    {tags.length > 1 ? <FaTags /> : <FaTag />}
-                    {tags.map((tag, i) => (
-                      <PostTag key={i} tag={tag} />
-                    ))}
-                  </HStack>
-                )}
+              {tags.length > 0 && (
+                <HStack>
+                  {tags.length > 1 ? <FaTags /> : <FaTag />}
+                  {tags.map((tag, i) => (
+                    <PostTag key={i} tag={tag} />
+                  ))}
+                </HStack>
+              )}
 
-                {date && <Date date={date} />}
-              </VStack>
-              <HeroImage {...summary} />
-            </HStack>
-          </VStack>
-        </Center>
+              {date && <Date date={date} />}
+            </VStack>
+            <HeroImage {...summary} />
+          </HStack>
+        </VStack>
       </Box>
 
       {children}
