@@ -1,0 +1,33 @@
+This is a the code that runs [[https://thrownforaloop.com/]].
+It Leverages
+- [[https://nextjs.org/][Next.js by Vercel - The React Framework]]
+- [[https://chakra-ui.com/][Chakra UI]]
+- [[https://orgmode.org/][Org mode for Emacs]]
+
+* Development
+A reasonable local development setup would be to run the dev server and jest
+
+#+begin_src sh
+open http://localhost:3000
+yarn dev
+#+end_src
+
+and in a separate terminal
+#+begin_src sh
+yarn watch:test
+#+end_src
+
+* Commands
+
+| yarn dev        | run development server                    |
+| yarn test:watch | run jest tests while watching for changes |
+| yarn build      | run next build                            |
+| yarn export     | run next export, creates files for SSG    |
+| yarn lint       | run next lint                             |
+| yarn test       | run jest tests                            |
+
+* Org integration
+The org sources aren't used directly, the site depends on json files produced by [[https://github.com/jlumpe/ox-json][ox-json a JSON export back end for Emacs Org mode]].
+I played quite a bit with things like [[https://github.com/orgapp/orgajs][orgajs]] and eventually decided it would be simplier to just have a json export in emacs, and look at that, it exists.
+
+** TODO How to add pages/articles/snippets or other categories
