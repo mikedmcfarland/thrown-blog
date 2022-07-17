@@ -6,7 +6,7 @@
 ],
 "filetags": [
 "scala",
-"fp"
+"react"
 ],
 "author": [
 "Michael McFarland"
@@ -23,10 +23,10 @@
 {
 "$$data_type": "org-node",
 "type": "section",
-"ref": "orgda9ffcf",
+"ref": "orgd8ec51b",
 "properties": {
 "robust-begin": 1,
-"robust-end": 427,
+"robust-end": 430,
 "post-blank": 2,
 "post-affiliated": 1,
 "mode": "first-section",
@@ -36,7 +36,7 @@
 {
 "$$data_type": "org-node",
 "type": "keyword",
-"ref": "org2ccd6a0",
+"ref": "org939fd9c",
 "properties": {
 "key": "TITLE",
 "value": "Fun with scalajs lenses and react",
@@ -50,7 +50,7 @@
 {
 "$$data_type": "org-node",
 "type": "keyword",
-"ref": "orga9b7108",
+"ref": "orge6127ab",
 "properties": {
 "key": "DATE",
 "value": "2015-06-16",
@@ -64,7 +64,7 @@
 {
 "$$data_type": "org-node",
 "type": "keyword",
-"ref": "org0ca9f6e",
+"ref": "org58b05c1",
 "properties": {
 "key": "CATEGORY",
 "value": "Scala",
@@ -78,10 +78,10 @@
 {
 "$$data_type": "org-node",
 "type": "keyword",
-"ref": "orgcec2e93",
+"ref": "org83cc046",
 "properties": {
 "key": "FILETAGS",
-"value": ":scala:fp",
+"value": ":scala:react",
 "post-blank": 0,
 "post-affiliated": 81,
 "mode": null,
@@ -92,12 +92,12 @@
 {
 "$$data_type": "org-node",
 "type": "keyword",
-"ref": "org6ecf36d",
+"ref": "org06216d1",
 "properties": {
 "key": "DESCRIPTION",
 "value": "Examples where lenses simplified scalajs react code",
 "post-blank": 1,
-"post-affiliated": 103,
+"post-affiliated": 106,
 "mode": null,
 "granularity": null
 },
@@ -106,10 +106,10 @@
 {
 "$$data_type": "org-node",
 "type": "paragraph",
-"ref": "org8a34077",
+"ref": "org8f67fc6",
 "properties": {
 "post-blank": 1,
-"post-affiliated": 171,
+"post-affiliated": 174,
 "mode": null,
 "granularity": null
 },
@@ -118,7 +118,7 @@
 {
 "$$data_type": "org-node",
 "type": "link",
-"ref": "orgaf327b3",
+"ref": "org7693b0a",
 "properties": {
 "type": "https",
 "path": "//github.com/japgolly/scalajs-react",
@@ -141,10 +141,10 @@
 {
 "$$data_type": "org-node",
 "type": "paragraph",
-"ref": "org06bb306",
+"ref": "orgeaf7c62",
 "properties": {
 "post-blank": 0,
-"post-affiliated": 290,
+"post-affiliated": 293,
 "mode": null,
 "granularity": null
 },
@@ -157,19 +157,19 @@
 {
 "$$data_type": "org-node",
 "type": "headline",
-"ref": "org815a167",
+"ref": "org2b0e948",
 "drawer": {
 
 },
 "properties": {
 "tags-all": [
 "scala",
-"fp"
+"react"
 ],
 "raw-value": "The model",
 "pre-blank": 1,
-"robust-begin": 446,
-"robust-end": 833,
+"robust-begin": 449,
+"robust-end": 836,
 "level": 1,
 "priority": null,
 "tags": [],
@@ -179,7 +179,7 @@
 "footnote-section-p": false,
 "archivedp": false,
 "commentedp": false,
-"post-affiliated": 431,
+"post-affiliated": 434,
 "title": [
 "The model"
 ],
@@ -190,12 +190,12 @@
 {
 "$$data_type": "org-node",
 "type": "section",
-"ref": "orge226d95",
+"ref": "org5523f3a",
 "properties": {
-"robust-begin": 444,
-"robust-end": 833,
+"robust-begin": 447,
+"robust-end": 836,
 "post-blank": 2,
-"post-affiliated": 444,
+"post-affiliated": 447,
 "mode": "section",
 "granularity": null
 },
@@ -203,10 +203,10 @@
 {
 "$$data_type": "org-node",
 "type": "paragraph",
-"ref": "org4f89745",
+"ref": "orgff765b7",
 "properties": {
 "post-blank": 1,
-"post-affiliated": 444,
+"post-affiliated": 447,
 "mode": "planning",
 "granularity": null
 },
@@ -217,7 +217,7 @@
 {
 "$$data_type": "org-node",
 "type": "src-block",
-"ref": "org0d1631f",
+"ref": "orge5b5a13",
 "properties": {
 "language": "scala",
 "switches": null,
@@ -229,7 +229,7 @@
 "label-fmt": null,
 "value": "  case class Config(restricted: String, mailConfig:MailConfig)\n\n  object Config{\n\n    lazy val default = Config(\"thrownforaloop.com\",MailConfig(\"localhost\",9000,\"mike\"))\n  }\n\n  case class MailConfig(\n    host:String,\n    port:Int,\n    user:String\n  )\n",
 "post-blank": 0,
-"post-affiliated": 556,
+"post-affiliated": 559,
 "mode": null,
 "granularity": null
 },
@@ -242,19 +242,19 @@
 {
 "$$data_type": "org-node",
 "type": "headline",
-"ref": "orgc362bd8",
+"ref": "org5816233",
 "drawer": {
 
 },
 "properties": {
 "tags-all": [
 "scala",
-"fp"
+"react"
 ],
 "raw-value": "The editable form",
 "pre-blank": 0,
-"robust-begin": 860,
-"robust-end": 2509,
+"robust-begin": 863,
+"robust-end": 2512,
 "level": 1,
 "priority": null,
 "tags": [],
@@ -264,7 +264,7 @@
 "footnote-section-p": false,
 "archivedp": false,
 "commentedp": false,
-"post-affiliated": 837,
+"post-affiliated": 840,
 "title": [
 "The editable form"
 ],
@@ -275,12 +275,12 @@
 {
 "$$data_type": "org-node",
 "type": "section",
-"ref": "orgf82038d",
+"ref": "orgb778026",
 "properties": {
-"robust-begin": 858,
-"robust-end": 2509,
+"robust-begin": 861,
+"robust-end": 2512,
 "post-blank": 1,
-"post-affiliated": 858,
+"post-affiliated": 861,
 "mode": "section",
 "granularity": null
 },
@@ -288,10 +288,10 @@
 {
 "$$data_type": "org-node",
 "type": "paragraph",
-"ref": "org1034ff4",
+"ref": "orge5bf28f",
 "properties": {
 "post-blank": 1,
-"post-affiliated": 858,
+"post-affiliated": 861,
 "mode": "planning",
 "granularity": null
 },
@@ -302,7 +302,7 @@
 {
 "$$data_type": "org-node",
 "type": "src-block",
-"ref": "orgc8a8555",
+"ref": "org0c7a5de",
 "properties": {
 "language": "scala",
 "switches": null,
@@ -314,7 +314,7 @@
 "label-fmt": null,
 "value": "  object Form{\n    case class Field(name:String,value:String,onChange:ReactEventI=>Unit)\n\n\n    val field = ReactComponentB[Field](\"form-field\")\n      .render(P=>{\n        val Field(name,value,onChange) = P\n        <.div(^.`class`:=\"form-group\",\n          <.label(\n            ^.`for` :=name,\n            name.capitalize),\n          <.input(\n            ^.tpe := \"text\",\n            ^.`class`:=\"form-control\",\n            ^.id := name,\n            ^.value := value,\n            ^.onChange ==> onChange\n          ))\n      })\n      .build\n\n    val form = ReactComponentB[Seq[Field]](\"form\")\n      .render(P=>{\n        <.div(^.`class`:=\"panel panel-default\",\n          <.div(^.`class`:=\"panel\",\n            <.div(^.`class`:=\"panel-heading\",\n              \"Config Edit\"\n            ),\n            <.div(^.`class`:=\"panel-body\",\n              <.form(\n                P.map(f => field.withKey(f.name)(f))\n              )\n            )\n          )\n        )\n      })\n    .build\n\n    // a static construction of our form\n    def static() = {\n      val Config(restricted,MailConfig(host,port,user)) = Config.default\n      val noOp = (e:ReactEventI) => {}\n      val fields = Seq(\n          Field(\"restricted\" ,restricted    ,noOp),\n          Field(\"host\"       ,host          ,noOp),\n          Field(\"user\"       ,user          ,noOp),\n          Field(\"port\"       ,port.toString ,noOp))\n\n      form(fields)\n    }\n  }\n",
 "post-blank": 1,
-"post-affiliated": 991,
+"post-affiliated": 994,
 "mode": null,
 "granularity": null
 },
@@ -323,10 +323,10 @@
 {
 "$$data_type": "org-node",
 "type": "paragraph",
-"ref": "orgef82766",
+"ref": "orgd400e48",
 "properties": {
 "post-blank": 0,
-"post-affiliated": 2427,
+"post-affiliated": 2430,
 "mode": null,
 "granularity": null
 },
@@ -335,7 +335,7 @@
 {
 "$$data_type": "org-node",
 "type": "verbatim",
-"ref": "org89038c0",
+"ref": "org57de7d4",
 "properties": {
 "post-blank": 0,
 "value": "Field"
@@ -352,19 +352,19 @@
 {
 "$$data_type": "org-node",
 "type": "headline",
-"ref": "orgbc4b98b",
+"ref": "org1203f95",
 "drawer": {
 
 },
 "properties": {
 "tags-all": [
 "scala",
-"fp"
+"react"
 ],
 "raw-value": "Making it dynamic",
 "pre-blank": 1,
-"robust-begin": 2535,
-"robust-end": 4164,
+"robust-begin": 2538,
+"robust-end": 4167,
 "level": 1,
 "priority": null,
 "tags": [],
@@ -374,7 +374,7 @@
 "footnote-section-p": false,
 "archivedp": false,
 "commentedp": false,
-"post-affiliated": 2512,
+"post-affiliated": 2515,
 "title": [
 "Making it dynamic"
 ],
@@ -385,12 +385,12 @@
 {
 "$$data_type": "org-node",
 "type": "section",
-"ref": "orgc561a73",
+"ref": "orgb7ab244",
 "properties": {
-"robust-begin": 2533,
-"robust-end": 4164,
+"robust-begin": 2536,
+"robust-end": 4167,
 "post-blank": 0,
-"post-affiliated": 2533,
+"post-affiliated": 2536,
 "mode": "section",
 "granularity": null
 },
@@ -398,10 +398,10 @@
 {
 "$$data_type": "org-node",
 "type": "paragraph",
-"ref": "org12add4b",
+"ref": "orgbe5e360",
 "properties": {
 "post-blank": 1,
-"post-affiliated": 2533,
+"post-affiliated": 2536,
 "mode": "planning",
 "granularity": null
 },
@@ -412,7 +412,7 @@
 {
 "$$data_type": "org-node",
 "type": "src-block",
-"ref": "orgf3303b3",
+"ref": "org2497656",
 "properties": {
 "language": "scala",
 "switches": null,
@@ -424,7 +424,7 @@
 "label-fmt": null,
 "value": "  object ConfigForm{\n    case class Props(onSubmit:Config=>Unit)\n    case class State(config:Config)\n\n    class Backend(t:BackendScope[Unit,State]){\n      def modifyRestricted(e:ReactEventI) = {\n        t.modState(\n          s=>s.copy(\n            config=s.config.copy(\n              restricted=e.currentTarget.value)))\n      }\n      def modifyHost(e:ReactEventI) = {\n        t.modState(\n          s=>s.copy(\n            config=s.config.copy(\n              mailConfig=s.config.mailConfig.copy(\n                host=e.currentTarget.value))))\n      }\n      def modifyUser(e:ReactEventI) = {\n        t.modState(\n          s=>s.copy(\n            config=s.config.copy(\n              mailConfig=s.config.mailConfig.copy(\n                user=e.currentTarget.value))))\n      }\n\n    }\n\n    val form = ReactComponentB[Unit](\"config-form\")\n      .initialState(State(Config.default))\n      .backend(new Backend(_))\n      .render((P,S,B) =>{\n        val Config(restricted,MailConfig(host,port,user)) = S.config\n        val Field = Form.Field\n\n        val fields = Seq(\n          Field(\"restricted\" ,restricted ,B.modifyRestricted),\n          Field(\"host\"       ,host       ,B.modifyHost),\n          Field(\"user\"       ,user       ,B.modifyUser))\n\n        Form.form(fields)\n      })\n      .buildU\n\n  }\n",
 "post-blank": 1,
-"post-affiliated": 2652,
+"post-affiliated": 2655,
 "mode": null,
 "granularity": null
 },
@@ -433,10 +433,10 @@
 {
 "$$data_type": "org-node",
 "type": "paragraph",
-"ref": "org79ba6d7",
+"ref": "orgc5a1ce1",
 "properties": {
 "post-blank": 0,
-"post-affiliated": 3970,
+"post-affiliated": 3973,
 "mode": null,
 "granularity": null
 },
@@ -451,19 +451,19 @@
 {
 "$$data_type": "org-node",
 "type": "headline",
-"ref": "org404414d",
+"ref": "orgc1802bf",
 "drawer": {
 
 },
 "properties": {
 "tags-all": [
 "scala",
-"fp"
+"react"
 ],
 "raw-value": "Enter lenses",
 "pre-blank": 1,
-"robust-begin": 4184,
-"robust-end": 5098,
+"robust-begin": 4187,
+"robust-end": 5101,
 "level": 1,
 "priority": null,
 "tags": [],
@@ -473,7 +473,7 @@
 "footnote-section-p": false,
 "archivedp": false,
 "commentedp": false,
-"post-affiliated": 4166,
+"post-affiliated": 4169,
 "title": [
 "Enter lenses"
 ],
@@ -484,12 +484,12 @@
 {
 "$$data_type": "org-node",
 "type": "section",
-"ref": "org5d1bdf9",
+"ref": "orgb976d1b",
 "properties": {
-"robust-begin": 4182,
-"robust-end": 5098,
+"robust-begin": 4185,
+"robust-end": 5101,
 "post-blank": 0,
-"post-affiliated": 4182,
+"post-affiliated": 4185,
 "mode": "section",
 "granularity": null
 },
@@ -497,10 +497,10 @@
 {
 "$$data_type": "org-node",
 "type": "paragraph",
-"ref": "org10f9baa",
+"ref": "org06fa321",
 "properties": {
 "post-blank": 1,
-"post-affiliated": 4182,
+"post-affiliated": 4185,
 "mode": "planning",
 "granularity": null
 },
@@ -511,7 +511,7 @@
 {
 "$$data_type": "org-node",
 "type": "src-block",
-"ref": "org3801c47",
+"ref": "orgeedfdbc",
 "properties": {
 "language": "scala",
 "switches": null,
@@ -523,7 +523,7 @@
 "label-fmt": null,
 "value": "  val _config     = Lens[State,ConfigItem]      (_.config)     (v => s => s.copy(config=v))\n  val _restricted = Lens[ConfigItem,String]     (_.restricted) (v => c => c.copy(restricted=v))\n  val _mail       = Lens[ConfigItem,MailConfig] (_.mailConfig) (v => c => c.copy(mailConfig=v))\n  val _host       = Lens[MailConfig,String]     (_.host)       (v => m => m.copy(host=v))\n  val _port       = Lens[MailConfig,Int]        (_.port)       (v => m => m.copy(port=v))\n  val _user       = Lens[MailConfig,String]     (_.user)       (v => m => m.copy(user=v))\n  val _password   = Lens[MailConfig,String]     (_.password)   (v => m => m.copy(password=v))\n\n  val _eventV     = Lens[ReactEventI,String]    (_.currentTarget.value)   (v => m => m.copy(password=v))\n  val _mailconfig = _config composeLens _mail\n",
 "post-blank": 0,
-"post-affiliated": 4272,
+"post-affiliated": 4275,
 "mode": null,
 "granularity": null
 },

@@ -1,4 +1,4 @@
-import { FaBook, FaCodeBranch, FaJava, FaNodeJs } from 'react-icons/fa'
+import { FaReact, FaCodeBranch, FaJava, FaNodeJs } from 'react-icons/fa'
 import { DiDatabase, DiJavascript, DiScala, DiUnitySmall } from 'react-icons/di'
 import { FC } from 'react'
 
@@ -10,6 +10,7 @@ const tagToIcon: [RegExp, FC][] = [
   [/unity(3d)/gi, DiUnitySmall],
   [/sql/gi, DiDatabase],
   [/node/gi, FaNodeJs],
+  [/react/gi, FaReact],
 ]
 
 export function firstIcon(tags: string[]) {
