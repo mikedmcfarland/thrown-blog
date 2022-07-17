@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import {
   Box,
   Center,
@@ -7,15 +6,12 @@ import {
   Stack,
   useColorModeValue,
   HStack,
-  Tag,
-  TagLabel,
-  Icon,
 } from '@chakra-ui/react'
 import Link from 'next/link'
 
-import { FaBook, FaCalendarAlt, FaCodeBranch, FaJava } from 'react-icons/fa'
-import { DiDatabase, DiJavascript, DiScala, DiUnitySmall } from 'react-icons/di'
-import { FC } from 'react'
+import Date from './Date'
+import HeroImage from './HeroImage'
+import PostTag from './PostTag'
 
 export type Props = {
   category: string
@@ -35,36 +31,6 @@ export function PostSummary({
   description,
   date,
 }: Props) {
-  console.log('tags', tags)
-  const heroComponent = image ? (
-    <Image src={image} alt={'Post Image'} layout={'fill'} />
-  ) : (
-    <Center>
-      {' '}
-      <Icon w={'210px'} h="100%" as={firstIcon(tags) || FaBook} />
-    </Center>
-  )
-
-  const tagComponents = tags.map((tag) => {
-    const icon = iconForTag(tag)
-    return (
-      <Tag key={tag}>
-        <TagLabel
-          color={'brand.500'}
-          textTransform={'uppercase'}
-          fontWeight={800}
-          fontSize={'xs'}
-          letterSpacing={1.1}
-        >
-          <>
-            {tag}
-            {icon ? <Icon as={icon} /> : null}
-          </>
-        </TagLabel>
-      </Tag>
-    )
-  })
-
   return (
     <Link href={href}>
       <a>
@@ -86,7 +52,7 @@ export function PostSummary({
               mb={6}
               pos={'relative'}
             >
-              {heroComponent}
+              <HeroImage image={image} tags={tags} />
             </Box>
             <Stack>
               <Heading
@@ -96,36 +62,17 @@ export function PostSummary({
               >
                 {title}
               </Heading>
-              <HStack>{tagComponents}</HStack>
+              <HStack>
+                {tags.map((tag, i) => (
+                  <PostTag key={i} tag={tag} />
+                ))}
+              </HStack>
               <Text color={'gray.500'}>{description}</Text>
             </Stack>
-            <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-              <FaCalendarAlt />
-              <Stack direction={'column'} spacing={0} fontSize={'sm'}>
-                <Text color={'gray.500'}>{date}</Text>
-              </Stack>
-            </Stack>
+            <Date mt={6} date={date} />
           </Box>
         </Center>
       </a>
     </Link>
   )
-}
-
-const tagToIcon: [RegExp, FC][] = [
-  [/javascript|js/gi, DiJavascript],
-  [/java?!script/gi, FaJava],
-  [/scala/gi, DiScala],
-  [/code/gi, FaCodeBranch],
-  [/unity(3d)/gi, DiUnitySmall],
-  [/sql/gi, DiDatabase],
-]
-
-function firstIcon(tags: string[]) {
-  return tags.map((t) => iconForTag(t)).find((i) => i !== undefined)
-}
-
-function iconForTag(tag: string) {
-  const [_, icon] = tagToIcon.find(([pattern, _]) => tag.match(pattern)) || []
-  return icon
 }
