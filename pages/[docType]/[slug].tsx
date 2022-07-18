@@ -25,7 +25,7 @@ export default function PostPage(props: Props) {
 type RouteParams = { params: { slug: string; docType: string } }
 
 export async function getStaticProps(route: RouteParams) {
-  const doc = await getDocBySlug(route.params.slug, route.params.docType)
+  const doc = await getDocBySlug(route.params.docType, route.params.slug)
   return {
     props: {
       doc,

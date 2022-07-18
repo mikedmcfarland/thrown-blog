@@ -5,18 +5,25 @@ import { PathReporter } from 'io-ts/PathReporter'
 import { isLeft } from 'fp-ts/lib/These'
 import DocIO from './Doc'
 
-const EXT = '.json'
+const EXT = 'json'
 const ENCODING = 'utf8'
 
 export async function getAllDocs(docType: string) {
-  const files = await fs.promises.readdir(
-    path.join(process.cwd(), getDir(docType))
+  const docTypeDir = path.join(process.cwd(), getDir(docType))
+  const docDirectories = await fs.promises.readdir(docTypeDir, {
+    withFileTypes: true,
+  })
+
+  const jsonFiles = await Promise.all(
+    docDirectories
+      .filter((file) => file.isDirectory())
+      .map((file) => file.name)
+      .filter((dir) => fs.promises.access(`${docTypeDir}/${dir}/${dir}.${EXT}`))
   )
-  const jsonFiles = files.filter((f) => path.extname(f).toLowerCase() === EXT)
   const docs = await Promise.all(
     jsonFiles.map((name) =>
-      getDocByName(name, docType).then((doc) => ({
-        name: name.replace('.json', ''),
+      getDocByName(docType, name).then((doc) => ({
+        name,
         doc,
         docType,
       }))
@@ -25,9 +32,9 @@ export async function getAllDocs(docType: string) {
   return docs
 }
 
-async function getDocByName(filename: string, docType: string): Promise<Doc> {
+async function getDocByName(docType: string, filename: string): Promise<Doc> {
   const contents = await fs.promises.readFile(
-    path.join(process.cwd(), getDir(docType), filename),
+    path.join(process.cwd(), getDir(docType, filename), `${filename}.json`),
     ENCODING
   )
 
@@ -42,10 +49,14 @@ async function getDocByName(filename: string, docType: string): Promise<Doc> {
   }
 }
 
-export async function getDocBySlug(slug: string, docType: string) {
-  return getDocByName(`${slug}.json`, docType)
+export async function getDocBySlug(docType: string, slug: string) {
+  return getDocByName(docType, `${slug}`)
 }
 
-function getDir(docType: string): string {
-  return `_${docType.toLowerCase()}`
+export function getDir(docType: string, filename?: string): string {
+  const basePath = `_${docType.toLowerCase()}`
+  if (!!filename) {
+    return `${basePath}/${filename}`
+  }
+  return basePath
 }
