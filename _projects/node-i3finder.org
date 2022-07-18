@@ -1,7 +1,7 @@
 #+TITLE: I3 finder
 #+CATEGORY: linux
 #+DATE: 2015-01-29
-#+FILETAGS: :javascript:node
+#+FILETAGS: node:JS
 #+DESCRIPTION: Gives dmenu access to your i3 windows/tags/and workspaces. Supports back and forward through command history
 
 [[https://github.com/mikedmcfarland/node-i3finder][I3 finder]] is a program made for the [[https://i3wm.org/][I3 Window Manager]]. It gives
