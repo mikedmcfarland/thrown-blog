@@ -7,7 +7,7 @@ const Home: NextPage = () => {
       <Stack
         as={Box}
         textAlign={'center'}
-        spacing={{ base: 8, md: 14 }}
+        spacing={{ base: 6, md: 12 }}
         py={{ base: 20, md: 36 }}
       >
         <Heading
@@ -15,15 +15,15 @@ const Home: NextPage = () => {
           fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
           lineHeight={'110%'}
         >
-          Stray thoughts from a<br />
+          Thoughts from a<br />
           <Text as={'span'} color={'brand.400'}>
-            Software Engineer
+            Full Stack Engineer
           </Text>
         </Heading>
 
         <Stack
           direction={'column'}
-          spacing={3}
+          spacing={[2, 4]}
           align={'center'}
           alignSelf={'center'}
           position={'relative'}
@@ -31,19 +31,16 @@ const Home: NextPage = () => {
           <Text color={'gray.500'}>
             Some articles, projects, and snippets...
           </Text>
-
-          <Box>
-            <Text
-              fontSize={'lg'}
-              fontFamily={'Caveat'}
-              position={'absolute'}
-              right={'-125px'}
-              top={'-15px'}
-              transform={'rotate(10deg)'}
-            >
-              a work in progress
-            </Text>
-          </Box>
+          <Text
+            fontSize={'lg'}
+            fontFamily={'Caveat'}
+            position={'relative'}
+            right={'0x'}
+            top={'0px'}
+            transform={'rotate(10deg)'}
+          >
+            a work in progress
+          </Text>
         </Stack>
       </Stack>
     </Container>
